@@ -5,15 +5,15 @@ date:   2014-03-12 15:00:00
 categories: about me
 ---
 
-I was a middle aged suit. Two years ago I decided to [get technical](http://www.slideshare.net/matthewnewell/ruby-newbie-26183481). 
+[Get technical](http://www.slideshare.net/matthewnewell/ruby-newbie-26183481). 
 
-I am going use this site to document my learning. If anyone finds my site useful or amusing, great. But for now, I am blogging for future me.
+I use this site to document my learning. If **you** find my site useful or amusing, great. But for now, I am blogging for **future me**.
 
 Jeckyll, GitHub Pages, and Markdown
 -----------------------------------
-This site is built with [Jekyll][jekyll] and hosted on [GitHub](http://www.github.com). Jekyll uses [Markdown](http://daringfireball.net/projects/markdown/), a text to HTML conversion tool for web writers. 
+This site is built with [Jekyll](http://jekyllrb.com/) and lives on [GitHub](http://www.github.com). Jekyll uses [Markdown](http://daringfireball.net/projects/markdown/), a text to HTML conversion tool for web writers. 
 
-To start Jekyll on the localhost, "jeckyll serve".
+To start Jekyll on the localhost, "jekyll serve".
 
 Markdown Basics
 --------------
@@ -33,12 +33,10 @@ Markdown Basics
 6. Emphasis is done with *one* or **two** asteriks.
 
 -------------
- 
-
 
 Ruby Learning
 -------------
-Ruby focus right now is on Procs and Lambdas. I dont know how I would use them in production code just yet. But they seem really important. I'm learning from this module of [RubyMonk.com](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas).
+Ruby focus right now is on Procs and Lambdas. I'm learning from this module of [RubyMonk.com](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas). Here is about where I am right now:
 
 {% highlight ruby %}
 family= ["Matt", "Dana", "Lucy", "Bode"]
