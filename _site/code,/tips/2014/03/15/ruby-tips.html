@@ -37,6 +37,33 @@
 A block is like a method that is not associated with any object
 <em>addition = lambda {|a, b| return a + b }</em></p>
 
+<p>++Scope++ is the context which its visible to the program.
+from <a href="http://www.codecademy.com/courses/ruby-beginner-en-MFiQ6/1/1?curriculum_id=5059f8619189a5000201fbcb">Codeschool</a>.</p>
+
+<h1>$global<em>var, @@class</em>var, @instance_var</h1>
+
+<div class="highlight"><pre><code class="ruby"><span class="k">class</span> <span class="nc">Now</span>
+  <span class="vg">$place</span> <span class="o">=</span> <span class="s2">&quot;Indiana&quot;</span> <span class="c1">#global variable</span>
+  <span class="vc">@@here</span> <span class="o">=</span> <span class="p">{</span><span class="ss">hello</span><span class="p">:</span> <span class="s2">&quot;Hello, fishers&quot;</span><span class="p">}</span> <span class="c1">#class variable</span>
+
+  <span class="k">def</span> <span class="nf">who</span><span class="p">(</span><span class="nb">name</span><span class="p">,</span> <span class="n">occupation</span><span class="p">)</span>
+    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+    <span class="vi">@occupation</span> <span class="o">=</span> <span class="n">occupation</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">current_user</span>
+    <span class="vi">@name</span>
+  <span class="k">end</span>
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">display_here</span>
+    <span class="vc">@@here</span>
+  <span class="k">end</span>
+
+  <span class="n">matt</span> <span class="o">=</span><span class="no">Now</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Matt&quot;</span><span class="p">,</span> <span class="s2">&quot;Lumberjack&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="n">matt</span><span class="o">.</span><span class="n">name</span>  <span class="c1">#call instance var</span>
+  <span class="nb">puts</span> <span class="vg">$place</span>  <span class="c1">#global, access directly</span>
+  <span class="nb">puts</span> <span class="no">Now</span><span class="o">.</span><span class="n">display_here</span>  <span class="c1">#class var belong to the class</span>
+</code></pre></div>
+
 </div>
 
 
@@ -44,7 +71,7 @@ A block is like a method that is not associated with any object
             <div class="contact">
               <p>
                 Matthew Newell<br />
-                <a href="http://usefulwebservice.com">Useful Web Service</a>
+                <a href="http://usefulwebservice.com">useful web service</a>
                 <br />
                 matthew.r.newell@gmail.com
               </p>

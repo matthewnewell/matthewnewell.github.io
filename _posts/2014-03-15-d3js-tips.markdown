@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "D3.js Tips"
+date:   2014-03-15 15:00:00
+categories: code, tips
+---
+
+D3.js Tipsheet
+--------------
+**The Links** 
+[D3 wiki](https://github.com/mbostock/d3/wiki)
+[Scott Murray's D3 Book](http://alignedleft.com/tutorials/d3)
+
+local host commands: 
+python -m http.server 8888 &
+Once this is running, go to http://localhost:8888/.

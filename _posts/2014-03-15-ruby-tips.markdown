@@ -15,4 +15,34 @@ A block is code you can store in a variable like any other object and run on dem
 A block is like a method that is not associated with any object
 *addition = lambda {|a, b| return a + b }*
 
+++Scope++ is the context which its visible to the program.
+from [Codeschool](http://www.codecademy.com/courses/ruby-beginner-en-MFiQ6/1/1?curriculum_id=5059f8619189a5000201fbcb).
+# $global_var, @@class_var, @instance_var
+{% highlight ruby %}
+class Now
+  $place = "Indiana" #global variable
+  @@here = {hello: "Hello, fishers"} #class variable
 
+  def who(name, occupation)
+    @name = name
+    @occupation = occupation
+  end
+
+  def current_user
+    @name
+  end
+  def self.display_here
+    @@here
+  end
+
+  matt =Now.new("Matt", "Lumberjack")
+  puts matt.name  #call instance var
+  puts $place  #global, access directly
+  puts Now.display_here  #class var belong to the class
+
+{% endhighlight %}
+++Namespacing++ is the act of keep methods and constants in named spaces.
+
+++::++ This is a scope resolution operator. It states where you are looking for code.
+
+++self++ refers to the current object.
