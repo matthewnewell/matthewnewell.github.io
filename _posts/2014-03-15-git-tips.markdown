@@ -8,4 +8,5 @@ categories: code, tips
 
 Git Tipsheet
 ------------
-
+1. git add --all #this will respect deleted files. better than git add .
+2. git commit -m "Fixes #1. OBE been_there global with use of raise. ". This will auto close github issue tracker Number 1. Commit message must include "Fixes #1".

@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Mac Tips"
+date:   2014-03-15 15:00:00
+categories: code, tips
+---
+
+Mac Tipsheet
+--------------
+1. **three finger swipe** toggles through all full screen applications.
+2. **Cmd / Tab / (Shift)**
+3. **shell to open as finder folder** "Open ." toggle through open applications.
+
+
+
+

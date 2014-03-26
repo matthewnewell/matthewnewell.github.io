@@ -11,4 +11,12 @@ Rails Tipsheet
 
 2. **generic migration command** rails generate migration add_values_to_opportunity type:string priority:integer
 
+3. tail -f log/development.log  #shows your rails logs in a console shell
+
+Rake Tips
+---------
+1. rake db:reset #combo command means...rake db:drop and db:schema:load or rake db:migrate
+
+
+
 
