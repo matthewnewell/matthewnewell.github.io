@@ -2,7 +2,7 @@
 layout: post
 title:  "Learning Tips"
 date:   2014-03-15 15:00:00
-categories: code, tips
+categories: code tips
 ---
 
 Learning Tipsheet

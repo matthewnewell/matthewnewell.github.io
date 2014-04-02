@@ -31,6 +31,8 @@ Markdown Basics
 4. The tag to highlight a `folder` is "`".
 5. A horizontal rule is "----" on a single line.
 6. Emphasis is done with *one* or **two** asteriks.
+7. Image tags are like this: **5th Grade Basketball**
+!"[]"({{ site.url }}/images/b1.jpg)
 
 -------------
 

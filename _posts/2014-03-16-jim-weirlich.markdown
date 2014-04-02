@@ -2,7 +2,7 @@
 layout: post
 title:  "Jim Weirlich Videos"
 date:   2014-03-16 15:00:00
-categories: code, video
+categories: code video
 ---
 
 My [Ruby Meetup](http://www.meetup.com/indyrb/) dedicated this month to Jim Weirlich. I couldn't make the session, but watched a few of his videos at home. Here is what I learned:
