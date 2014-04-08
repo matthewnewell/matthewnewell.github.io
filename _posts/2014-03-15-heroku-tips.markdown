@@ -9,5 +9,5 @@ categories: code tips
 Heroku Tipsheet   categories: tipsheet
 ---------------
 
-1. heroku run pg:reset DATABASE (on local host, rake db:drop)
+1. heroku pg:reset DATABASE (on local host, rake db:drop)
 
