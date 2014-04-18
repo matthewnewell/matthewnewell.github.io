@@ -7,7 +7,7 @@ categories: kisa
 
 5th Grade Basketball
 --------------------
-![My helpful screenshot]({{ site.url }}/images/b1.jpg)
+![My helpful screenshot]({{ site.url }}/images/B1.jpg)
 
 8th Grade Musical
 -----------------
