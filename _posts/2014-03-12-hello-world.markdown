@@ -9,6 +9,11 @@ categories: about me
 
 I use this site to document my learning. If **you** find my site useful or amusing, great. But for now, I am blogging for **future me**.
 
+There are much more useful blogs and much better written blogs. Here are some of that I like:
+[Matt Swanson](http://www.mdswanson.com/)
+
+
+
 Jeckyll, GitHub Pages, and Markdown
 -----------------------------------
 This site is built with [Jekyll](http://jekyllrb.com/) and lives on [GitHub](http://www.github.com). Jekyll uses [Markdown](http://daringfireball.net/projects/markdown/), a text to HTML conversion tool for web writers. 

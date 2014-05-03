@@ -25,6 +25,8 @@ Rake Tips
 ---------
 1. rake db:reset #combo command means...rake db:drop and db:schema:load or rake db:migrate
 
+2. rake db:rollback STEP=1 #goes back one migration. useful if you are maintaining tables via migration scripts.
+
 
 
 
