@@ -7,20 +7,31 @@ title: Useful Web Service
   
 {% highlight ruby %}
 
-def everything_is_a_program
-  link_to("The Universe is Programmable, We Need an API for Everything", http://www.wired.com/2014/04/the-universe-is-programmable/) 
+class Teach < Learn::BestWay
+
+  def everything_is_a_program
+    link_to("The Universe is Programmable, We Need an API for Everything", 
+    http://www.wired.com/2014/04/the-universe-is-programmable/) 
+  end
+
+  def about(web_services)
+    %{ machine-to-machine interactions, 
+    enterprise power and functionality,
+    lightweight applications,
+    tiny development cycles,
+    cost flexible,
+    always on. %}
+  end
+
+  def about(useful_web_service)
+    %{Lean startup experiments, ruby notes, learning,
+    family, friends, music, and gardening (mostly trees). }
+  end
+
 end
 
-def about(web_services)
-  %{ machine-to-machine interactions, 
-  enterprise power and functionality,
-  lightweight applications,
-  tiny development cycles,
-  cost flexible,
-  always on. %}
-	end
 
-	{% endhighlight %}
+{% endhighlight %}
 
   <br>
 
