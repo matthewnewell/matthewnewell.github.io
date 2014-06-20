@@ -8,30 +8,29 @@ title: Useful Web Service
 {% highlight ruby %}
 
 def everything_is_a_program
-  link_to("The Universe is Programmable, We Need an API for Everything", http://www.google.com) 
+  link_to("The Universe is Programmable, We Need an API for Everything", http://www.wired.com/2014/04/the-universe-is-programmable/) 
 end
 
 def about(web_services)
-  %{ support machine-to-machine interactions, 
-  utilize enterprise power and functionality,
-  enable lightweight applications,
-  shrink development cycles,
-  are cost flexible,
-  and always on. %}
+  %{ machine-to-machine interactions, 
+  enterprise power and functionality,
+  lightweight applications,
+  tiny development cycles,
+  cost flexible,
+  always on. %}
 	end
 
-  
 	{% endhighlight %}
 
   <br>
 
-  <h4>Projects</h4>
+  <h4>Experiments</h4>
   <ul><a href="http://teamfbo.com"> TeamFBO </a> </ul>
-  <ul><a href="http://thanktheteacher.com">ThanktheTeacher</a></ul>
-  <ul>Shop July 22</ul>
+  <ul><a href="http://teaser-thank-the-teacher.herokuapp.com/about">ThanktheTeacher</a></ul>
+  <ul><a href="http://shopjulytwentytwo.com">Shop July Twenty Two</a></ul>
 
   <br>
-  <h4>A Blog</h4>
+  <h4>re:Newell </h4>
     <ul class="posts">
     {% for post in site.categories.tips %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
