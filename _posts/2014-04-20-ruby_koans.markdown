@@ -2,7 +2,7 @@
 layout: post
 title:  "Ruby Koans"
 date:   2014-04-20 15:00:00
-categories: code tips
+categories: notes
 ---
 What I learned from Jim Weirlich & Joe O'Brien's [Ruby Koans](http://rubykoans.com/). I tried Ruby Koans about a year ago. Restarted after hearing [Ruby Rogues](http://rubyrogues.com/) podcast [eposode 151](http://rubyrogues.com/151-rr-the-jim-weirich-tribute-episode/).
 

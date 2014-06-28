@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ruby Koans</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+
+          <div class="header">
+    <h1 class="title"><a href="/index.html">Useful Web Service</a> 
+    <!-- <a href="/">Ruby Koans</a></h1> -->
+    <!-- <a class="extra" href="/">home</a> -->
+</div>
+
+          <h2>Ruby Koans</h2>
+<p class="meta">20 Apr 2014</p>
+
+<div class="post">
+<p>What I learned from Jim Weirlich &amp; Joe O&#39;Brien&#39;s <a href="http://rubykoans.com/">Ruby Koans</a>. I tried Ruby Koans about a year ago. Restarted after hearing <a href="http://rubyrogues.com/">Ruby Rogues</a> podcast <a href="http://rubyrogues.com/151-rr-the-jim-weirich-tribute-episode/">eposode 151</a>.</p>
+
+<p>Koans secretly teaches the student test driven development while learning ruby.</p>
+
+<h1>About Nil</h1>
+
+<p>Think about it: is it better to use &quot;object.nil?&quot; or &quot;object == nil&quot;
+Both return a true value. But they are not exactly the same. The first is testing to see of object is part of the nil singleton class. The second is a comparasion. Which is better? object.nil is slightly faster, reads better, and coller because its my first application of the singleton class.</p>
+
+<h1>About Objects</h1>
+
+<p>in<em>ruby</em>everything.is<em>a?(Object) #returns true
+small numbers have fixed ids: 0.object</em>id #returns 1</p>
+
+<h1>About Arrays</h1>
+
+<p>(1..5).class #returns Range
+(1...5).to_a #returns array [1,2,3,4] #drops last value</p>
+
+<p>nice array move with parallel assignments and splat operator</p>
+
+<div class="highlight"><pre><code class="ruby">  <span class="k">def</span> <span class="nf">test_parallel_assignments_with_splat_operator</span>
+    <span class="n">first_name</span><span class="p">,</span> <span class="o">*</span><span class="n">last_name</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="s2">&quot;Smith&quot;</span><span class="p">,</span> <span class="s2">&quot;III&quot;</span><span class="o">]</span>
+    <span class="n">assert_equal</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="n">first_name</span>
+    <span class="n">assert_equal</span> <span class="o">[</span><span class="s2">&quot;Smith&quot;</span><span class="p">,</span> <span class="s2">&quot;III&quot;</span><span class="o">]</span><span class="p">,</span> <span class="n">last_name</span>
+  <span class="k">end</span>
+</code></pre></div>
+
+<h1>About Hashes</h1>
+
+<p>fetch vs []</p>
+
+<div class="highlight"><pre><code class="ruby"> <span class="k">def</span> <span class="nf">test_accessing_hashes_with_fetch</span>
+        <span class="nb">hash</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">:one</span> <span class="o">=&gt;</span> <span class="s2">&quot;uno&quot;</span> <span class="p">}</span>
+        <span class="n">assert_equal</span> <span class="s2">&quot;uno&quot;</span><span class="p">,</span> <span class="nb">hash</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:one</span><span class="p">)</span>
+        <span class="n">assert_raise</span><span class="p">(</span><span class="no">KeyError</span><span class="p">)</span> <span class="k">do</span>
+          <span class="nb">hash</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:doesnt_exist</span><span class="p">)</span>
+        <span class="k">end</span>
+
+        <span class="c1"># THINK ABOUT IT:</span>
+        <span class="c1">#</span>
+        <span class="c1"># Why might you want to use #fetch instead of #[] when accessing hash keys?</span>
+        <span class="c1">#Because #[] will not raise an error even though it is not a valid key.</span>
+        <span class="c1">#Maybe put in a rescue to create the key/value pair</span>
+    <span class="k">end</span>
+</code></pre></div>
+
+<p>hash.keys.class == Array #Interesting
+hash.values.class == Array #Interesting</p>
+
+<p>h = Hash.new(0) #sets a default value to 0. Useful for counting.</p>
+
+<h1>About Strings</h1>
+
+<div class="highlight"><pre><code class="ruby"> 
+    <span class="k">def</span> <span class="nf">test_use_backslash_for_those_hard_cases</span>
+      <span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;He said, </span><span class="se">\&quot;</span><span class="s2">Don&#39;t</span><span class="se">\&quot;</span><span class="s2">&quot;</span>
+      <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;He said, &quot;Don\&#39;t&quot;&#39;</span>
+    <span class="k">end</span>
+</code></pre></div>
+
+<h1>About Symbols</h1>
+
+<p><em>Why is it not a good idea to dynamically create a lot of symbols in ruby?</em></p>
+
+<p>Symbols are put into memory once. They stay there until the program exists. Fast, but memory hog.</p>
+
+<h1>About Regular Expressions</h1>
+
+<p><em>basic syntax</em>
+&quot;a string&quot;[/str/] #=&gt; &quot;str&quot;</p>
+
+<p><em>Nice use of select method and regexp</em></p>
+
+<div class="highlight"><pre><code class="ruby"> <span class="n">animals</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;bat&quot;</span><span class="p">,</span> <span class="s2">&quot;fat&quot;</span><span class="o">]</span>
+    <span class="n">match</span> <span class="o">=</span> <span class="sr">/[bc]at/</span>
+    <span class="n">animals</span><span class="o">.</span><span class="n">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">a</span><span class="o">|</span> <span class="n">a</span><span class="o">[</span><span class="n">match</span><span class="o">]</span> <span class="p">}</span> <span class="c1">#=&gt; [&quot;cat&quot;, &quot;bat&quot;]</span>
+</code></pre></div>
+
+<ol>
+<li>Find digits  [/\d/]</li>
+<li>Find spaces [/\s/]</li>
+<li>Any character (non newline) [/.+/]</li>
+<li>Any expression can be negated [^/\d/] or with capital [/\D/]</li>
+</ol>
+
+</div>
+
+
+          <div class="footer">
+    <div class="contact">
+      <p>
+        <a href='/renewell.html'> matthew newell</a><br />
+        <a href="/index.html">useful web service</a>
+        <br />
+        matthew.r.newell@gmail.com
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+        <a href="https://github.com/matthewnewell">github.com/matthewnewell</a><br />
+        <a href="https://twitter.com/matthewrnewell">twitter.com/matthewrnewell</a><br />
+      </p>
+    </div>
+</div>
+          
+        </div>
+
+    </body>
+</html>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Hash!"
 date:   2014-05-01 15:00:00
-categories: code tips
+categories: notes
 ---
 
 #The most useful thing I learned today.

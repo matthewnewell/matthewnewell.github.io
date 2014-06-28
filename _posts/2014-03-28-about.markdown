@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "About"
+date:   2014-03-28 15:00:00
+categories: about
+---
+
+_"If you follow all your dreams, you might get lost" Neil Young_
+
+I focus on developing competencies that help me collect, parse, and present information. To get better, I have developed a bias towards using a very limited set of tools and processes.
+
+There are other ways and probably better ways to collect, parse, and present information. But I have learned that if you explore too many alternatives, you get good at none of them. My blog has learning resources and tips that support my narrow views about systems, processes, and tools for information management. Some of these views include:
+
+1. *Client Hardware:* MacBook Air is the best personal computer in the world. Slick on the outside, UNIX on the inside. When I have to use Windows, I add Cygwin to gain access to UNIX and the open source universe. Windows is always slower and less elegant than Mac but can be useful when mining stovepipe data.
+
+2. *Development:* My text editor is 98% Sublime and 2% vim. My shell is bash and I use git to manage change. I develop with Ruby and Rails and blog with Octopress and Markdown. Rails helps me to not really care about my database, but in development, I use sqlite. I debug with pry, unit test with minitest, and make things pretty with Bootstrap.
+
+3. *Deployment:* I buy and manage domains at NameCheap, manage configurations with GitHub, and deploy with Heroku.
+
+Thanks.

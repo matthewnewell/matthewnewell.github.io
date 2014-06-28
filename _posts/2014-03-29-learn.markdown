@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Learn"
+date:   2014-03-29 15:00:00
+categories: Learn
+---
+
+Useful Learning Resources
+--------------
+**Javascript interactive tutorials**
+1. learnprime #thoughtbot educational resource
+2. rubymonks
+3. codeacademy
+4. tutsplus
+
+**TDD Based Exercises**
+1. exercism.io
+
+
+**Cookbooks**
+1. Michael Hartl
+
+**Videos**
+1. Railscasts
+
+**Email subscriptions**
+
+**Podcasts**
+
+**Books**
+
+**Ruby Docs**
+
+
+
+[Matt Swanson](http://www.mdswanson.com/)
+
+
+
+
+-------------
+
+Ruby Learning
+-------------
+Ruby focus right now is on Procs and Lambdas. I'm learning from this module of [RubyMonk.com](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas). Here is about where I am right now:
+
+{% highlight ruby %}
+family= ["Matt", "Dana", "Lucy", "Bode"]
+
+def meet_us(fam)
+	puts "Meet our family of #{fam.length}."
+	yield
+end
+
+meet_us(family) {family.each {|f| puts f}}
+{% endhighlight %}
+
+More soon. So much to learn.

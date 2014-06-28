@@ -2,7 +2,7 @@
 layout: post
 title:  "Unit Tests"
 date:   2014-04-20 15:00:00
-categories: code tips
+categories: notes
 ---
 Got [this article](http://programming.oreilly.com/2014/04/ruby-the-unit-test-friendly-language.html?utm_source=rubyweekly&utm_medium=email) from [Ruby Weekly](http://rubyweekly.com/). 
 

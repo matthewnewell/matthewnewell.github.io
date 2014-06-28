@@ -2,7 +2,7 @@
 layout: post
 title:  "Code Smells"
 date:   2014-04-9 15:00:00
-categories: code tips
+categories: notes
 ---
 An [Indy Ruby Meetup](http://www.meetup.com/indyrb/) presentation by [Matt Swanson](http://www.mdswanson.com/)
 
