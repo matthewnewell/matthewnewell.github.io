@@ -54,7 +54,16 @@ Once this is running, go to http://localhost:8888/.</p>
 <li>git branch --merged  #show which branches are merged to current branch. Merged branches can usually be deleted.</li>
 <li>git branch --no-merged #have not yet been merged. Attempt to delete will fail
 Git Branching Remote Branches: for multi-user collaborations with a remote origin</li>
-<li>git fetch origin  #this synchronizes work between your git clone and most current merges to master on origin</li>
+<li>git fetch origin  #this synchronizes work between your git clone and most current merges to master on origin
+Git Initial Remote Repository Setup</li>
+<li>git remote add origin https://github.com/username/repository_name.git</li>
+<li>git push -u origin master  &quot;-u&quot; remembers the parameters, nest time, just git push</li>
+<li>git pull origin master  #pulls down latest.</li>
+<li>git diff HEAD  #describes differenes pull vs. local</li>
+<li>git diff --staged   describes how stage is new</li>
+<li>git reset name.txt  #drops name.txt</li>
+<li>git branch clean_up</li>
+<li>git rm &#39;*.txt&#39;   #you can use wildcards to exclude entire filetypes from a git</li>
 </ol>
 
 <h2>Heroku Tipsheet   categories: tipsheet</h2>

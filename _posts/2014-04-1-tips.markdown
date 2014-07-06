@@ -34,6 +34,15 @@ Git Tipsheet
 7. git branch --no-merged #have not yet been merged. Attempt to delete will fail
 Git Branching Remote Branches: for multi-user collaborations with a remote origin
 1. git fetch origin  #this synchronizes work between your git clone and most current merges to master on origin
+Git Initial Remote Repository Setup
+1. git remote add origin https://github.com/username/repository_name.git
+2. git push -u origin master  "-u" remembers the parameters, nest time, just git push
+3. git pull origin master  #pulls down latest.
+4. git diff HEAD  #describes differenes pull vs. local
+5. git diff --staged   describes how stage is new
+6. git reset name.txt  #drops name.txt
+7. git branch clean_up
+8. git rm '*.txt'   #you can use wildcards to exclude entire filetypes from a git
 
 
 Heroku Tipsheet   categories: tipsheet
