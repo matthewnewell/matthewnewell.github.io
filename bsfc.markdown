@@ -11,3 +11,5 @@ The CMMI is full of great stuff. But really, are you ever actually going to read
 #The Solution
 BetterStrongerFasterCheap makes the CMMI open and accessible. 
 
+#July 2014 Status
+will push soon.

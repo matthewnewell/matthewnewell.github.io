@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "tips"
+title:  "Tips"
 date:   2014-04-1 15:00:00
 categories: tips
 ---

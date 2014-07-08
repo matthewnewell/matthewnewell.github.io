@@ -3,14 +3,15 @@ layout: default
 title: Shop July Twenty Two
 ---
 
-#[Shop July Twenty Two:](http://www.shopjulytwentytwo) funky fresh things for modern day hippies
+#[Shop July Twenty Two:](http://www.shopjulytwentytwo.com) 
+funky fresh things for modern day hippies
 
 #The Problem
-The artist wanted a simple interface to post product information and to process transactions. She prefers to focus on making product and expects the online portion of her business to "just work" and not cost a lot to maintain.
+The artist wanted a simple interface to blog, post product information and process transactions. She prefers to focus on making product and expects the online portion of her business to "just work" and not cost a lot to maintain.
 
 #The Solution
 Weebly, Square, Instagram.
 
 #Results
-The artist has enough business to keep inventory close to zero. Almost too busy making stuff. She now runs a very successful hobby business.
+The artist has enough business to keep inventory close to zero. Almost too busy making stuff. She now runs a very successful hobby business. Shop July Twenty Two is the only profitable Useful Web Service at this time.
 

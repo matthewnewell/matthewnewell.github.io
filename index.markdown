@@ -18,14 +18,16 @@ title: Useful Web Service
 <br>
 <h4>Experiments</h4>
 <ul><a href="bsfc.html">Better Stronger Faster Cheaper:</a>
-  <small>CMMI on Rails</small>
+  CMMI on Rails
 </ul>
 <ul><a href="teamfbo.html">teamFBO:</a> 
-  <small>Crowdsource Government Business Opportunities</small> 
+  Crowdsource Government Business Opportunities 
 </ul>
 <ul><a href="thanktheteacher.html">Thank The Teacher:</a> 
-  <small>Parent Funded Gift Cards for Teachers and Coaches</small> </ul>
-<ul><a href="sj22.html">shopjulytwentytwo:</a> <small>Funky fresh things for modern hippies.</small> 
+  Parent Funded Gift Cards for Teachers and Coaches 
+</ul>
+<ul>
+  <a href="sj22.html">Shop July Twenty Two:</a> Funky fresh things for modern day hippies
 </ul>
 
 <br>

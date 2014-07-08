@@ -3,7 +3,8 @@ layout: default
 title: teamFBO
 ---
 
-#[teamFBO.com:](http://teamfbo.com) Crowd Source New Business Opportunities
+#[teamFBO.com:](http://teamfbo.com) 
+Crowd Source New Business Opportunities
 Deployed March 2014
 
 #The Problem
@@ -15,6 +16,7 @@ Evaluate [Federal Business Opportunities](http://fbo.gov) that match your compan
 3. How to capitalize on your teams knowledge diversity
 4. How do you train BD newbies on what opportunities to pursue and reject?
 5. fbo.gov is hard to use on tablets and phones.
+
 
 #The Solution
 ![teamFBO](/images/teamfbo.png)

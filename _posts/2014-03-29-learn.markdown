@@ -6,9 +6,14 @@ categories: Learn
 ---
 
 #The Setup
-I have always been "the suit" in technical and artistic work places. I saw programmers as super heavy genius types that were at the core of value creation in an organization.  As much as I admired them, I never ever considerd myself capable of becoming one of them. 
+I started to get technical in my early 40s. I have a good (non-technical) job and pretty heavy (but typical) financial obligations for a middle-aged parent. Going back to school or tech bootcamps were not viable options because of time and money. Fortunately, online and Meetup resources are abundant. In fact, there is so much content out there, you can get lost. 
 
-I started to get technical in my early 40s. Going back to school or bootcamp was not an option. Fortunately, online and Meetup resources are abundant. In fact, there is so much opportunity out there, you can get lost. 
+1. Pick a development track
+2. Learn how to Learn
+3. Select High Quality Educational Content
+4. Get paid to learn
+5. Help others lern
+6. Read code, write code, ship code. 
 
 Finding high quality learning material is critical. 
 
