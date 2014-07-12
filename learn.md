@@ -1,0 +1,91 @@
+---
+layout: default
+title: Learn
+---
+
+1. Pick a development track
+2. Learn how to Learn
+3. Select High Quality Educational Content
+4. Get paid to learn
+5. Help others lern
+6. Read code, write code, ship code. 
+
+Finding high quality learning material is critical. 
+
+Next up is developing the descipline to turn technical concepts into muscle memory. For me, the best way to do this was to make learning to program a part of my day job. "Suits" process data. Technical competency helps you process data more quickly. Leverage your area expertise with some very basic programming moves and all of the sudden, you are writing code at the office. [Excel parsing](https://github.com/matthewnewell/spreadsheet-gem-examples) is a great way to start.
+
+##Tip: get paid to learn. 
+If you use a computer at work, you are working with data. When you get better at writing software and you will be better at your job. It can take years to develop domain knowledge in your area of expertise. Add a lil code and your domain knowledge gets supercharged.
+
+##Tip: Look for Human ICDs
+ICDs and APIs are the babelfish of machine to machine interactions. Lots of meetings involve people taking information from one machine and reporting the information to other humans so that they can enter data into their own machines. This is like telling your mom what happened on Twitter yesterday. It is an incredibly inefficient way to disseminate information.  Human ICD events can be good opportunities for code-based process improvements.
+
+#Podcasts
+Listen Ruby Rogues episode 131 [How to Learn](http://rubyrogues.com/131-rr-how-to-learn/). Then try to listen to at least one episode per week.
+
+#Go to Meetups
+Indy ruby meetups have three flavors:
+1. Technical presentation
+2. Hack night (bring a problem, help solve a problem, or try something new.)
+3. Newbie workshops 
+Hopefully, your city has similar programs.
+
+#In-Browser Learning
+
+#Learning through Test
+
+
+
+Useful Learning Resources
+--------------
+**Javascript interactive tutorials**
+1. learnprime #thoughtbot educational resource
+2. rubymonks
+3. codeacademy
+4. tutsplus
+
+**TDD Based Exercises**
+1. exercism.io
+
+
+**Cookbooks**
+1. Michael Hartl
+
+**Videos**
+1. Railscasts
+
+**Email subscriptions**
+
+**Podcasts**
+
+**Books**
+
+**Ruby Docs**
+
+**Git
+[Pro Git](git-scm.com/book)  
+[Git browser tutorial]**(https://try.github.io)
+
+[Matt Swanson](http://www.mdswanson.com/)
+
+
+
+
+-------------
+
+Ruby Learning
+-------------
+Ruby focus right now is on Procs and Lambdas. I'm learning from this module of [RubyMonk.com](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas). Here is about where I am right now:
+
+{% highlight ruby %}
+family= ["Matt", "Dana", "Lucy", "Bode"]
+
+def meet_us(fam)
+  puts "Meet our family of #{fam.length}."
+  yield
+end
+
+meet_us(family) {family.each {|f| puts f}}
+{% endhighlight %}
+
+More soon. So much to learn.

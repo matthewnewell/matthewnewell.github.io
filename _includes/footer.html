@@ -1,16 +1,12 @@
-<div class="footer">
-    <div class="contact">
-      <p>
-        <a href='/renewell.html'> matthew newell</a><br />
-        <a href="/index.html">useful web service</a>
-        <br />
-        matthew.r.newell@gmail.com
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-        <a href="https://github.com/matthewnewell">github.com/matthewnewell</a><br />
-        <a href="https://twitter.com/matthewrnewell">twitter.com/matthewrnewell</a><br />
-      </p>
-    </div>
+<div class="disclaimer">
+  {% if site.theme.show_disclaimer %}
+  <p>
+    The postings on this site are my own and don't necessarily represent my 
+    employer’s positions, strategies or opinions.
+  </p>
+  {% endif %}
+
+  <p>
+    © {{ site.theme.name }}, 2013 &mdash; built with Jekyll using Lagom theme
+  </p>
 </div>
