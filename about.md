@@ -14,7 +14,7 @@ title: About
 
 
 
-I focus on developing competencies to collect, parse, and present information.There are many ways to do this. Explore too many alternatives and good at none of them. 
+I focus on developing competencies to collect, parse, and present information.There are many ways to do this. Explore too many options and good at none of them. 
 
 My blog has learning resources that support my narrow views for information collection, parse, and presentation. Some of these views include:
 
