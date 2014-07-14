@@ -3,12 +3,28 @@ layout: default
 title: Learn
 ---
 
-1. Pick a development track
-2. Learn how to Learn
-3. Select High Quality Educational Content
-4. Get paid to learn
-5. Help others lern
-6. Read code, write code, ship code. 
+{% highlight ruby %}
+
+  learn = [
+    "Pick a development track",
+    "Learn how to learn",
+    "Use high quality educational content",
+    "Get paid to learn",
+    "Help others learn",
+    "Read code, write code, ship code."
+  ]
+
+{% endhighlight %}
+
+###Pick a development track
+
+My thing is ruby, rails, github, heroku, markdown and I hope soon javascript. If this track appeals to you, you may find some useful resources here. 
+
+###Learn how to Learn
+###Select High Quality Educational Content
+###Get paid to learn
+###Help others lern
+###Read code, write code, ship code. 
 
 Finding high quality learning material is critical. 
 
