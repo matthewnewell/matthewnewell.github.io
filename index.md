@@ -13,7 +13,7 @@ title: Useful Web Service
   end
 
   useful_web_service = ["experiments", 
-                        "development blog"]
+                        "learning"]
 
 
 {% endhighlight %}
@@ -27,7 +27,7 @@ title: Useful Web Service
 * [Shop July Twenty Two:](experiments.html#sj22) Funky fresh things for modern day hippies
 
 <div id="home">
-  <h3><i class="icon-bookmark"></i> Blog</h3>
+  <h3><i class="icon-bookmark"></i> Learn</h3>
   <ul id="blog-posts" class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }} &raquo;</span><a href="{{ post.url }}">{{ post.title }}</a></li>
