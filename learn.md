@@ -21,7 +21,7 @@ title: Learn
 
   until skilled
     learn[2..-1].each do |practice|
-      practice\
+      practice
     end
   end
 
@@ -29,48 +29,32 @@ title: Learn
 
 ###Pick a development track
 
-My thing is ruby, rails, github, heroku, markdown and I hope soon javascript. 
+My areas of interest are ruby, rails, github, heroku, markdown, and javascript. And UNIX based development and production environments.
 
 ###Learn how to Learn
 
-Listen to [Ruby Rogues Episode 131](rubyrogues.com/131-rr-how-to-learn) 
+Listen to [Ruby Rogues Episode 131 "How to Learn"](rubyrogues.com/131-rr-how-to-learn) 
 
 ###Listen to smart people
 
-1. go to meetups
-2. follow smart people on twitter
-3. subscribe to Ruby Roges podcast
-4. subscribe to Ruby weekly
-5. use RailsCasts
-6. Watch the free Tutsplus tutorial on Sublime
+1. Go to meetups
+2. Follow smart people on twitter
+3. Follow some smart people on github
+4. Subscribe to some podcasts like [Ruby Rogues](rubyrogues.com)
+
+[Matt Swanson](http://www.mdswanson.com/)
 
 *I don't care to belong to any club that will have me as a member.  -Groucho Marx*
 
 ###Use interactive resources
 There are two flavors: browser based learning and TDD style
 
+4. subscribe to Ruby weekly
+5. use RailsCasts
+6. Watch the free Tutsplus tutorial on Sublime
+
 Exercism.io
 RubyMonk
-
-###read books
-
-
-###Read code
-Read good code. Start here
-
-###write code, ship code. 
-[code here](https://github.com/matthewnewell)
-
-###ship code
-[experiments](#)
-
-###teach others
-
-I teach third graders because they don't know that I don't know what I'm talking about. 
-
-
-Useful Learning Resources
---------------
 **Javascript interactive tutorials**
 1. learnprime #thoughtbot educational resource
 2. rubymonks
@@ -81,25 +65,49 @@ Useful Learning Resources
 1. exercism.io
 
 
+###read books _and_ online media
+
 **Cookbooks**
 1. Michael Hartl
 
-**Videos**
-1. Railscasts
-
-**Email subscriptions**
-
-**Podcasts**
-
-**Books**
-
-**Ruby Docs**
 
 **Git
 [Pro Git](git-scm.com/book)  
 [Git browser tutorial]**(https://try.github.io)
 
-[Matt Swanson](http://www.mdswanson.com/)
+
+
+
+**Videos**
+1. Railscasts
+
+
+###Read code
+Read good code. Start here
+**Ruby Docs**
+
+
+###write code
+Even if its bad. And it will be.
+[code here](https://github.com/matthewnewell)
+
+###ship code
+Use git and github, readme files, discover the miracle that is heroku.
+[experiments](#)
+
+###teach others
+
+The open source community if full of really smart people that are passionate about teaching others. When you can, pay it forward.
+
+As a bonus, teaching is also one of the best ways to learn. 
+
+Best way to start is start a blog. Its kind of like [rubber ducking](http://en.wikipedia.org/wiki/Rubber_duck_debugging)
+
+stackoverflow
+
+Missing
+Fork and contribute to repositories
+
 
 
 
