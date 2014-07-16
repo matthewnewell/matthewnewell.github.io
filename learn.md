@@ -5,51 +5,68 @@ title: Learn
 
 {% highlight ruby %}
 
+  skilled = false
+
   learn = [
-    "Pick a development track",
-    "Learn how to learn",
-    "Use high quality educational content",
-    "Get paid to learn",
-    "Help others learn",
-    "Read code, write code, ship code."
+    "pick a development track",
+    "learn how to learn",
+    "listen to smart people",
+    "use interactive resources",
+    "read books",
+    "read code", 
+    "write code", 
+    "ship code",
+    "teach others"
   ]
+
+  until skilled
+    learn[2..-1].each do |practice|
+      practice\
+    end
+  end
 
 {% endhighlight %}
 
 ###Pick a development track
 
-My thing is ruby, rails, github, heroku, markdown and I hope soon javascript. If this track appeals to you, you may find some useful resources here. 
+My thing is ruby, rails, github, heroku, markdown and I hope soon javascript. 
 
 ###Learn how to Learn
-###Select High Quality Educational Content
-###Get paid to learn
-###Help others lern
-###Read code, write code, ship code. 
 
-Finding high quality learning material is critical. 
+Listen to [Ruby Rogues Episode 131](rubyrogues.com/131-rr-how-to-learn) 
 
-Next up is developing the descipline to turn technical concepts into muscle memory. For me, the best way to do this was to make learning to program a part of my day job. "Suits" process data. Technical competency helps you process data more quickly. Leverage your area expertise with some very basic programming moves and all of the sudden, you are writing code at the office. [Excel parsing](https://github.com/matthewnewell/spreadsheet-gem-examples) is a great way to start.
+###Listen to smart people
 
-##Tip: get paid to learn. 
-If you use a computer at work, you are working with data. When you get better at writing software and you will be better at your job. It can take years to develop domain knowledge in your area of expertise. Add a lil code and your domain knowledge gets supercharged.
+1. go to meetups
+2. follow smart people on twitter
+3. subscribe to Ruby Roges podcast
+4. subscribe to Ruby weekly
+5. use RailsCasts
+6. Watch the free Tutsplus tutorial on Sublime
 
-##Tip: Look for Human ICDs
-ICDs and APIs are the babelfish of machine to machine interactions. Lots of meetings involve people taking information from one machine and reporting the information to other humans so that they can enter data into their own machines. This is like telling your mom what happened on Twitter yesterday. It is an incredibly inefficient way to disseminate information.  Human ICD events can be good opportunities for code-based process improvements.
+*I don't care to belong to any club that will have me as a member.  -Groucho Marx*
 
-#Podcasts
-Listen Ruby Rogues episode 131 [How to Learn](http://rubyrogues.com/131-rr-how-to-learn/). Then try to listen to at least one episode per week.
+###Use interactive resources
+There are two flavors: browser based learning and TDD style
 
-#Go to Meetups
-Indy ruby meetups have three flavors:
-1. Technical presentation
-2. Hack night (bring a problem, help solve a problem, or try something new.)
-3. Newbie workshops 
-Hopefully, your city has similar programs.
+Exercism.io
+RubyMonk
 
-#In-Browser Learning
+###read books
 
-#Learning through Test
 
+###Read code
+Read good code. Start here
+
+###write code, ship code. 
+[code here](https://github.com/matthewnewell)
+
+###ship code
+[experiments](#)
+
+###teach others
+
+I teach third graders because they don't know that I don't know what I'm talking about. 
 
 
 Useful Learning Resources
