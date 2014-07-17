@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: general
 title: Learn
 ---
 
@@ -37,14 +37,11 @@ Listen to [Ruby Rogues Episode 131 "How to Learn"](rubyrogues.com/131-rr-how-to-
 
 ###Listen to smart people
 
-1. Go to meetups
+1. Go to [meetups](www.meetup.com)
 2. Follow smart people on twitter
-3. Follow some smart people on github
-4. Subscribe to some podcasts like [Ruby Rogues](rubyrogues.com)
-
-[Matt Swanson](http://www.mdswanson.com/)
-
-*I don't care to belong to any club that will have me as a member.  -Groucho Marx*
+  try [@kytrinyx](https://twitter.com/kytrinyx) and [@sandimetz](https://twitter.com/sandimetz)
+3. Follow some smart people on github and read their blogs and fork their repositories.  I am a fan of [Matt Swanson](http://www.mdswanson.com/). My site is based on his template [Lagom](https://github.com/swanson/lagom).
+4. Subscribe to some podcasts like [Ruby Rogues](www.rubyrogues.com)
 
 ###Use interactive resources
 There are two flavors: browser based learning and TDD style
