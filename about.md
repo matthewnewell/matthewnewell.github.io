@@ -11,11 +11,11 @@ My site has some [learning resources](learn.html) to support my approach to info
 
 1. *Client Hardware:* I prefer MacBook Air. When I have to use Windows, I add Cygwin for access to UNIX and the open source universe. 
 
-2. *Development:* My text editor is 98% Sublime and 2% vim. My shell is bash and I use git(hub) for configuration management. I process information with Ruby and Rails, blog with Octopress, and present text with Markdown as much as possible. I debug with pry and make things pretty with Bootstrap. I aspire to become competent test driven development (TDD) and JavaScript, in particular d3.js.
+2. *Development:* My text editor is 98% Sublime and 2% vim. My shell is bash and I use git(hub) for configuration management. I process information with Ruby and Rails, blog with Octopress, and present text with Markdown as much as possible. I debug with pry and make things pretty with Bootstrap. I aspire to become competent in test driven development (TDD) and JavaScript, in particular d3.js.
 
 3. *Deployment:* I manage domains at NameCheap and deploy with Heroku.
 
-##Experiments
+#Experiments
 A founder needs [selective amnesia](http://usatoday.com/story/sports/nfl/2014/01/04/colts-chiefs-wild-card-playoffs-andrew-luck/4321311/) to handle the twists, turns, rejections, and pivots. And while I do enjoy a good roller coaster ride, the journey can take away from the things that create value in the first place. 
 
 I prefer to focus on developing technical skills to bootstrap my experiments. My goals are to learn, share, have fun, and build cool things that people may find useful.
