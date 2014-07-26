@@ -33,13 +33,13 @@ My areas of interest are ruby, rails, github, heroku, markdown, and javascript. 
 
 ###Learn how to Learn
 
-Listen to [Ruby Rogues Episode 131 "How to Learn"](rubyrogues.com/131-rr-how-to-learn) 
+Check out the podcast: [Ruby Rogues Episode 131 "How to Learn"](rubyrogues.com/131-rr-how-to-learn) 
 
 ###Listen to smart people
 
 1. Go to [meetups](www.meetup.com)
 2. Follow smart people on twitter
-  try [@kytrinyx](https://twitter.com/kytrinyx) and [@sandimetz](https://twitter.com/sandimetz)
+  You might want to try [@kytrinyx](https://twitter.com/kytrinyx) and [@sandimetz](https://twitter.com/sandimetz)
 3. Follow some smart people on github and read their blogs and fork their repositories.  I am a fan of [Matt Swanson](http://www.mdswanson.com/). My site is based on his template [Lagom](https://github.com/swanson/lagom).
 4. Subscribe to some podcasts like [Ruby Rogues](www.rubyrogues.com)
 
@@ -85,36 +85,18 @@ Read good code. Start here
 
 
 ###write code
-Even if its bad. And it will be.
+Even if its bad. And it will be. Fork and contribute to repositories.
 [code here](https://github.com/matthewnewell)
 
 ###ship code
-Use git and github, readme files, discover the miracle that is heroku.
+Use git and github and discover the miracle that is heroku.
 [experiments](#)
 
 ###teach others
+Helping others to learn is one of the best ways to learn an new competency. Blog about a new move, help a newbie, or teach a class. Its kind of like [rubber ducking](http://en.wikipedia.org/wiki/Rubber_duck_debugging) except with humans.
 
-The open source community if full of really smart people that are passionate about teaching others. When you can, pay it forward.
-
-As a bonus, teaching is also one of the best ways to learn. 
-
-Best way to start is start a blog. Its kind of like [rubber ducking](http://en.wikipedia.org/wiki/Rubber_duck_debugging)
-
-stackoverflow
-
-Missing
-Fork and contribute to repositories
-
-
-
-
-
--------------
-
-Ruby Learning
--------------
-Ruby focus right now is on Procs and Lambdas. I'm learning from this module of [RubyMonk.com](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas). Here is about where I am right now:
-
+__Example: Here's how to pass a block of code through a method__
+Learn more about this at [RubyMonk.com](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas).
 {% highlight ruby %}
 family= ["Matt", "Dana", "Lucy", "Bode"]
 
@@ -126,4 +108,7 @@ end
 meet_us(family) {family.each {|f| puts f}}
 {% endhighlight %}
 
-More soon. So much to learn.
+
+
+
+

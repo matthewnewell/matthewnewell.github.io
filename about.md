@@ -7,7 +7,7 @@ I focus on developing competencies to collect, parse, and present information. M
 
 1. *Client Hardware:* I prefer MacBook Air. When I have to use Windows, I add Cygwin for access to UNIX and the open source universe. 
 
-2. *Development:* My text editor is 98% Sublime and 2% vim. My shell is bash and I use git(hub) for configuration management. I process information with Ruby and Rails, blog with Octopress, and present text with Markdown as much as possible. I debug with pry and make things pretty with Bootstrap. I tinker test driven development (TDD) and JavaScript and am infatuated with d3.js.
+2. *Development:* My text editor is Sublime with a tiny bit of vi. My shell is bash and I use git(hub) for configuration management. I process information with Ruby and Rails, blog with Octopress, and present text with Markdown as much as possible. I debug with pry and make things pretty with Bootstrap. I tinker with test driven development (TDD) and JavaScript and am infatuated with d3.js.
 
 3. *Deployment:* I manage domains at NameCheap and deploy with Heroku.
 

@@ -1,7 +1,11 @@
 ---
 layout: default
-title: Experiments
+title: Projects
 ---
+
+>If you follow all your dreams, you might get lost. Neil Young
+
+
 
 ###<a name="ttt"></a>
 
@@ -45,5 +49,14 @@ Weebly, Square, Instagram.
 
 #Results
 The artist has enough business to keep inventory close to zero. Almost too busy making stuff. She now runs a very successful hobby business. Shop July Twenty Two is the only profitable Useful Web Service at this time.
+
+
+<a name="cut"</a>
+##Cutting Room Floor
+
+[KidPal Software](http://kidpal.weebly.com/) Our project from 2011 Indianapolis Startup Weekend. 
+
+[@urbanrenewell](http://wildlifeandwatershedfriendly.weebly.com/) A blog about land, water, wine, food, family, and friends. 
+
 
 

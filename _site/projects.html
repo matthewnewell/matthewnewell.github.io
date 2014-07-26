@@ -7,10 +7,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="assets/d3/d3.v3.js"></script>
-  <title>Matthew Newell - Experiments</title>
+  <title>Matthew Newell - Projects</title>
   <meta name="author" content="Matthew Newell" />
   <meta name="description" content="The blog of Matthew Newell" />
-  <link rel="canonical" href="http://usefulwebservice.com/experiments.html" />
+  <link rel="canonical" href="http://usefulwebservice.com/projects.html" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.png">
@@ -24,7 +24,7 @@
     <div class="four columns sidebar">
       <nav>
   <a href="/">
-    <img src="/static/head.jpg" alt="re:newell"/>
+    <img src="/static/head-alt.jpg" alt="re:newell"/>
   </a>
   <h2><a href="/">Matthew Newell</h2></a>
   <ul>
@@ -85,7 +85,11 @@
 
     <div class="eleven columns content">
       
-      <h3 id="a-namettta"><a name="ttt"></a></h3>
+      <blockquote>
+  <p>If you follow all your dreams, you might get lost. Neil Young</p>
+</blockquote>
+
+<h3 id="a-namettta"><a name="ttt"></a></h3>
 
 <h1 id="thanktheteachercomhttpthanktheteachercom"><a href="http://thanktheteacher.com">ThankTheTeacher.com:</a></h1>
 <p>Parent funded gift carts for teachers and coaches
@@ -126,6 +130,13 @@ The CMMI on rails</p>
 <h1 id="results">Results</h1>
 <p>The artist has enough business to keep inventory close to zero. Almost too busy making stuff. She now runs a very successful hobby business. Shop July Twenty Two is the only profitable Useful Web Service at this time.</p>
 
+<p>&lt;a name=”cut”&lt;/a&gt;
+##Cutting Room Floor</p>
+
+<p><a href="http://kidpal.weebly.com/">KidPal Software</a> Our project from 2011 Indianapolis Startup Weekend. </p>
+
+<p><a href="http://wildlifeandwatershedfriendly.weebly.com/">@urbanrenewell</a> A blog about land, water, wine, food, family, and friends. </p>
+
 
 
       <div class="footer">
@@ -133,12 +144,132 @@ The CMMI on rails</p>
   
 
   <p>
-    © Matthew Newell, 2014 &mdash; built with Jekyll using Lagom theme
+    © Matthew Newell, 2014 &mdash; built with Jekyll using <a href="https://github.com/swanson/lagom">Lagom</a> theme. The footer is Mike Bostok's d3.js block <a href="http://bl.ocks.org/mbostock/bd012e7bbe5f66c41d39"> QuickSort</a>.
   </p>
 </div>
       </div>
     </div>
   </div>
+<svg_insert></svg_insert>
+
+<style>
+
+.line {
+  stroke: #000;
+  stroke-width: 1.5px;
+  stroke-linecap: round;
+}
+
+.line--pivot {
+  stroke: #f00;
+  stroke-width: 2.5px;
+}
+
+.line--inactive {
+  stroke: #ddd;
+  stroke-width: 1px;
+}
+
+</style>
+
+<script type="text/javascript">
+
+  var n = 200,
+    array = d3.shuffle(d3.range(n)),
+    actions = quicksort(array.slice()).reverse();
+
+var margin = {top: 5, right: 40, bottom: 30, left: 200},
+    width = 960,
+    height = 150 - margin.top - margin.bottom;
+
+var x = d3.scale.ordinal()
+    .domain(d3.range(n))
+    .rangePoints([0, width]);
+
+var a = d3.scale.linear()
+    .domain([0, n - 1])
+    .range([-45, 45]);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var line = svg.append("g")
+    .attr("class", "line")
+  .selectAll("line")
+    .data(array)
+  .enter().append("line")
+    .attr("transform", transform)
+    .attr("y2", -height / 2);
+
+var transition = d3.transition()
+    .duration(150)
+    .each("start", function start() {
+      var action = actions.pop();
+      switch (action.type) {
+        case "swap": {
+          var i = action[0],
+              j = action[1],
+              li = line[0][i],
+              lj = line[0][j];
+          line[0][i] = lj;
+          line[0][j] = li;
+          transition.each(function() { line.transition().attr("transform", transform); });
+          break;
+        }
+        case "partition": {
+          line.attr("class", function(d, i) {
+            return i === action.pivot ? "line--pivot"
+                : action.left <= i && i < action.right ? null
+                : "line--inactive";
+          });
+          break;
+        }
+      }
+      if (actions.length) transition = transition.transition().each("start", start);
+      else transition.each("end", function() { line.attr("class", null); });
+    });
+
+function transform(d, i) {
+  return "translate(" + x(i) + "," + height + ")rotate(" + a(d) + ")";
+}
+
+function quicksort(array) {
+  var actions = [];
+
+  function partition(left, right, pivot) {
+    var v = array[pivot];
+    swap(pivot, --right);
+    for (var i = left; i < right; ++i) if (array[i] <= v) swap(i, left++);
+    swap(left, right);
+    return left;
+  }
+
+  function swap(i, j) {
+    if (i === j) return;
+    var t = array[i];
+    array[i] = array[j];
+    array[j] = t;
+    actions.push({type: "swap", "0": i, "1": j});
+  }
+
+  function recurse(left, right) {
+    if (left < right - 1) {
+      var pivot = (left + right) >> 1;
+      actions.push({type: "partition", "left": left, "pivot": pivot, "right": right});
+      pivot = partition(left, right, pivot);
+      recurse(left, pivot);
+      recurse(pivot + 1, right);
+    }
+  }
+
+  recurse(0, array.length);
+  return actions;
+}
+
+</script>
 
 
 <script type="text/javascript">

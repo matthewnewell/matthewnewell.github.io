@@ -24,7 +24,7 @@
     <div class="four columns sidebar">
       <nav>
   <a href="/">
-    <img src="/static/head.jpg" alt="re:newell"/>
+    <img src="/static/head-alt.jpg" alt="re:newell"/>
   </a>
   <h2><a href="/">Matthew Newell</h2></a>
   <ul>
@@ -88,23 +88,52 @@
       <div id="post">
   <h3 id="projects">Projects</h3>
 <ul>
-  <li><a href="experiments.html#ttt">Thank The Teacher:</a> Crowdfund thank-you gifts for teachers</li>
-  <li><a href="experiments.html#bsfc">Better Stronger Faster Cheaper:</a> A dynamic rendering of the CMMI </li>
-  <li><a href="experiments.html#sj22">Shop July Twenty Two:</a> Botique retail</li>
+  <li><a href="projects.html#ttt">Thank The Teacher:</a> Crowdfund thank-you gifts for teachers</li>
+  <li><a href="projects.html#bsfc">The CMMI Club:</a> A dynamic rendering of the CMMI </li>
+  <li><a href="projects.html#tfbo">Team FBO</a> Crowdsource federal business opportunities</li>
+  <li><a href="projects.html#smc">Sports Management Club:</a> Leage, team, and player management</li>
+  <li><a href="projects.html#playbook">Playbook Club</a>: x’s and o’s come to life</li>
+  <li><a href="projects.html#sj22">Shop July Twenty Two:</a> Botique retail</li>
+  <li><a href="projects.html#cut">Cutting Room Floor:</a> Good ideas poorly implemented or maybe not good ideas</li>
 </ul>
 
-<svg_insert />
+<h3 id="presentationsarticles">Presentations/Articles</h3>
+<ul>
+  <li><a href="http://www.slideshare.net/matthewnewell/ruby-newbie-26183481">Ruby Newbie:</a> my first year learning to write code.</li>
+  <li><a href="http://www.slideshare.net/matthewnewell/geistfall-creek-watershed-public-meeting">Geist Watershed Community Meeting:</a> Watershed awareness public outreach.</li>
+  <li><a href="http://www.slideshare.net/matthewnewell/wildlife-and-watershed-friendly-residential-landscape">Demonstration Property</a>: Environmentally responsible residential landscape.</li>
+  <li><a href="http://www.townepost.com/geist/spring-fertilization-tips-geist-watershed-alliance/">Watershed awareness article</a>: The solution to pollution is <strong>not</strong> dilution. </li>
+</ul>
 
 <div id="home">
   <h3><i class="icon-bookmark" /> Blog</h3>
   <ul id="blog-posts" class="posts">
     
-      <li><span>20 Aug 2013 &raquo;</span><a href="/blog/2013/08/20/sample-post.html">Tips</a></li>
+      <li><span>22 Jul 2014 &raquo;</span><a href="/blog/2014/07/22/bioswale.html">Bioswale Installation</a></li>
+    
+      <li><span>20 Mar 2014 &raquo;</span><a href="/blog/2014/03/20/tips.html">Tips</a></li>
     
       <li><span>12 Aug 2013 &raquo;</span><a href="/blog/2013/08/12/another-sample.html">Another sample</a></li>
     
   </ul>
 </div>
+
+
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Matthew Newell, 2014 &mdash; built with Jekyll using <a href="https://github.com/swanson/lagom">Lagom</a> theme. The footer is Mike Bostok's d3.js block <a href="http://bl.ocks.org/mbostock/bd012e7bbe5f66c41d39"> QuickSort</a>.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+<svg_insert></svg_insert>
 
 <style>
 
@@ -127,18 +156,14 @@
 </style>
 
 <script type="text/javascript">
-  var svg = d3.select("svg_insert")
-            .append("svg")
-            .attr("width", "575")
-            .attr("height", 100);
 
   var n = 200,
     array = d3.shuffle(d3.range(n)),
     actions = quicksort(array.slice()).reverse();
 
-var margin = {top: 230, right: 40, bottom: 230, left: 240},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+var margin = {top: 5, right: 40, bottom: 30, left: 200},
+    width = 960,
+    height = 150 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
     .domain(d3.range(n))
@@ -160,7 +185,7 @@ var line = svg.append("g")
     .data(array)
   .enter().append("line")
     .attr("transform", transform)
-    .attr("y2", -height);
+    .attr("y2", -height / 2);
 
 var transition = d3.transition()
     .duration(150)
@@ -228,22 +253,6 @@ function quicksort(array) {
 }
 
 </script>
-
-
-</div>
-
-
-      <div class="footer">
-        <div class="disclaimer">
-  
-
-  <p>
-    © Matthew Newell, 2014 &mdash; built with Jekyll using Lagom theme
-  </p>
-</div>
-      </div>
-    </div>
-  </div>
 
 
 <script type="text/javascript">

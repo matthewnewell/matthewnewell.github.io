@@ -4,7 +4,7 @@
  <title>The blog of Matthew Newell</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-07-24T06:29:33-04:00</updated>
+ <updated>2014-07-26T09:48:46-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
    <name>Matthew Newell</name>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title>Tips</title>
-   <link href="http://usefulwebservice.com/blog/2013/08/20/sample-post.html"/>
-   <updated>2013-08-20T00:00:00-04:00</updated>
-   <id>http://usefulwebservice.com/blog/2013/08/20/sample-post</id>
+   <title>Bioswale Installation</title>
+   <link href="http://usefulwebservice.com/blog/2014/07/22/bioswale.html"/>
+   <updated>2014-07-22T00:00:00-04:00</updated>
+   <id>http://usefulwebservice.com/blog/2014/07/22/bioswale</id>
    <content type="html">&lt;h2 id=&quot;twitter-bootstrap-tipsheet&quot;&gt;Twitter Bootstrap Tipsheet&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;“bundle exec rake assets:precompile” precompiles your stylesheet I think&lt;/li&gt;
@@ -28,7 +28,200 @@
 &lt;a href=&quot;http://alignedleft.com/tutorials/d3&quot;&gt;Scott Murray’s D3 Book&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;local host commands: 
-python -m http.server 8888 &amp;amp;
+python -m SimpleHTTPServer 8888 &amp;amp;
+Once this is running, go to http://localhost:8888/.&lt;/p&gt;
+
+&lt;h2 id=&quot;git-tipsheet&quot;&gt;Git Tipsheet&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;git add –all #this will respect deleted files. better than git add .&lt;/li&gt;
+  &lt;li&gt;git commit -m “Fixes #1. OBE been_there global with use of raise. “. This will auto close github issue tracker Number 1. Commit message must include “Fixes #1”.&lt;/li&gt;
+  &lt;li&gt;git branch branchname -d #this will delete branches that are no longer useful. do this after a successful merge to master branch.&lt;/li&gt;
+  &lt;li&gt;git mergetool  #run this after a git merge branchname when there are merge conflicts&lt;/li&gt;
+  &lt;li&gt;git branch -v  #view last commit for each branch&lt;/li&gt;
+  &lt;li&gt;git branch –merged  #show which branches are merged to current branch. Merged branches can usually be deleted.&lt;/li&gt;
+  &lt;li&gt;git branch –no-merged #have not yet been merged. Attempt to delete will fail
+Git Branching Remote Branches: for multi-user collaborations with a remote origin&lt;/li&gt;
+  &lt;li&gt;git fetch origin  #this synchronizes work between your git clone and most current merges to master on origin
+Git Initial Remote Repository Setup&lt;/li&gt;
+  &lt;li&gt;git remote add origin https://github.com/username/repository_name.git&lt;/li&gt;
+  &lt;li&gt;git push -u origin master  “-u” remembers the parameters, nest time, just git push&lt;/li&gt;
+  &lt;li&gt;git pull origin master  #pulls down latest.&lt;/li&gt;
+  &lt;li&gt;git diff HEAD  #describes differenes pull vs. local&lt;/li&gt;
+  &lt;li&gt;git diff –staged   describes how stage is new&lt;/li&gt;
+  &lt;li&gt;git reset name.txt  #drops name.txt&lt;/li&gt;
+  &lt;li&gt;git branch clean_up&lt;/li&gt;
+  &lt;li&gt;git rm ‘*.txt’   #you can use wildcards to exclude entire filetypes from a git&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;heroku-tipsheet---categories-tipsheet&quot;&gt;Heroku Tipsheet   categories: tipsheet&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;heroku pg:reset DATABASE (on local host, rake db:drop)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;jeckyll-github-pages-and-markdown&quot;&gt;Jeckyll, GitHub Pages, and Markdown&lt;/h2&gt;
+&lt;p&gt;This site is built with &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and lives on &lt;a href=&quot;http://www.github.com&quot;&gt;GitHub&lt;/a&gt;. Jekyll uses &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;, a text to HTML conversion tool for web writers. &lt;/p&gt;
+
+&lt;p&gt;To start Jekyll on the localhost, “jekyll serve”.&lt;/p&gt;
+
+&lt;h2 id=&quot;markdown-basics&quot;&gt;Markdown Basics&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;”===” under a line of text renders HTML “H1”&lt;/p&gt;
+
+  &lt;p&gt;”—” under a line of test renders HTML “H2”&lt;/p&gt;
+
+  &lt;p&gt;”&amp;gt;” makes block quotes. This list so far is block quotes.&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;”+”, “*”, and “-“ make unordered lists. They are interchangable.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;“1.” makes an ordered list&lt;/li&gt;
+  &lt;li&gt;Here is ordered list “2.”&lt;/li&gt;
+  &lt;li&gt;The syntax to make a link is  “[name of link]” immediately folled by “(https://url.com)”.&lt;/li&gt;
+  &lt;li&gt;The tag to highlight a &lt;code&gt;folder&lt;/code&gt; is “`”.&lt;/li&gt;
+  &lt;li&gt;A horizontal rule is “—-“ on a single line.&lt;/li&gt;
+  &lt;li&gt;Emphasis is done with &lt;em&gt;one&lt;/em&gt; or &lt;strong&gt;two&lt;/strong&gt; asteriks.&lt;/li&gt;
+  &lt;li&gt;Image tags are like this: &lt;strong&gt;5th Grade Basketball&lt;/strong&gt;
+!”[]”(http://usefulwebservice.com/images/b1.jpg)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;mac-tipsheet&quot;&gt;Mac Tipsheet&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;three finger swipe&lt;/strong&gt; toggles through all full screen applications.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cmd / Tab / (Shift)&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;shell to open as finder folder&lt;/strong&gt; “Open .” toggle through open applications.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;pry-tipsheet&quot;&gt;Pry Tipsheet&lt;/h2&gt;
+
+&lt;p&gt;Pry
+Pry is a REPL (Read Eval Print Loop)&lt;/p&gt;
+
+&lt;h1 id=&quot;commands-in-pry-shell&quot;&gt;commands in pry shell&lt;/h1&gt;
+&lt;p&gt;show-method pry&lt;/p&gt;
+
+&lt;h1 id=&quot;invoke-pry-from-command-line&quot;&gt;invoke pry from command line&lt;/h1&gt;
+&lt;p&gt;ruby -r pry file.rb.&lt;/p&gt;
+
+&lt;h1 id=&quot;insert-into-filerb&quot;&gt;insert into file.rb&lt;/h1&gt;
+&lt;p&gt;binding.pry&lt;/p&gt;
+
+&lt;h1 id=&quot;access-to-variables-by-typing-variables&quot;&gt;access to variables by typing variables&lt;/h1&gt;
+
+&lt;h1 id=&quot;advance-to-next-binding&quot;&gt;advance to next binding&lt;/h1&gt;
+&lt;ctrl&gt; D
+
+#when writing a script in the command line
+show-input
+amend-line
+edit  #opens a browser (currently emacs) 
+
+#replay history
+hist    #use “u” and “d” and vi commands, search with “/“, advance “n&quot;
+hist —tail 10
+hist —replay 216..224 #reruns the script
+hist -n   #use to view without numbers. useful for cut paste code
+
+#play files and methods as inputs
+load ‘file.rb’
+play 5  #executes line 5 of program file.rb
+play 5..7  #executes multiple lines
+
+Rails Tipsheet
+--------------
+1. **generic scaffold command** rails generate scaffold Opportunity opportunity:text agency:string opp_type:string  post_date:date response_date:date link:string  comments:text like:integer
+
+2. **generic migration command** rails generate migration add_values_to_opportunity type:string priority:integer
+
+3. tail -f log/development.log  #shows your rails logs in a console shell
+
+4. has_many, through
+rails generate model FaVpr functional_area_id:integer vpr_id:integer
+models: fa_vpr.rb  has_many :vprs, has_many :functional_areas
+        vpr.rb    has_many :functional_areas, through: :fa_vpr
+in the console, call by vpr_functional_area_ids
+
+
+
+Rake Tips
+---------
+1. rake db:reset #combo command means...rake db:drop and db:schema:load or rake db:migrate
+
+2. rake db:rollback STEP=1 #goes back one migration. useful if you are maintaining tables via migration scripts.
+
+
+
+
+Ruby Tipsheet
+--------------
+#if my_array is nil, create a new array
+my_array ||= []
+
+#Blocks, Procs, Lambdas
+A block is code you can store in a variable like any other object and run on demand.  
+A block is like a method that is not associated with any object
+*addition = lambda {|a, b| return a + b }*
+
+++Scope++ is the context which its visible to the program.
+from [Codeschool](http://www.codecademy.com/courses/ruby-beginner-en-MFiQ6/1/1?curriculum_id=5059f8619189a5000201fbcb).
+# $global_var, @@class_var, @instance_var
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Now&lt;/span&gt;
+  &lt;span class=&quot;vg&quot;&gt;$place&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Indiana&amp;quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#global variable&lt;/span&gt;
+  &lt;span class=&quot;vc&quot;&gt;@@here&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hello, fishers&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#class variable&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;who&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;occupation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@occupation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;occupation&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;current_user&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;display_here&lt;/span&gt;
+    &lt;span class=&quot;vc&quot;&gt;@@here&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;matt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Matt&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Lumberjack&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#call instance var&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$place&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#global, access directly&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display_here&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#class var belong to the class&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+++Namespacing++ is the act of keep methods and constants in named spaces.
+
+++::++ This is a scope resolution operator. It states where you are looking for code.
+
+++self++ refers to the current object.
+
+Sublime Tipsheet
+----------------
+
+
+&lt;/ctrl&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Tips</title>
+   <link href="http://usefulwebservice.com/blog/2014/03/20/tips.html"/>
+   <updated>2014-03-20T00:00:00-04:00</updated>
+   <id>http://usefulwebservice.com/blog/2014/03/20/tips</id>
+   <content type="html">&lt;h2 id=&quot;twitter-bootstrap-tipsheet&quot;&gt;Twitter Bootstrap Tipsheet&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;“bundle exec rake assets:precompile” precompiles your stylesheet I think&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;d3js-tipsheet&quot;&gt;D3.js Tipsheet&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;The Links&lt;/strong&gt; 
+&lt;a href=&quot;https://github.com/mbostock/d3/wiki&quot;&gt;D3 wiki&lt;/a&gt;
+&lt;a href=&quot;http://alignedleft.com/tutorials/d3&quot;&gt;Scott Murray’s D3 Book&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;local host commands: 
+python -m SimpleHTTPServer 8888 &amp;amp;
 Once this is running, go to http://localhost:8888/.&lt;/p&gt;
 
 &lt;h2 id=&quot;git-tipsheet&quot;&gt;Git Tipsheet&lt;/h2&gt;

@@ -6,11 +6,19 @@ title: Useful Web Service
 
 
 ###Projects
-* [Thank The Teacher:](experiments.html#ttt) Crowdfund thank-you gifts for teachers
-* [The CMMI Club:](experiments.html#bsfc) A dynamic rendering of the CMMI 
-* [Shop July Twenty Two:](experiments.html#sj22) Botique retail
+* [Thank The Teacher:](projects.html#ttt) Crowdfund thank-you gifts for teachers
+* [The CMMI Club:](projects.html#bsfc) A dynamic rendering of the CMMI 
+* [Team FBO](projects.html#tfbo) Crowdsource federal business opportunities
+* [Sports Management Club:](projects.html#smc) Leage, team, and player management
+* [Playbook Club](projects.html#playbook): x's and o's come to life
+* [Shop July Twenty Two:](projects.html#sj22) Botique retail
+* [Cutting Room Floor:](projects.html#cut) Good ideas poorly implemented or maybe not good ideas
 
-<svg_insert></svg_insert>
+###Presentations/Articles
+* [Ruby Newbie:](http://www.slideshare.net/matthewnewell/ruby-newbie-26183481) my first year learning to write code.
+* [Geist Watershed Community Meeting:](http://www.slideshare.net/matthewnewell/geistfall-creek-watershed-public-meeting) Watershed awareness public outreach.
+* [Demonstration Property](http://www.slideshare.net/matthewnewell/wildlife-and-watershed-friendly-residential-landscape): Environmentally responsible residential landscape.
+* [Watershed awareness article](http://www.townepost.com/geist/spring-fertilization-tips-geist-watershed-alliance/): The solution to pollution is **not** dilution. 
 
 <div id="home">
   <h3><i class="icon-bookmark"></i> Blog</h3>
@@ -21,121 +29,3 @@ title: Useful Web Service
   </ul>
 </div>
 
-<style>
-
-.line {
-  stroke: #000;
-  stroke-width: 1.5px;
-  stroke-linecap: round;
-}
-
-.line--pivot {
-  stroke: #f00;
-  stroke-width: 2.5px;
-}
-
-.line--inactive {
-  stroke: #ddd;
-  stroke-width: 1px;
-}
-
-</style>
-
-<script type="text/javascript">
-
-  var n = 200,
-    array = d3.shuffle(d3.range(n)),
-    actions = quicksort(array.slice()).reverse();
-
-var margin = {top: 30, right: 40, bottom: 30, left: 240},
-    width = 960 - margin.left - margin.right,
-    height = 200 - margin.top - margin.bottom;
-
-var x = d3.scale.ordinal()
-    .domain(d3.range(n))
-    .rangePoints([0, width]);
-
-var a = d3.scale.linear()
-    .domain([0, n - 1])
-    .range([-45, 45]);
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-var line = svg.append("g")
-    .attr("class", "line")
-  .selectAll("line")
-    .data(array)
-  .enter().append("line")
-    .attr("transform", transform)
-    .attr("y2", -height);
-
-var transition = d3.transition()
-    .duration(150)
-    .each("start", function start() {
-      var action = actions.pop();
-      switch (action.type) {
-        case "swap": {
-          var i = action[0],
-              j = action[1],
-              li = line[0][i],
-              lj = line[0][j];
-          line[0][i] = lj;
-          line[0][j] = li;
-          transition.each(function() { line.transition().attr("transform", transform); });
-          break;
-        }
-        case "partition": {
-          line.attr("class", function(d, i) {
-            return i === action.pivot ? "line--pivot"
-                : action.left <= i && i < action.right ? null
-                : "line--inactive";
-          });
-          break;
-        }
-      }
-      if (actions.length) transition = transition.transition().each("start", start);
-      else transition.each("end", function() { line.attr("class", null); });
-    });
-
-function transform(d, i) {
-  return "translate(" + x(i) + "," + height + ")rotate(" + a(d) + ")";
-}
-
-function quicksort(array) {
-  var actions = [];
-
-  function partition(left, right, pivot) {
-    var v = array[pivot];
-    swap(pivot, --right);
-    for (var i = left; i < right; ++i) if (array[i] <= v) swap(i, left++);
-    swap(left, right);
-    return left;
-  }
-
-  function swap(i, j) {
-    if (i === j) return;
-    var t = array[i];
-    array[i] = array[j];
-    array[j] = t;
-    actions.push({type: "swap", "0": i, "1": j});
-  }
-
-  function recurse(left, right) {
-    if (left < right - 1) {
-      var pivot = (left + right) >> 1;
-      actions.push({type: "partition", "left": left, "pivot": pivot, "right": right});
-      pivot = partition(left, right, pivot);
-      recurse(left, pivot);
-      recurse(pivot + 1, right);
-    }
-  }
-
-  recurse(0, array.length);
-  return actions;
-}
-
-</script>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="assets/d3/d3.v3.js"></script>
+  <title>Matthew Newell - Tips</title>
+  <meta name="author" content="Matthew Newell" />
+  <meta name="description" content="The blog of Matthew Newell" />
+  <link rel="canonical" href="http://usefulwebservice.com/blog/2014/03/20/tips.html" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="Matthew Newell" href="http://usefulwebservice.com/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <a href="/">
+    <img src="/static/head-alt.jpg" alt="re:newell"/>
+  </a>
+  <h2><a href="/">Matthew Newell</h2></a>
+  <ul>
+  <div align="center">
+    Learn by doing
+  </div>
+  <div align="center">
+    <a href="/about.html">about</a> 
+    |
+    <a href="/learn.html">learn</a>
+  </div>
+  <hr/>
+  <div>
+    <div id="social">
+      <div id="stalker">
+  
+  <a title="matthewnewell on Github" href="https://github.com/matthewnewell">
+    <i class="fa fa-github-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="matthewrnewell on Twitter" href="https://twitter.com/matthewrnewell">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+  <a title="Matthew Newell on LinkedIn" href="https://www.linkedin.com/pub/matthew-newell/6/474/978">
+    <i class="fa fa-linkedin-square"></i>
+  </a>
+  
+
+  
+
+  <a title="RSS feed" id="rss" href="/atom.xml">
+    <i class="fa fa-rss-square"></i>
+  </a>
+</div>
+
+    </div>
+  </div>
+  </ul>
+</nav>
+    </div>
+
+    <div class="eleven columns content">
+      
+      <p class="meta">
+  March 20, 2014 
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title">Tips</h1>
+
+<div id="post">
+  <h2 id="twitter-bootstrap-tipsheet">Twitter Bootstrap Tipsheet</h2>
+<ol>
+  <li>“bundle exec rake assets:precompile” precompiles your stylesheet I think</li>
+</ol>
+
+<h2 id="d3js-tipsheet">D3.js Tipsheet</h2>
+<p><strong>The Links</strong> 
+<a href="https://github.com/mbostock/d3/wiki">D3 wiki</a>
+<a href="http://alignedleft.com/tutorials/d3">Scott Murray’s D3 Book</a></p>
+
+<p>local host commands: 
+python -m SimpleHTTPServer 8888 &amp;
+Once this is running, go to http://localhost:8888/.</p>
+
+<h2 id="git-tipsheet">Git Tipsheet</h2>
+<ol>
+  <li>git add –all #this will respect deleted files. better than git add .</li>
+  <li>git commit -m “Fixes #1. OBE been_there global with use of raise. “. This will auto close github issue tracker Number 1. Commit message must include “Fixes #1”.</li>
+  <li>git branch branchname -d #this will delete branches that are no longer useful. do this after a successful merge to master branch.</li>
+  <li>git mergetool  #run this after a git merge branchname when there are merge conflicts</li>
+  <li>git branch -v  #view last commit for each branch</li>
+  <li>git branch –merged  #show which branches are merged to current branch. Merged branches can usually be deleted.</li>
+  <li>git branch –no-merged #have not yet been merged. Attempt to delete will fail
+Git Branching Remote Branches: for multi-user collaborations with a remote origin</li>
+  <li>git fetch origin  #this synchronizes work between your git clone and most current merges to master on origin
+Git Initial Remote Repository Setup</li>
+  <li>git remote add origin https://github.com/username/repository_name.git</li>
+  <li>git push -u origin master  “-u” remembers the parameters, nest time, just git push</li>
+  <li>git pull origin master  #pulls down latest.</li>
+  <li>git diff HEAD  #describes differenes pull vs. local</li>
+  <li>git diff –staged   describes how stage is new</li>
+  <li>git reset name.txt  #drops name.txt</li>
+  <li>git branch clean_up</li>
+  <li>git rm ‘*.txt’   #you can use wildcards to exclude entire filetypes from a git</li>
+</ol>
+
+<h2 id="heroku-tipsheet---categories-tipsheet">Heroku Tipsheet   categories: tipsheet</h2>
+
+<ol>
+  <li>heroku pg:reset DATABASE (on local host, rake db:drop)</li>
+</ol>
+
+<h2 id="jeckyll-github-pages-and-markdown">Jeckyll, GitHub Pages, and Markdown</h2>
+<p>This site is built with <a href="http://jekyllrb.com/">Jekyll</a> and lives on <a href="http://www.github.com">GitHub</a>. Jekyll uses <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, a text to HTML conversion tool for web writers. </p>
+
+<p>To start Jekyll on the localhost, “jekyll serve”.</p>
+
+<h2 id="markdown-basics">Markdown Basics</h2>
+<blockquote>
+  <p>”===” under a line of text renders HTML “H1”</p>
+
+  <p>”—” under a line of test renders HTML “H2”</p>
+
+  <p>”&gt;” makes block quotes. This list so far is block quotes.</p>
+
+  <ul>
+    <li>”+”, “*”, and “-“ make unordered lists. They are interchangable.</li>
+  </ul>
+</blockquote>
+
+<ol>
+  <li>“1.” makes an ordered list</li>
+  <li>Here is ordered list “2.”</li>
+  <li>The syntax to make a link is  “[name of link]” immediately folled by “(https://url.com)”.</li>
+  <li>The tag to highlight a <code>folder</code> is “`”.</li>
+  <li>A horizontal rule is “—-“ on a single line.</li>
+  <li>Emphasis is done with <em>one</em> or <strong>two</strong> asteriks.</li>
+  <li>Image tags are like this: <strong>5th Grade Basketball</strong>
+!”[]”(http://usefulwebservice.com/images/b1.jpg)</li>
+</ol>
+
+<h2 id="mac-tipsheet">Mac Tipsheet</h2>
+<ol>
+  <li><strong>three finger swipe</strong> toggles through all full screen applications.</li>
+  <li><strong>Cmd / Tab / (Shift)</strong></li>
+  <li><strong>shell to open as finder folder</strong> “Open .” toggle through open applications.</li>
+</ol>
+
+<h2 id="pry-tipsheet">Pry Tipsheet</h2>
+
+<p>Pry
+Pry is a REPL (Read Eval Print Loop)</p>
+
+<h1 id="commands-in-pry-shell">commands in pry shell</h1>
+<p>show-method pry</p>
+
+<h1 id="invoke-pry-from-command-line">invoke pry from command line</h1>
+<p>ruby -r pry file.rb.</p>
+
+<h1 id="insert-into-filerb">insert into file.rb</h1>
+<p>binding.pry</p>
+
+<h1 id="access-to-variables-by-typing-variables">access to variables by typing variables</h1>
+
+<h1 id="advance-to-next-binding">advance to next binding</h1>
+<ctrl> D
+
+#when writing a script in the command line
+show-input
+amend-line
+edit  #opens a browser (currently emacs) 
+
+#replay history
+hist    #use “u” and “d” and vi commands, search with “/“, advance “n"
+hist —tail 10
+hist —replay 216..224 #reruns the script
+hist -n   #use to view without numbers. useful for cut paste code
+
+#play files and methods as inputs
+load ‘file.rb’
+play 5  #executes line 5 of program file.rb
+play 5..7  #executes multiple lines
+
+Rails Tipsheet
+--------------
+1. **generic scaffold command** rails generate scaffold Opportunity opportunity:text agency:string opp_type:string  post_date:date response_date:date link:string  comments:text like:integer
+
+2. **generic migration command** rails generate migration add_values_to_opportunity type:string priority:integer
+
+3. tail -f log/development.log  #shows your rails logs in a console shell
+
+4. has_many, through
+rails generate model FaVpr functional_area_id:integer vpr_id:integer
+models: fa_vpr.rb  has_many :vprs, has_many :functional_areas
+        vpr.rb    has_many :functional_areas, through: :fa_vpr
+in the console, call by vpr_functional_area_ids
+
+
+
+Rake Tips
+---------
+1. rake db:reset #combo command means...rake db:drop and db:schema:load or rake db:migrate
+
+2. rake db:rollback STEP=1 #goes back one migration. useful if you are maintaining tables via migration scripts.
+
+
+
+
+Ruby Tipsheet
+--------------
+#if my_array is nil, create a new array
+my_array ||= []
+
+#Blocks, Procs, Lambdas
+A block is code you can store in a variable like any other object and run on demand.  
+A block is like a method that is not associated with any object
+*addition = lambda {|a, b| return a + b }*
+
+++Scope++ is the context which its visible to the program.
+from [Codeschool](http://www.codecademy.com/courses/ruby-beginner-en-MFiQ6/1/1?curriculum_id=5059f8619189a5000201fbcb).
+# $global_var, @@class_var, @instance_var
+
+<div class="highlight"><pre><code class="ruby"><span class="k">class</span> <span class="nc">Now</span>
+  <span class="vg">$place</span> <span class="o">=</span> <span class="s2">&quot;Indiana&quot;</span> <span class="c1">#global variable</span>
+  <span class="vc">@@here</span> <span class="o">=</span> <span class="p">{</span><span class="ss">hello</span><span class="p">:</span> <span class="s2">&quot;Hello, fishers&quot;</span><span class="p">}</span> <span class="c1">#class variable</span>
+
+  <span class="k">def</span> <span class="nf">who</span><span class="p">(</span><span class="nb">name</span><span class="p">,</span> <span class="n">occupation</span><span class="p">)</span>
+    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+    <span class="vi">@occupation</span> <span class="o">=</span> <span class="n">occupation</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">current_user</span>
+    <span class="vi">@name</span>
+  <span class="k">end</span>
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">display_here</span>
+    <span class="vc">@@here</span>
+  <span class="k">end</span>
+
+  <span class="n">matt</span> <span class="o">=</span><span class="no">Now</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Matt&quot;</span><span class="p">,</span> <span class="s2">&quot;Lumberjack&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="n">matt</span><span class="o">.</span><span class="n">name</span>  <span class="c1">#call instance var</span>
+  <span class="nb">puts</span> <span class="vg">$place</span>  <span class="c1">#global, access directly</span>
+  <span class="nb">puts</span> <span class="no">Now</span><span class="o">.</span><span class="n">display_here</span>  <span class="c1">#class var belong to the class</span>
+</code></pre></div>
+
+++Namespacing++ is the act of keep methods and constants in named spaces.
+
+++::++ This is a scope resolution operator. It states where you are looking for code.
+
+++self++ refers to the current object.
+
+Sublime Tipsheet
+----------------
+
+
+</ctrl>
+
+</div>
+
+<div id="related">
+  <h3>Related Posts</h3>
+  <ul class="posts">
+    
+    <li>
+      <span>22 Jul 2014 &raquo;</span> <a href="/blog/2014/07/22/bioswale.html">Bioswale Installation</a>
+    </li>
+    
+    <li>
+      <span>12 Aug 2013 &raquo;</span> <a href="/blog/2013/08/12/another-sample.html">Another sample</a>
+    </li>
+    
+  </ul>
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Matthew Newell, 2014 &mdash; built with Jekyll using <a href="https://github.com/swanson/lagom">Lagom</a> theme. The footer is Mike Bostok's d3.js block <a href="http://bl.ocks.org/mbostock/bd012e7bbe5f66c41d39"> QuickSort</a>.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+<svg_insert></svg_insert>
+
+<style>
+
+.line {
+  stroke: #000;
+  stroke-width: 1.5px;
+  stroke-linecap: round;
+}
+
+.line--pivot {
+  stroke: #f00;
+  stroke-width: 2.5px;
+}
+
+.line--inactive {
+  stroke: #ddd;
+  stroke-width: 1px;
+}
+
+</style>
+
+<script type="text/javascript">
+
+  var n = 200,
+    array = d3.shuffle(d3.range(n)),
+    actions = quicksort(array.slice()).reverse();
+
+var margin = {top: 5, right: 40, bottom: 30, left: 200},
+    width = 960,
+    height = 150 - margin.top - margin.bottom;
+
+var x = d3.scale.ordinal()
+    .domain(d3.range(n))
+    .rangePoints([0, width]);
+
+var a = d3.scale.linear()
+    .domain([0, n - 1])
+    .range([-45, 45]);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var line = svg.append("g")
+    .attr("class", "line")
+  .selectAll("line")
+    .data(array)
+  .enter().append("line")
+    .attr("transform", transform)
+    .attr("y2", -height / 2);
+
+var transition = d3.transition()
+    .duration(150)
+    .each("start", function start() {
+      var action = actions.pop();
+      switch (action.type) {
+        case "swap": {
+          var i = action[0],
+              j = action[1],
+              li = line[0][i],
+              lj = line[0][j];
+          line[0][i] = lj;
+          line[0][j] = li;
+          transition.each(function() { line.transition().attr("transform", transform); });
+          break;
+        }
+        case "partition": {
+          line.attr("class", function(d, i) {
+            return i === action.pivot ? "line--pivot"
+                : action.left <= i && i < action.right ? null
+                : "line--inactive";
+          });
+          break;
+        }
+      }
+      if (actions.length) transition = transition.transition().each("start", start);
+      else transition.each("end", function() { line.attr("class", null); });
+    });
+
+function transform(d, i) {
+  return "translate(" + x(i) + "," + height + ")rotate(" + a(d) + ")";
+}
+
+function quicksort(array) {
+  var actions = [];
+
+  function partition(left, right, pivot) {
+    var v = array[pivot];
+    swap(pivot, --right);
+    for (var i = left; i < right; ++i) if (array[i] <= v) swap(i, left++);
+    swap(left, right);
+    return left;
+  }
+
+  function swap(i, j) {
+    if (i === j) return;
+    var t = array[i];
+    array[i] = array[j];
+    array[j] = t;
+    actions.push({type: "swap", "0": i, "1": j});
+  }
+
+  function recurse(left, right) {
+    if (left < right - 1) {
+      var pivot = (left + right) >> 1;
+      actions.push({type: "partition", "left": left, "pivot": pivot, "right": right});
+      pivot = partition(left, right, pivot);
+      recurse(left, pivot);
+      recurse(pivot + 1, right);
+    }
+  }
+
+  recurse(0, array.length);
+  return actions;
+}
+
+</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-xxxx-x']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
