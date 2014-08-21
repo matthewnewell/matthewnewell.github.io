@@ -1,21 +1,15 @@
 [
 
-{"date": "2014-07-22 00:00:00 -0400",
+{"date": "2014-08-21 00:00:00 -0400",
 "categories": ["blog"],
 "tags": [],
-"title": "Bioswale Installation",
-"url": "/blog/2014/07/22/bioswale.html"},
+"title": "Build a \"has_many :through\" Association in Rails 4",
+"url": "/blog/2014/08/21/has_many_through.html"},
 
 {"date": "2014-03-20 00:00:00 -0400",
 "categories": ["blog"],
 "tags": [],
 "title": "Tips",
 "url": "/blog/2014/03/20/tips.html"},
-
-{"date": "2013-08-12 00:00:00 -0400",
-"categories": ["blog"],
-"tags": [],
-"title": "Another sample",
-"url": "/blog/2013/08/12/another-sample.html"},
 
 false]
