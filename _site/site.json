@@ -3,7 +3,7 @@
 {"date": "2014-08-21 00:00:00 -0400",
 "categories": ["blog"],
 "tags": [],
-"title": "Build a \"has_many :through\" Association in Rails 4",
+"title": "Rails 4 Active Record Association has_many, through",
 "url": "/blog/2014/08/21/has_many_through.html"},
 
 {"date": "2014-03-20 00:00:00 -0400",

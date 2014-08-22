@@ -4,7 +4,7 @@
  <title>The blog of Matthew Newell</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-08-21T16:19:54-04:00</updated>
+ <updated>2014-08-22T04:25:34-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
    <name>Matthew Newell</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Build a "has_many :through" Association in Rails 4</title>
+   <title>Rails 4 Active Record Association has_many, through</title>
    <link href="http://usefulwebservice.com/blog/2014/08/21/has_many_through.html"/>
    <updated>2014-08-21T00:00:00-04:00</updated>
    <id>http://usefulwebservice.com/blog/2014/08/21/has_many_through</id>

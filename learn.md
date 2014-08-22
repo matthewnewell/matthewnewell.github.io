@@ -5,7 +5,7 @@ title: Learn
 
 {% highlight ruby %}
 
-  skilled = false
+  knowledgable_and_productive = false
 
   learn = [
     "pick a development track",
@@ -19,7 +19,7 @@ title: Learn
     "teach others"
   ]
 
-  until skilled
+  until knowledgable_and_productive
     learn[2..-1].each do |practice|
       practice
     end

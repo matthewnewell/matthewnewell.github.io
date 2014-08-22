@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build a "has_many :through" Association in Rails 4
+title: Rails 4 Active Record Association has_many, through  
 categories:
 - blog
 ---
