@@ -5,8 +5,8 @@ categories:
 - blog
 ---
 
-The Setup
----------
+Setup
+-----
 A hospital has physicians and patients.  A physician has many patients. A patient has many physicians. They two parties meet via appointments. Appointments have a date, time, location, patient, and physician.
 
 * Patient needs: Do I have any physician appointments? When, where, & with whom?
@@ -24,7 +24,7 @@ rails generate scaffold appointment location:string date:date time:time physicia
 
 {% endhighlight %}
 
-Now, go to your models and make 'em look like this...
+Go to your models and make 'em look like this...
 
 {% highlight ruby %}
 class Physician < ActiveRecord::Base
@@ -44,11 +44,11 @@ end
 
 {% endhighlight ruby%}
 
-Open up your controllers and croll down to the bottom and check out the strong parameters. Physician is only allowed to create :physician. Patient is only allowed to create :patient.  Things get spicy when you check out the appointments_controller strong parameters.  It looks like this (note the :physician_id and the :patient_id):
+Open up your controllers, scroll down to the bottom and check out your strong parameters. Physician and Patient are only allowed to write :title.  Now check out the appointments_controller.  Note the :physician_id and the :patient_id.
 
 {% highlight ruby %}
 
-params.require(:appointment).permit(:location, :date, :time, :physician_id, :patient_id)
+params.require(:appointment).permit(:physician_id, :patient_id, :location, :date, :time)
 
 {% endhighlight ruby%}
 
@@ -57,7 +57,7 @@ Migrate your database
 rake db:migrate
 {% endhighlight ruby %}
 
-And then make some data in the console
+And make some data in the console
 
 {% highlight ruby %}
 rails c
@@ -68,7 +68,7 @@ paitent_bob = Patient.create!(name: "Bob the Patient")
 patient_sue = Patient.create!(name: "Sue the Patient")
 {% endhighlight ruby%}
 
-Everything gets glued together in the appointments table with the physician and patient record id. Remember the Appointments_Controllers strong parameters?. Lets check our ids.
+Appointments establish the association with the physician_id and patient_id. Check out the ids.
 
 {% highlight ruby %}
 dr_fred.id  #=>1
@@ -77,7 +77,7 @@ patient_bob.id #=>1
 patient_sue.id #=>2
 {% endhighlight %}
 
-Bob wants to make an appointment with Dr. Cindy at the hospital today. Here goes...
+Bob wants to make an appointment with Dr. Cindy at the hospital today.
 
 {% highlight ruby %}
 an_appointment = Appointment.create!(physician_id: 1, patient_id: 2, date: Date.today, time:Time.now, location: "The Hospital")

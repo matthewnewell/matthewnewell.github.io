@@ -4,9 +4,9 @@ title: Useful Web Service
 ---
 
 ###Projects
+* [CMMI Club:](cmmi.html) A dynamic rendering of the CMMI 
+* [Team FBO:](teamFBO.html) Crowdsource federal business opportunities
 * [Thank The Teacher:](thanktheteacher.html) Crowdfund thank-you gifts for teachers
-* [The CMMI Club:](cmmi.html) A dynamic rendering of the CMMI 
-* [Team FBO](teamFBO.html) Crowdsource federal business opportunities
 * [Shop July Twenty Two:](july_twenty_two.html) Botique retail
 * [Early stage:](early_stage.html) work in progress, but isn't everything?
 * [Cutting Room Floor:](the_floor.html#cut) Good ideas poorly implemented or maybe not good ideas

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Tips
+title: Tips For Future Me
 categories:
 - blog
 ---
 
-### Notes to future me
+If I dont use a new move every day I will probably forget it.  
 
 
 Twitter Bootstrap Tipsheet

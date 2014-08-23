@@ -3,15 +3,11 @@ layout: default
 title: Projects
 ---
 
-#[Shop July Twenty Two:](http://www.shopjulytwentytwo.com) 
-funky fresh things for modern day hippies
+#[Shop July Twenty Two](http://www.shopjulytwentytwo.com) 
+[www.ShopJulyTwentyTwo.com](http://www.shopjulytwentytwo.com) 
 
-#The Problem
-The artist wanted a simple interface to blog, post product information and process transactions. She prefers to focus on making product and expects the online portion of her business to "just work" and not cost a lot to maintain.
+The artist wants tools to blog, post product information, and process transactions. She prefers to focus on making and marketing her wares. The online stuff should "just work" and not be too expensive.
 
-#The Solution
-Weebly, Square, Instagram.
+We went with Weebly, Square, Instagram and Twitter. Dana now runs a very successful hobby business. The cost to run her online store is about zero. 
 
-#Results
-The artist has enough business to keep inventory close to zero. Almost too busy making stuff. She now runs a very successful hobby business. 
-
+![woah](/static/j22clarence.jpg)

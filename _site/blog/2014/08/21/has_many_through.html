@@ -72,9 +72,6 @@
 
   
 
-  <a title="RSS feed" id="rss" href="/atom.xml">
-    <i class="fa fa-rss-square"></i>
-  </a>
 </div>
 
     </div>
@@ -95,7 +92,7 @@
 <h1 class="title">Rails 4 Active Record Association has_many, through</h1>
 
 <div id="post">
-  <h2 id="the-setup">The Setup</h2>
+  <h2 id="setup">Setup</h2>
 <p>A hospital has physicians and patients.  A physician has many patients. A patient has many physicians. They two parties meet via appointments. Appointments have a date, time, location, patient, and physician.</p>
 
 <ul>
@@ -112,7 +109,7 @@
 <span class="n">rails</span> <span class="n">generate</span> <span class="n">scaffold</span> <span class="n">appointment</span> <span class="ss">location</span><span class="p">:</span><span class="n">string</span> <span class="ss">date</span><span class="p">:</span><span class="n">date</span> <span class="ss">time</span><span class="p">:</span><span class="n">time</span> <span class="ss">physician</span><span class="p">:</span><span class="n">references</span> <span class="ss">patient</span><span class="p">:</span><span class="n">references</span>
 </code></pre></div>
 
-<p>Now, go to your models and make ‘em look like this…</p>
+<p>Go to your models and make ‘em look like this…</p>
 
 <div class="highlight"><pre><code class="ruby"><span class="k">class</span> <span class="nc">Physician</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
   <span class="n">has_many</span> <span class="ss">:appointments</span>
@@ -130,9 +127,9 @@
 <span class="k">end</span>
 </code></pre></div>
 
-<p>Open up your controllers and croll down to the bottom and check out the strong parameters. Physician is only allowed to create :physician. Patient is only allowed to create :patient.  Things get spicy when you check out the appointments_controller strong parameters.  It looks like this (note the :physician_id and the :patient_id):</p>
+<p>Open up your controllers, scroll down to the bottom and check out your strong parameters. Physician and Patient are only allowed to write :title.  Now check out the appointments_controller.  Note the :physician_id and the :patient_id.</p>
 
-<div class="highlight"><pre><code class="ruby"><span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:appointment</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:location</span><span class="p">,</span> <span class="ss">:date</span><span class="p">,</span> <span class="ss">:time</span><span class="p">,</span> <span class="ss">:physician_id</span><span class="p">,</span> <span class="ss">:patient_id</span><span class="p">)</span>
+<div class="highlight"><pre><code class="ruby"><span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:appointment</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:physician_id</span><span class="p">,</span> <span class="ss">:patient_id</span><span class="p">,</span> <span class="ss">:location</span><span class="p">,</span> <span class="ss">:date</span><span class="p">,</span> <span class="ss">:time</span><span class="p">)</span>
 </code></pre></div>
 
 <p>Migrate your database</p>
@@ -140,7 +137,7 @@
 <div class="highlight"><pre><code class="ruby"><span class="n">rake</span> <span class="ss">db</span><span class="p">:</span><span class="n">migrate</span>
 </code></pre></div>
 
-<p>And then make some data in the console</p>
+<p>And make some data in the console</p>
 
 <div class="highlight"><pre><code class="ruby"><span class="n">rails</span> <span class="n">c</span>
 <span class="n">dr_fred</span> <span class="o">=</span> <span class="no">Physician</span><span class="o">.</span><span class="n">create!</span><span class="p">(</span><span class="nb">name</span><span class="p">:</span> <span class="s2">&quot;Dr. Fred&quot;</span><span class="p">)</span>
@@ -150,7 +147,7 @@
 <span class="n">patient_sue</span> <span class="o">=</span> <span class="no">Patient</span><span class="o">.</span><span class="n">create!</span><span class="p">(</span><span class="nb">name</span><span class="p">:</span> <span class="s2">&quot;Sue the Patient&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<p>Everything gets glued together in the appointments table with the physician and patient record id. Remember the Appointments_Controllers strong parameters?. Lets check our ids.</p>
+<p>Appointments establish the association with the physician_id and patient_id. Check out the ids.</p>
 
 <div class="highlight"><pre><code class="ruby"><span class="n">dr_fred</span><span class="o">.</span><span class="n">id</span>  <span class="c1">#=&gt;1</span>
 <span class="n">dr_cindy</span><span class="o">.</span><span class="n">id</span> <span class="c1">#=&gt;2</span>
@@ -158,7 +155,7 @@
 <span class="n">patient_sue</span><span class="o">.</span><span class="n">id</span> <span class="c1">#=&gt;2</span>
 </code></pre></div>
 
-<p>Bob wants to make an appointment with Dr. Cindy at the hospital today. Here goes…</p>
+<p>Bob wants to make an appointment with Dr. Cindy at the hospital today.</p>
 
 <div class="highlight"><pre><code class="ruby"><span class="n">an_appointment</span> <span class="o">=</span> <span class="no">Appointment</span><span class="o">.</span><span class="n">create!</span><span class="p">(</span><span class="n">physician_id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">patient_id</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="ss">date</span><span class="p">:</span> <span class="no">Date</span><span class="o">.</span><span class="n">today</span><span class="p">,</span> <span class="ss">time</span><span class="p">:</span><span class="no">Time</span><span class="o">.</span><span class="n">now</span><span class="p">,</span> <span class="ss">location</span><span class="p">:</span> <span class="s2">&quot;The Hospital&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -183,7 +180,7 @@
   <ul class="posts">
     
     <li>
-      <span>20 Mar 2014 &raquo;</span> <a href="/blog/2014/03/20/tips.html">Tips</a>
+      <span>20 Mar 2014 &raquo;</span> <a href="/blog/2014/03/20/tips_for_future_me.html">Tips For Future Me</a>
     </li>
     
   </ul>
