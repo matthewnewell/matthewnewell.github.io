@@ -5,7 +5,7 @@ categories:
 - blog
 ---
 
-If I dont use a new move every day I will probably forget it.  
+>If I dont use a new move every day I will probably forget it. These are mostly tips to "future me". 
 
 
 Twitter Bootstrap Tipsheet

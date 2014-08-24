@@ -4,7 +4,7 @@
  <title>The blog of Matthew Newell</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-08-23T09:16:14-04:00</updated>
+ <updated>2014-08-24T09:14:24-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
    <name>Matthew Newell</name>
@@ -105,7 +105,9 @@
    <link href="http://usefulwebservice.com/blog/2014/03/20/tips_for_future_me.html"/>
    <updated>2014-03-20T00:00:00-04:00</updated>
    <id>http://usefulwebservice.com/blog/2014/03/20/tips_for_future_me</id>
-   <content type="html">&lt;p&gt;If I dont use a new move every day I will probably forget it.  &lt;/p&gt;
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;If I dont use a new move every day I will probably forget it. These are mostly tips to “future me”. &lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;twitter-bootstrap-tipsheet&quot;&gt;Twitter Bootstrap Tipsheet&lt;/h2&gt;
 &lt;ol&gt;

@@ -82,20 +82,24 @@
 
     <div class="eleven columns content">
       
-      <blockquote>
+      <ul>
+  <li><a href="the_floor.html#cut">Cutting Room Floor:</a> Good ideas poorly implemented or maybe not good ideas</li>
+</ul>
+
+<blockquote>
   <p>If you follow all your dreams, you might get lost. Neil Young</p>
 </blockquote>
 
 <p><a href="http://kidpal.weebly.com/">KidPal</a> collects data from all of your kids academic and extracurricular activities and puts it on your phone.  </p>
 
-<p><a href="http://wildlifeandwatershedfriendly.weebly.com/">urbanrenewell</a>: I got sick after swimming in our local reservoir and became an environmental activist. </p>
+<p><a href="http://wildlifeandwatershedfriendly.weebly.com/">Urban Renewell:</a> I got sick after swimming in our local reservoir and became an environmental activist. </p>
 
 <p><img src="/static/clarence.jpg" alt="woah" /></p>
 
 <p>Concluded that the solution is land use regulation, not public outreach. </p>
 
 <p><a href="#">Necessity, Invention, &amp; Consequence</a>
-Screenplay about about Thomas Midgley, an inventor who changed the world and almost ended it…twice! The story needs to be told, but not the guy to do it. Still, everyone should try writing a screenplay.</p>
+Screenplay about about <a href="http://en.wikipedia.org/wiki/Thomas_Midgley,_Jr.">Thomas Midgley</a>, a self taught chemist and inventor who changed the world and almost ended it…twice! The story needs to be told, but not the guy to do it. Still, everyone should try writing a screenplay.</p>
 
 <p>I also think a Cyrano do Bergerac reboot where Cyrano communicates to Christian via snap chat would be awesome. Maybe next winter. </p>
 
@@ -106,133 +110,13 @@ Screenplay about about Thomas Midgley, an inventor who changed the world and alm
   
 
   <p>
-    © Matthew Newell, 2014 &mdash; built with Jekyll using <a href="https://github.com/swanson/lagom">Lagom</a> theme. The footer is Mike Bostok's d3.js block <a href="http://bl.ocks.org/mbostock/bd012e7bbe5f66c41d39"> QuickSort</a>. <br>
-    If QuickSort is done and you are still on the page, maybe you have been here too long.
+    © Matthew Newell, 2014 &mdash; built with Jekyll using <a href="https://github.com/swanson/lagom">Lagom</a> theme. 
   </p>
 </div>
       </div>
     </div>
   </div>
-<svg_insert></svg_insert>
 
-<style>
-
-.line {
-  stroke: #000;
-  stroke-width: 1.5px;
-  stroke-linecap: round;
-}
-
-.line--pivot {
-  stroke: #f00;
-  stroke-width: 2.5px;
-}
-
-.line--inactive {
-  stroke: #ddd;
-  stroke-width: 1px;
-}
-
-</style>
-
-<script type="text/javascript">
-
-  var n = 200,
-    array = d3.shuffle(d3.range(n)),
-    actions = quicksort(array.slice()).reverse();
-
-var margin = {top: 5, right: 40, bottom: 30, left: 200},
-    width = 960,
-    height = 150 - margin.top - margin.bottom;
-
-var x = d3.scale.ordinal()
-    .domain(d3.range(n))
-    .rangePoints([0, width]);
-
-var a = d3.scale.linear()
-    .domain([0, n - 1])
-    .range([-45, 45]);
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-var line = svg.append("g")
-    .attr("class", "line")
-  .selectAll("line")
-    .data(array)
-  .enter().append("line")
-    .attr("transform", transform)
-    .attr("y2", -height / 2);
-
-var transition = d3.transition()
-    .duration(150)
-    .each("start", function start() {
-      var action = actions.pop();
-      switch (action.type) {
-        case "swap": {
-          var i = action[0],
-              j = action[1],
-              li = line[0][i],
-              lj = line[0][j];
-          line[0][i] = lj;
-          line[0][j] = li;
-          transition.each(function() { line.transition().attr("transform", transform); });
-          break;
-        }
-        case "partition": {
-          line.attr("class", function(d, i) {
-            return i === action.pivot ? "line--pivot"
-                : action.left <= i && i < action.right ? null
-                : "line--inactive";
-          });
-          break;
-        }
-      }
-      if (actions.length) transition = transition.transition().each("start", start);
-      else transition.each("end", function() { line.attr("class", null); });
-    });
-
-function transform(d, i) {
-  return "translate(" + x(i) + "," + height + ")rotate(" + a(d) + ")";
-}
-
-function quicksort(array) {
-  var actions = [];
-
-  function partition(left, right, pivot) {
-    var v = array[pivot];
-    swap(pivot, --right);
-    for (var i = left; i < right; ++i) if (array[i] <= v) swap(i, left++);
-    swap(left, right);
-    return left;
-  }
-
-  function swap(i, j) {
-    if (i === j) return;
-    var t = array[i];
-    array[i] = array[j];
-    array[j] = t;
-    actions.push({type: "swap", "0": i, "1": j});
-  }
-
-  function recurse(left, right) {
-    if (left < right - 1) {
-      var pivot = (left + right) >> 1;
-      actions.push({type: "partition", "left": left, "pivot": pivot, "right": right});
-      pivot = partition(left, right, pivot);
-      recurse(left, pivot);
-      recurse(pivot + 1, right);
-    }
-  }
-
-  recurse(0, array.length);
-  return actions;
-}
-
-</script>
 
 
 <script type="text/javascript">
@@ -248,6 +132,9 @@ function quicksort(array) {
   })();
 
 </script>
+
+<footer>
+</footer>
 
 </body>
 </html>

@@ -13,6 +13,13 @@ I focus on developing competencies to collect, parse, and present information. M
 3. *Deployment:* I manage domains at NameCheap and deploy with Heroku.
 
 #Projects
-A founder needs [selective amnesia](http://usatoday.com/story/sports/nfl/2014/01/04/colts-chiefs-wild-card-playoffs-andrew-luck/4321311/) to handle the twists, turns, rejections, and pivots. And while I do enjoy a good roller coaster ride, the journey can take away from the things that create value in the first place. -replace with luck image goaline, link to article, tag: Luck leads team back from 35 point deficit-
+A founder needs [selective amnesia](http://usatoday.com/story/sports/nfl/2014/01/04/colts-chiefs-wild-card-playoffs-andrew-luck/4321311/) to handle the twists, turns, rejections, and pivots. 
 
-I prefer to focus on developing technical skills so that I can bootstrap my projects. My goals are to learn, share, have fun, and build cool things that people may find useful. 
+<figure align="center">
+  <img src="/static/andrew_12.png">
+  <small>Andrew Luck leads the Colts from a 28-point deficit to an impropable wild-car win. <br>On his three interceptions, Luck said, "You have to flush it, you have to forget about it".</small>
+</figure>
+<br>
+Although I do enjoy a good roller coaster ride, the journey can take away from the things that create value in the first place. 
+
+I prefer to focus on developing technical skills so that I can bootstrap my projects. My goals are to learn, share, have fun and build cool things that people find useful. You can view a copy of my resume [here](/resume.html).

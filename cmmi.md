@@ -10,9 +10,9 @@ The Capability Maturity Model Integrated (CMMI) is a collection of best practice
 
 <insert_d3>
 </insert_d3>
-My plan with CMMI.club is to create project accounts where one can maintain evidence online. Eventually, I would like to enable organizations to establish and maintain policy that traces directly to the CMMI standard from within the site. 
+My plan with CMMI.club is to create project accounts where organizations can maintain appraisal evidence online. Eventually, I would like to enable organizations to establish and maintain policy that traces directly to the CMMI standard from within the site. 
 
-This would significantly lower the cost of project CMMI appraisals and organizational policy compliance. 
+This would significantly lower the cost of CMMI appraisals and organizational policy compliance. 
 
 If CMMI compliance appraisals remain relevant (current implementations are expensive and provide marginal value), the CMMI.club might have a bright future.
 

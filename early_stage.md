@@ -3,6 +3,9 @@ layout: default
 title: Projects
 ---
 
+* [Early stage:](early_stage.html) work in progress, but isn't everything?
+
+
 [Sports Management Club](asdf)
 Sport, league, team, player, and game management. Information wants to be free.
 

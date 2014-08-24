@@ -1,4 +1,10 @@
-<svg_insert></svg_insert>
+<div class="disclaimer">
+  <p>
+    This footer animation is Mike Bostok's d3.js block <a href="http://bl.ocks.org/mbostock/bd012e7bbe5f66c41d39"> QuickSort</a>. 
+  </p>
+</div>
+
+
 
 <style>
 
@@ -38,7 +44,7 @@ var a = d3.scale.linear()
     .domain([0, n - 1])
     .range([-45, 45]);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("footer").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -118,3 +124,5 @@ function quicksort(array) {
 }
 
 </script>
+
+
