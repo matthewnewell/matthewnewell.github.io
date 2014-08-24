@@ -4,7 +4,7 @@
  <title>The blog of Matthew Newell</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-08-24T12:33:25-04:00</updated>
+ <updated>2014-08-24T14:46:16-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
    <name>Matthew Newell</name>
@@ -45,11 +45,12 @@
  </entry>
  
  <entry>
-   <title>Rails 4 Active Record Association has_many, through</title>
+   <title>Rails 4 Association has_many, through</title>
    <link href="http://usefulwebservice.com/blog/2014/08/21/has_many_through.html"/>
    <updated>2014-08-21T00:00:00-04:00</updated>
    <id>http://usefulwebservice.com/blog/2014/08/21/has_many_through</id>
    <content type="html">&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+
 &lt;p&gt;A hospital has physicians and patients.  A physician has many patients. A patient has many physicians. They two parties meet via appointments. Appointments have a date, time, location, patient, and physician.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -84,7 +85,7 @@
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Open up your controllers, scroll down to the bottom and check out your strong parameters. Physician and Patient are only allowed to write :title.  Now check out the appointments_controller.  Note the :physician_id and the :patient_id.&lt;/p&gt;
+&lt;p&gt;Open up your controllers, scroll down to the bottom and check out your strong parameters. Physician and Patient are only allowed to write :title.  Look at the appointments_controller.  Note the :physician_id and the :patient_id.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:appointment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;permit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:physician_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:patient_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -94,7 +95,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rake&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;migrate&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;And make some data in the console&lt;/p&gt;
+&lt;p&gt;and make some data in the console.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;dr_fred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Physician&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Dr. Fred&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;

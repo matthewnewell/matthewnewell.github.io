@@ -13,15 +13,13 @@ I focus on developing competencies to collect, parse, and present information. M
 * *Deployment:* I manage domains at NameCheap and deploy with Heroku.
 
 #Projects
-A founder needs selective amnesia to handle the twists, turns, rejections, and pivots. 
+A founder needs selective amnesia to handle the twists, turns, rejections, and pivots. And while I do enjoy a good roller coaster ride, the journey can take away from the developing the things that create value in the first place. 
 
 <figure align="center">
   <img src="/static/andrew_12.png">
   <small>Andrew Luck leads the Colts from a 28-point deficit to an impropable wild-card win. <br>Of his three interceptions, <a href="http://usatoday.com/story/sports/nfl/2014/01/04/colts-chiefs-wild-card-playoffs-andrew-luck/4321311"> Luck said</a>, "You have to flush it, you have to forget about it".</small>
 </figure>
 <br>
-And while I do enjoy a good roller coaster ride, the journey can take away from the things that create value in the first place. I prefer to focus on developing technical skills so that I can bootstrap my projects. 
+I prefer to focus on developing technical skills so that I can bootstrap my projects. 
 
-My goals are to learn, share, have fun and build cool things that people find useful. 
-
-You may view a copy of my resume [here](/resume.html).
+My goals are to learn, share, have fun and build cool things that people find useful. You may view a copy of my resume [here](/resume.html).

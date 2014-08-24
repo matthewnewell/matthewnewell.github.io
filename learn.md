@@ -27,21 +27,21 @@ title: Learn
 
 {% endhighlight %}
 
-##Pick a development track
+##Pick a Development Track
 {% highlight ruby %}
 learn[0] # => Pick a development track
 {% endhighlight%}
 
   My areas of interest are ruby, rails, github, heroku, markdown, and javascript. And UNIX based development and production environments.
 
-##Learn how to Learn
+##Learn How to Learn
 {% highlight ruby %}
 learn[1] # => Learn how to Learn
 {% endhighlight%}
 
 The podcast [Ruby Rogues Episode 131 "How to Learn"](rubyrogues.com/131-rr-how-to-learn) is amazing. Its worth a listen even if you are not into ruby.
 
-##Listen to smart people
+##Listen to Smart People
 {% highlight ruby %}
 learn[2] # => Listen to smart people
 {% endhighlight%}
@@ -49,30 +49,29 @@ learn[2] # => Listen to smart people
 * Go to [meetups](www.meetup.com)
 * Follow smart people on twitter. 
   You might want to try [@kytrinyx](https://twitter.com/kytrinyx) and [@sandimetz](https://twitter.com/sandimetz)
-* Follow some smart people on github and read their blogs and fork their repositories.  I am a fan of [Matt Swanson](http://www.mdswanson.com/). My site is based on his template [Lagom](https://github.com/swanson/lagom).
+* Follow smart people on github and read their blogs and fork their repositories.  I am a fan of [Matt Swanson](http://www.mdswanson.com/). My site is based on his template [Lagom](https://github.com/swanson/lagom).
 * Subscribe to some podcasts. I like [Ruby Rogues](www.rubyrogues.com).
 
-##Use interactive resources
+##Use Interactive Resources
 {% highlight ruby %}
 learn[3] # => Use interactive resources
 {% endhighlight%}
 
-I know of two flavors: browser based learning and TDD style. 
+My two favorite flavors are browser based learning and Test Driven Development Style. 
 
-Exercism.io
-RubyMonk
-**Javascript interactive tutorials**
+TDD format is awesome because you are learning how to write tests while at the same time learning a new concept.
 
-1. learnprime #thoughtbot educational resource
-2. rubymonks
-3. codeacademy
-4. tutsplus
+**Browser Based**
+Ruby Monk
+Code Academy
+Tutsplus
+Thoutbot?
 
-**TDD Based Exercises**
-1. exercism.io
+**TDD Style**
 
+* exercism.io
 
-##read books _and_ online media
+##Read Books _and_ Online Media
 {% highlight ruby %}
 learn[4] # => Read books
 {% endhighlight%}
@@ -92,28 +91,26 @@ Subscribe to Rails Weekly newsletter
 * Watch the free Tutsplus tutorial on Sublime
 
 
-###Read code
+###Read Code
 {% highlight ruby %}
 learn[5] # => Read code
 {% endhighlight%}
 Read good code. Start here
 **Ruby Docs**
 
-##write code
+##Write Code
 {% highlight ruby %}
 learn[6] # => Write code
 {% endhighlight%}
 
-Even if its bad. And it will be. Fork and contribute to repositories.
-[code here](https://github.com/matthewnewell)
+Write lots of code. Even if its bad. Especially when its bad.  Fork and contribute to repositories. [Like mine](https://github.com/matthewnewell).
 
 ##Ship Code
 {% highlight ruby %}
 learn[7] # => Ship code
 {% endhighlight%}
 
-Use git and github and heroku.
-[experiments](#)
+Writing code is fun but seeing it come alive on the heroku is a blast. The barrier to entry is low and the upside endless.
 
 ##Teach
 {% highlight ruby %}

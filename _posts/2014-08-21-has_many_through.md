@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Rails 4 Active Record Association has_many, through  
+title: Rails 4 Association has_many, through  
 categories:
 - blog
 ---
 
-Setup
------
+##Setup
+
 A hospital has physicians and patients.  A physician has many patients. A patient has many physicians. They two parties meet via appointments. Appointments have a date, time, location, patient, and physician.
 
 * Patient needs: Do I have any physician appointments? When, where, & with whom?
@@ -44,7 +44,7 @@ end
 
 {% endhighlight ruby%}
 
-Open up your controllers, scroll down to the bottom and check out your strong parameters. Physician and Patient are only allowed to write :title.  Now check out the appointments_controller.  Note the :physician_id and the :patient_id.
+Open up your controllers, scroll down to the bottom and check out your strong parameters. Physician and Patient are only allowed to write :title.  Look at the appointments_controller.  Note the :physician_id and the :patient_id.
 
 {% highlight ruby %}
 
@@ -57,7 +57,7 @@ Migrate your database
 rake db:migrate
 {% endhighlight ruby %}
 
-And make some data in the console
+and make some data in the console.
 
 {% highlight ruby %}
 rails c
