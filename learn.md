@@ -16,7 +16,7 @@ title: Learn
     "read code", 
     "write code", 
     "ship code",
-    "teach others"
+    "teach"
   ]
 
   until knowledgable_and_productive
@@ -27,32 +27,42 @@ title: Learn
 
 {% endhighlight %}
 
-###Pick a development track
+##Pick a development track
+{% highlight ruby %}
+learn[0] # => Pick a development track
+{% endhighlight%}
 
-My areas of interest are ruby, rails, github, heroku, markdown, and javascript. And UNIX based development and production environments.
+  My areas of interest are ruby, rails, github, heroku, markdown, and javascript. And UNIX based development and production environments.
 
-###Learn how to Learn
+##Learn how to Learn
+{% highlight ruby %}
+learn[1] # => Learn how to Learn
+{% endhighlight%}
 
-Check out the podcast: [Ruby Rogues Episode 131 "How to Learn"](rubyrogues.com/131-rr-how-to-learn) 
+The podcast [Ruby Rogues Episode 131 "How to Learn"](rubyrogues.com/131-rr-how-to-learn) is amazing. Its worth a listen even if you are not into ruby.
 
-###Listen to smart people
+##Listen to smart people
+{% highlight ruby %}
+learn[2] # => Listen to smart people
+{% endhighlight%}
 
-1. Go to [meetups](www.meetup.com)
-2. Follow smart people on twitter
+* Go to [meetups](www.meetup.com)
+* Follow smart people on twitter. 
   You might want to try [@kytrinyx](https://twitter.com/kytrinyx) and [@sandimetz](https://twitter.com/sandimetz)
-3. Follow some smart people on github and read their blogs and fork their repositories.  I am a fan of [Matt Swanson](http://www.mdswanson.com/). My site is based on his template [Lagom](https://github.com/swanson/lagom).
-4. Subscribe to some podcasts like [Ruby Rogues](www.rubyrogues.com)
+* Follow some smart people on github and read their blogs and fork their repositories.  I am a fan of [Matt Swanson](http://www.mdswanson.com/). My site is based on his template [Lagom](https://github.com/swanson/lagom).
+* Subscribe to some podcasts. I like [Ruby Rogues](www.rubyrogues.com).
 
-###Use interactive resources
-There are two flavors: browser based learning and TDD style
+##Use interactive resources
+{% highlight ruby %}
+learn[3] # => Use interactive resources
+{% endhighlight%}
 
-4. subscribe to Ruby weekly
-5. use RailsCasts
-6. Watch the free Tutsplus tutorial on Sublime
+I know of two flavors: browser based learning and TDD style. 
 
 Exercism.io
 RubyMonk
 **Javascript interactive tutorials**
+
 1. learnprime #thoughtbot educational resource
 2. rubymonks
 3. codeacademy
@@ -62,37 +72,53 @@ RubyMonk
 1. exercism.io
 
 
-###read books _and_ online media
+##read books _and_ online media
+{% highlight ruby %}
+learn[4] # => Read books
+{% endhighlight%}
+
+Subscribe to Rails Weekly newsletter
 
 **Cookbooks**
 1. Michael Hartl
 
-
 **Git
 [Pro Git](git-scm.com/book)  
+
 [Git browser tutorial]**(https://try.github.io)
 
-
-
-
 **Videos**
-1. Railscasts
+* Railscasts
+* Watch the free Tutsplus tutorial on Sublime
 
 
 ###Read code
+{% highlight ruby %}
+learn[5] # => Read code
+{% endhighlight%}
 Read good code. Start here
 **Ruby Docs**
 
+##write code
+{% highlight ruby %}
+learn[6] # => Write code
+{% endhighlight%}
 
-###write code
 Even if its bad. And it will be. Fork and contribute to repositories.
 [code here](https://github.com/matthewnewell)
 
-###ship code
-Use git and github and discover the miracle that is heroku.
+##Ship Code
+{% highlight ruby %}
+learn[7] # => Ship code
+{% endhighlight%}
+
+Use git and github and heroku.
 [experiments](#)
 
-###teach others
+##Teach
+{% highlight ruby %}
+learn[8] # => Teach
+{% endhighlight%}
 Helping others to learn is one of the best ways to learn an new competency. Blog about a new move, help a newbie, or teach a class. Its kind of like [rubber ducking](http://en.wikipedia.org/wiki/Rubber_duck_debugging) except with humans.
 
 __Example: Here's how to pass a block of code through a method__
