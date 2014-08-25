@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>The blog of Matthew Newell</title>
+ <title>The blog of Matt Newell</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-08-24T14:46:16-04:00</updated>
+ <updated>2014-08-25T18:20:19-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
-   <name>Matthew Newell</name>
-   <email>matthew.r.newell@usefulwebservice.com</email>
+   <name>Matt Newell</name>
+   <email>matt@usefulwebservice.com</email>
  </author>
 
  
@@ -134,24 +134,20 @@
  </entry>
  
  <entry>
-   <title>Tips For Future Me</title>
+   <title>Tips for Future Me</title>
    <link href="http://usefulwebservice.com/blog/2014/03/20/tips_for_future_me.html"/>
    <updated>2014-03-20T00:00:00-04:00</updated>
    <id>http://usefulwebservice.com/blog/2014/03/20/tips_for_future_me</id>
    <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;If I dont use a new move every day I will probably forget it. These are mostly tips to “future me”. &lt;/p&gt;
+  &lt;p&gt;If I dont use a new move every day I will probably forget it. &lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;twitter-bootstrap-tipsheet&quot;&gt;Twitter Bootstrap Tipsheet&lt;/h2&gt;
 &lt;ol&gt;
-  &lt;li&gt;“bundle exec rake assets:precompile” precompiles your stylesheet I think&lt;/li&gt;
+  &lt;li&gt;“bundle exec rake assets:precompile” precompiles your stylesheet &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;d3js-tipsheet&quot;&gt;D3.js Tipsheet&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;The Links&lt;/strong&gt; 
-&lt;a href=&quot;https://github.com/mbostock/d3/wiki&quot;&gt;D3 wiki&lt;/a&gt;
-&lt;a href=&quot;http://alignedleft.com/tutorials/d3&quot;&gt;Scott Murray’s D3 Book&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;local host commands: 
 python -m SimpleHTTPServer 8888 &amp;amp;
 Once this is running, go to http://localhost:8888/.&lt;/p&gt;

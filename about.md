@@ -17,7 +17,7 @@ A founder needs selective amnesia to handle the twists, turns, rejections, and p
 
 <figure align="center">
   <img src="/static/andrew_12.png">
-  <small>Andrew Luck leads the Colts from a 28-point deficit to an impropable wild-card win. <br>Of his three interceptions, <a href="http://usatoday.com/story/sports/nfl/2014/01/04/colts-chiefs-wild-card-playoffs-andrew-luck/4321311"> Luck said</a>, "You have to flush it, you have to forget about it".</small>
+  <small>Andrew Luck led the Colts from a 28-point deficit to an impropable wild-card win. <br>Of his three interceptions, <a href="http://usatoday.com/story/sports/nfl/2014/01/04/colts-chiefs-wild-card-playoffs-andrew-luck/4321311"> Luck said</a>, "You have to flush it, you have to forget about it".</small>
 </figure>
 <br>
 I prefer to focus on developing technical skills so that I can bootstrap my projects. 

@@ -1,24 +1,20 @@
 ---
 layout: post
-title: Tips For Future Me
+title: Tips for Future Me
 categories:
 - blog
 ---
 
->If I dont use a new move every day I will probably forget it. These are mostly tips to "future me". 
+>If I dont use a new move every day I will probably forget it. 
 
 
 Twitter Bootstrap Tipsheet
 --------------------------
-1. "bundle exec rake assets:precompile" precompiles your stylesheet I think
+1. "bundle exec rake assets:precompile" precompiles your stylesheet 
 
 
 D3.js Tipsheet
 --------------
-**The Links** 
-[D3 wiki](https://github.com/mbostock/d3/wiki)
-[Scott Murray's D3 Book](http://alignedleft.com/tutorials/d3)
-
 local host commands: 
 python -m SimpleHTTPServer 8888 &
 Once this is running, go to http://localhost:8888/.

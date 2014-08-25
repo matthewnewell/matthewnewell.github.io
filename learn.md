@@ -79,7 +79,11 @@ learn[4] # => Read books
 Subscribe to Rails Weekly newsletter
 
 **Cookbooks**
-1. Michael Hartl
+[Michael Hartl, Learn Rails](http://www.railstutorial.org/)
+
+**D3.Js**
+[D3 wiki](https://github.com/mbostock/d3/wiki)
+[Scott Murray's D3 Book](http://alignedleft.com/tutorials/d3)
 
 **Git
 [Pro Git](git-scm.com/book)  
