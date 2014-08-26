@@ -1,31 +1,48 @@
 ---
 layout: post
-title: AWS Gov Disrupts Everything Federal
+title: AWS GovCloud Disrupts Everything Federal
 categories:
 - blog
 ---
 
-Our government requires data to be secure. So secure in fact that it can be extremely expensive to establish and maintain a secure data environment. Few companies can afford to operate in this space and their services are almost always inferior to commercial cloud services.  
+##Summary
 
-Federal information assurance compliance almost always means products built for our government, including the communication services for the department of defense,  be more expensive and less sophisticated than commercial.
+* In August 2014, the Defense Information Systems Agency (DSIA) issued Amazon Web Service (AWS) GovCloud provisional authorization under the DOD Cloud Security Model at a 1-5 security impact level. 
+* The new authorization enables GovCloud and the DOD to move forward with application deployments processing controlled and FOUO unclassified information.
+* Government contractors embracing AWS GovCloud will enjoy significant competitive advantage on cost, technical, and information assurance compliance requirements.
 
-Its so important to keep bad people out that we keep innovation from getting in.   
+##Background
 
-In August 2014, Amazon Web Services became certified to process Fed 1 to x.  
+* AWS GovCloud is an isolated region dedicated entirely to U.S. government customers through a private connection routed to DOD’s network.
 
-Federal contracts thrive on inertia. The incumbent always has an advantage. However, the disruptive impact of A Cloud will be huge.  The comoditazation of web services and information assurance levels the playing field.
+* GovCloud is designed to meet US Government International Traffic in Arms Regulations (ITAR) and includes many additional requirements on top of what is required by the Federal Risk and Authorization Management Program (FedRAMP).
 
-Just like in commercial, agile startups can now compete with the bigs for government contracts. 
+##Case Study
 
--A one person system engineering consultant can render simulations on the cloud.
--Information exchange repositories will be as slick as dropbox
--MVPs will pop up quickly
--
- 
-Startups still lack the overhead to support complex contracting and and reporting requirements. And even though earned value is a farce, its not going away.  This favors the bigs. 
+NASA recently migrated 110 websites and applications to the AWS and AWS GovCloud including NASA.gov and their internal NASA Engineering Network, which holds 3 million engineering documents. 
 
-Of course, established contracts will be able to take advantage of Gov cloud. NASA did just that and saw costs drop by 40%.
+The new environment generated immediate cost savings of 40%. The platform is expected to reduce agency’s monthly operations and maintenance costs by around 25%, according to Roopangi Kadakia, NASA’s Chief Information Officer.
 
-The paradox of government contracting is that if you could cut your costs by 80%, would you? 
+##Opportunities
 
-Who’s gonna win? I’m going to bet on the hybrid. A person with one foot in defense and one foot in the open source met averse. 
+For the first time ever, government contractors serving the Depart of Defense have a cloud infrastructure equal to that of commercial industry.  Companies that embrace GovCloud will become significantly more competitive on technical solution, information assurance compliance, and operations and maintenance.
+
+##AWS GovCloud Application Use Cases
+
+* Enterprise Applications
+
+* High Performance Computing (HPC) and Analytics
+
+* Storage and Disaster Recovery
+
+* Web Applications
+
+##References
+
+[Amazon GovCloud Homepage](http://aws.amazon.com/govcloud-us/)
+
+[AWS Security](http://fcw.com/Articles/2014/08/21/News-in-brief-August-21.aspx), FCW: The Business of Federal Technology
+
+[Big Win for Amazon: First Provider Authorized to Handle Sensitive DOD Workloads in Cloud](www.nextgov.com/cloud-computing/2014/08/big-win-amazon-first-provider-authorized-handle-sensitive-dod-workloads/92069/), NextGov.com
+
+[Amazon deploys true-blue US GovCloud for secret arms data](www.theregister.co.uk/2011/08/17/amazon_government_defense_cloud/), The Register
