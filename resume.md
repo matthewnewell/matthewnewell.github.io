@@ -5,7 +5,7 @@ title: Projects
 
 Matt is happy to communicate accomplishments with current and prior employers upon request. However, much of this information could be construed as competition sensitive and he is reluctant to share online.  If you would like to get to know Matt better, scan the resume and then visit his portfolio site [Useful Web Service](/index.html). 
 
-Matt's ideal position combines his area expertise with Department of Defense projects with commercial best practices for cloud service development. His goal is to develop superior cloud services for the DoD and deploy them securely via [AWS GovCloud](/blog/2014/08/25/amazon_gov_disrupts.html).
+Matt's ideal position combines his area expertise with Department of Defense projects with commercial best practices for cloud service development. His goal is to build superior cloud services for the DoD and deploy them securely via [AWS GovCloud](/blog/2014/08/25/amazon_gov_disrupts.html).
 
 ***
 
@@ -26,7 +26,7 @@ Matt's ideal position combines his area expertise with Department of Defense pro
 
 ##January 2001 – Present; Indianapolis, Indiana 
 
-Performs Systems and Software Engineering Configuration Management and Mission Assurance for complex systems, most recently the [V22 Osprey](https://www.google.com/search?q=v22+osprey&espv=2&source=lnms&tbm=isch&sa=X&ei=8A76U9_FCcqeyASRzoJg&sqi=2&ved=0CAYQ_AUoAQ&biw=1440&bih=761) and [FBCB2](https://www.google.com/search?q=FBCB2&espv=2&source=lnms&tbm=isch&sa=X&ei=dQ_6U6OuOMX3yQS4-IHoDA&ved=0CAYQ_AUoAQ&biw=1440&bih=761). 
+Performs Systems and Software Engineering Configuration Management and Mission Assurance for complex systems, most recently the [V22 Osprey](https://www.google.com/search?q=v22+osprey&espv=2&source=lnms&tbm=isch&sa=X&ei=8A76U9_FCcqeyASRzoJg&sqi=2&ved=0CAYQ_AUoAQ&biw=1440&bih=761) and [FBCB2](https://www.google.com/search?q=FBCB2&espv=2&source=lnms&tbm=isch&sa=X&ei=dQ_6U6OuOMX3yQS4-IHoDA&ved=0CAYQ_AUoAQ&biw=1440&bih=761). Experience with CMMI, AS9100, and Six Sigma.
 
 #Media SuperCollider/OnChat
 
@@ -44,7 +44,7 @@ We started OnChat about four years before IMVU, Eric Ries's avatar based startup
 
 ##1995 – 1999 (4 years) Venice, California
 
-Back when Pixar was just a software company, Matt worked for two of the most innovative visual effects companies in the industry, Boss Films and Digital Domain. He helped produce ground breaking Computer Generated Imagery and Motion Capture for some really cool movies including True Lies, Interview with a Vampire, Apollo 13, Species, Outbreak, Starship Troopers, and Air Force One.
+Back when Pixar was just a software company, Matt worked for two of the most innovative visual effects companies in the industry: Boss Films and Digital Domain. He helped produce ground breaking Computer Generated Imagery and Motion Capture for some really cool movies including True Lies, Interview with a Vampire, Apollo 13, Species, Outbreak, Starship Troopers, and Air Force One.
 
 #Education
 

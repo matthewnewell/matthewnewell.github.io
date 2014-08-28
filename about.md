@@ -2,13 +2,13 @@
 layout: general
 title: About
 ---
-Useful Web Service is where Matthew matures software experiments into products. 
+Useful Web Service is where Matt matures software experiments into products. 
 
 I focus on developing competencies to collect, parse, and present information. My site has some [learning resources](learn.html) to support my opinion on how best to do this. Some of these views include:
 
 * *Client Hardware:* I prefer MacBook Air. When I have to use Windows, I add Cygwin for access to UNIX and the open source universe. 
 
-* *Development:* My text editor is Sublime with a tiny bit of vim. My shell is bash and I use git/hub for configuration management and collaboration. I process information with Ruby and Rails, blog with Octopress, and present text with Markdown as much as possible. I debug with pry and make things pretty with Bootstrap. I tinker with test driven development (TDD) and JavaScript and am infatuated with d3.js.
+* *Development:* My text editor is Sublime with a tiny bit of vim. My shell is bash and I use git/hub for configuration management and collaboration. I process information with Ruby and Rails, blog with Octopress, and present text with Markdown as much as possible. I debug with pry and make things pretty with Bootstrap. I tinker with test driven development (TDD) and JavaScript and am infatuated by d3.js.
 
 * *Deployment:* I manage domains at NameCheap and deploy with Heroku.
 
