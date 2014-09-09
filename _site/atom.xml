@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>The blog of Matt Newell</title>
+ <title>The blog of Useful Web Service</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-08-27T09:52:02-04:00</updated>
+ <updated>2014-09-08T19:55:27-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
-   <name>Matt Newell</name>
+   <name>Useful Web Service</name>
    <email>matt@usefulwebservice.com</email>
  </author>
 
@@ -209,12 +209,23 @@ Git Initial Remote Repository Setup&lt;/li&gt;
 
 &lt;ol&gt;
   &lt;li&gt;heroku pg:reset DATABASE (on local host, rake db:drop)&lt;/li&gt;
+  &lt;li&gt;heroku run rails console&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;irb(main)&amp;gt; ActiveRecord::Base.connection.tables.each {&lt;/td&gt;
+      &lt;td&gt;t&lt;/td&gt;
+      &lt;td&gt;ActiveRecord::Base.connection.reset_pk_sequence!(t) }&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;h2 id=&quot;jeckyll-github-pages-and-markdown&quot;&gt;Jeckyll, GitHub Pages, and Markdown&lt;/h2&gt;
 &lt;p&gt;This site is built with &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and lives on &lt;a href=&quot;http://www.github.com&quot;&gt;GitHub&lt;/a&gt;. Jekyll uses &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;, a text to HTML conversion tool for web writers. &lt;/p&gt;
 
-&lt;p&gt;To start Jekyll on the localhost, “jekyll serve”.&lt;/p&gt;
+&lt;p&gt;To start Jekyll on the localhost, “jekyll serve”. Even better, “jekyll serve –watch”&lt;/p&gt;
 
 &lt;h2 id=&quot;markdown-basics&quot;&gt;Markdown Basics&lt;/h2&gt;
 &lt;blockquote&gt;

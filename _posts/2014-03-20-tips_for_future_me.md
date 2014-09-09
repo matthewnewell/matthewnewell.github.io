@@ -46,6 +46,9 @@ Heroku Tipsheet   categories: tipsheet
 ---------------
 
 1. heroku pg:reset DATABASE (on local host, rake db:drop)
+2. heroku run rails console
+
+irb(main)> ActiveRecord::Base.connection.tables.each { |t|     ActiveRecord::Base.connection.reset_pk_sequence!(t) }
 
 
 
@@ -53,7 +56,7 @@ Jeckyll, GitHub Pages, and Markdown
 -----------------------------------
 This site is built with [Jekyll](http://jekyllrb.com/) and lives on [GitHub](http://www.github.com). Jekyll uses [Markdown](http://daringfireball.net/projects/markdown/), a text to HTML conversion tool for web writers. 
 
-To start Jekyll on the localhost, "jekyll serve".
+To start Jekyll on the localhost, "jekyll serve". Even better, "jekyll serve --watch"
 
 Markdown Basics
 --------------
