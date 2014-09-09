@@ -2,24 +2,24 @@
 layout: general
 title: About
 ---
-Useful Web Service is where [Matt](resume.html) matures software experiments into products. His projects sometimes have revenue objectives. At this time learning software develelopment technique and cloud service deployment options take priority over revenue generation.
+Useful Web Service is where Matt matures software experiments into products. His projects sometimes have revenue objectives. More often, learning software develelopment technique and cloud service deployment take priority over revenue generation.
 
 We focus on developing competencies to collect, parse, and present information. Our site has some [learning resources](learn.html) to support our opinion on how best to do this. Some of these views include:
 
-* *Client Hardware:* I prefer MacBook Air. When I have to use Windows, I add Cygwin for access to UNIX and the open source universe. 
+* *Client Hardware:* Matt prefers MacBook Air. When Matt have to use Windows, he adds Cygwin for access to UNIX and the dark side of the open source universe. 
 
-* *Development:* My text editor is Sublime with a tiny bit of vim. My shell is bash and I use git/hub for configuration management and collaboration. I process information with Ruby and Rails, blog with Octopress, and present text with Markdown as much as possible. I debug with pry and make things pretty with Bootstrap. I tinker with test driven development (TDD) and JavaScript and am infatuated by d3.js.
+* *Development:* Matt's text editor is Sublime with a tiny bit of vim. His shell is bash and he uses git/hub for configuration management and collaboration. Matt processes information with Ruby and Rails, blogs with Octopress, and presents text with Markdown as much as possible. He debugs with pry and make things pretty with Bootstrap. Matt tinkers with test driven development (TDD) and JavaScript and is infatuated by d3.js.
 
-* *Deployment:* I manage domains at NameCheap and deploy with Heroku.
+* *Deployment:* UWS manages domains at NameCheap and usually deploys with Heroku.
 
 #Projects
-A founder needs selective amnesia to handle the twists, turns, rejections, and pivots. And while I do enjoy a good roller coaster ride, the journey can take away from developing the things that create value in the first place. 
+A founder needs selective amnesia to handle the twists, turns, rejections, and pivots. Matt enjoys a good roller coaster ride, but feels the journey can sometimes take away the things that create value in the first place. 
 
 <div align="center">
   <img src="/static/andrew_12.png">
   <small>Andrew Luck led the Colts from a 28-point deficit to an impropable wild-card win. <br>Of his three interceptions, <a href="http://usatoday.com/story/sports/nfl/2014/01/04/colts-chiefs-wild-card-playoffs-andrew-luck/4321311"> Luck said</a>, "You have to flush it, you have to forget about it".</small>
 </div>
 <br>
-I prefer to focus on developing technical skills so that I can bootstrap my projects. I enjoy the customer discovery process but my key predecessor is learning software and cloud deployment options. This is the best way to serve my customers. Listen, learn, apply.
+Matt prefers to focus on developing technical skills so that he can bootstrap UWS projects. He enjoys the customer discovery process but his priority is learning software and cloud deployment. 
 
-My goals are to learn, share, and to have fun building useful things with interesting people. You may view a copy of my resume [here](/resume.html).
+Matt's goals are to learn, share, and to have fun building useful things with interesting people. He also likes to refer to himself in the third person. View a copy of Matt's resume [here](/resume.html).
