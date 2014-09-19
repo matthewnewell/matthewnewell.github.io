@@ -6,6 +6,8 @@ title: Projects
 #[team FBO](http://www.teamfbo.com) 
 [teamfbo.com](http://www.teamfbo.com)
 
+teamFBO lowers the cost of finding federal business opportunities. Teams crowd source new business leads and then blog on why the lead may be a fit for their organization. Its kind of like a Facebook feed for companies that compete in the federal business space.
+
 ![Alt text](/static/teamFBO.png)
 
 * Efficient: Evaluate more qualified opportunities in far less time

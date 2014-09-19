@@ -26,28 +26,26 @@ categories:
   until knowledgable_and_productive
     learn[2..-1].each do |practice|
       practice
-      practice
-      practice
     end
   end
 
 {% endhighlight %}
 
-##Pick a Development Track
+###Pick a Development Track
 {% highlight ruby %}
 learn[0] # => Pick a development track
 {% endhighlight%}
 
   My areas of interest are Ruby, Rails, Git/Hub, Heroku & AWS, Markdown, JavaScript, and UNIX based development and production environments.
 
-##Learn How to Learn
+###Learn How to Learn
 {% highlight ruby %}
 learn[1] # => Learn how to Learn
 {% endhighlight%}
 
 The podcast [Ruby Rogues Episode 131 "How to Learn"](rubyrogues.com/131-rr-how-to-learn) is amazing. Its worth a listen even if you are not into Ruby.
 
-##Listen to Smart People
+###Listen to Smart People
 {% highlight ruby %}
 learn[2] # => Listen to smart people
 {% endhighlight%}
@@ -58,7 +56,7 @@ learn[2] # => Listen to smart people
 * Follow smart people on GitHub and read their blogs and fork their repositories.  I am a fan of [Matt Swanson](http://www.mdswanson.com/). My site is based on his template [Lagom](https://github.com/swanson/lagom).
 * Subscribe to some podcasts. I like [Ruby Rogues](www.rubyrogues.com).
 
-##Use Interactive Resources
+###Use Interactive Resources
 {% highlight ruby %}
 learn[3] # => Use interactive resources
 {% endhighlight%}
@@ -83,7 +81,8 @@ My two favorite flavors are __Browser Based Learning__ and __Test Driven Develop
 
 * exercism.io
 
-##Read Books _and_ Online Media
+
+###Read Books _and_ Online Media
 {% highlight ruby %}
 learn[4] # => Read books
 {% endhighlight%}
@@ -111,24 +110,23 @@ Subscribe to Rails Weekly newsletter
 {% highlight ruby %}
 learn[5] # => Read code
 {% endhighlight%}
-Read good code. Start here
-**Ruby Docs**
+Read good code. [Start here](http://ruby-doc.org/)
 
-##Write Code
+###Write Code
 {% highlight ruby %}
 learn[6] # => Write code
 {% endhighlight%}
 
 Write lots of code. Even if its bad. Especially when its bad. Fork and contribute to repositories. [Like mine](https://github.com/matthewnewell).
 
-##Ship Code
+###Ship Code
 {% highlight ruby %}
 learn[7] # => Ship code
 {% endhighlight%}
 
 Writing code is fun but seeing it come alive on the cloud is a blast. The barrier to entry is low and the upside endless. I deploy to Amazon Web Service by way of Heroku.
 
-##Teach
+###Teach
 {% highlight ruby %}
 learn[8] # => Teach
 {% endhighlight%}

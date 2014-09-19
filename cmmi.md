@@ -6,15 +6,14 @@ title: Projects
 #[CMMI Club](http://www.cmmi.club/process_areas) 
 [CMMI.Club](http://www.cmmi.club/process_areas)
 
-The Capability Maturity Model Integrated (CMMI) is a collection of best practices that help organizations to improve their processes. Process enables leveraging of resources and provides a way to incorporate knowledge of how to do things better.
+Reference library for the CMMI. The model's [framework interactions](http://www.cmmi.club/process_areas) are much easier to understand when the presentation is not static.
 
 <insert_d3>
 </insert_d3>
-My plan with CMMI.club is to create project accounts where organizations can maintain appraisal evidence online. Eventually, I would like to enable organizations to establish and maintain policy that traces directly to the CMMI standard from within the site. 
 
-This would significantly lower the cost of CMMI appraisals and organizational policy compliance. 
+CMMI compliance precludes many small businesses from being eligible for federal competition. I envision CMMI.club as a suite of services that help small business establish and maintain compliance at a very low cost.  
 
-If CMMI compliance appraisals remain relevant (current implementations are expensive and provide marginal value), the CMMI.club might have a bright future.
+Low cost compliance will increase competition for federal contracts. This benefits the taxpayer, warfighter, and federal procurement expenditure. 
 
 *The animation is from Mike Bostok's d3.js [bl.ocks.org](www.bl.ocks.org)*
 

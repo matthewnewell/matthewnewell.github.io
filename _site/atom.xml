@@ -4,7 +4,7 @@
  <title>The blog of Useful Web Service</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-09-19T00:27:32-04:00</updated>
+ <updated>2014-09-19T11:02:08-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
    <name>Useful Web Service</name>
@@ -36,27 +36,25 @@
   &lt;span class=&quot;k&quot;&gt;until&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;knowledgable_and_productive&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;practice&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;practice&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;practice&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;practice&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;pick-a-development-track&quot;&gt;Pick a Development Track&lt;/h2&gt;
+&lt;h3 id=&quot;pick-a-development-track&quot;&gt;Pick a Development Track&lt;/h3&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Pick a development track&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;My areas of interest are Ruby, Rails, Git/Hub, Heroku &amp;amp; AWS, Markdown, JavaScript, and UNIX based development and production environments.&lt;/p&gt;
 
-&lt;h2 id=&quot;learn-how-to-learn&quot;&gt;Learn How to Learn&lt;/h2&gt;
+&lt;h3 id=&quot;learn-how-to-learn&quot;&gt;Learn How to Learn&lt;/h3&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Learn how to Learn&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The podcast &lt;a href=&quot;rubyrogues.com/131-rr-how-to-learn&quot;&gt;Ruby Rogues Episode 131 “How to Learn”&lt;/a&gt; is amazing. Its worth a listen even if you are not into Ruby.&lt;/p&gt;
 
-&lt;h2 id=&quot;listen-to-smart-people&quot;&gt;Listen to Smart People&lt;/h2&gt;
+&lt;h3 id=&quot;listen-to-smart-people&quot;&gt;Listen to Smart People&lt;/h3&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Listen to smart people&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -69,7 +67,7 @@ You might want to try &lt;a href=&quot;https://twitter.com/kytrinyx&quot;&gt;@ky
   &lt;li&gt;Subscribe to some podcasts. I like &lt;a href=&quot;www.rubyrogues.com&quot;&gt;Ruby Rogues&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;use-interactive-resources&quot;&gt;Use Interactive Resources&lt;/h2&gt;
+&lt;h3 id=&quot;use-interactive-resources&quot;&gt;Use Interactive Resources&lt;/h3&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Use interactive resources&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -108,7 +106,7 @@ You might want to try &lt;a href=&quot;https://twitter.com/kytrinyx&quot;&gt;@ky
   &lt;li&gt;exercism.io&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;read-books-and-online-media&quot;&gt;Read Books &lt;em&gt;and&lt;/em&gt; Online Media&lt;/h2&gt;
+&lt;h3 id=&quot;read-books-and-online-media&quot;&gt;Read Books &lt;em&gt;and&lt;/em&gt; Online Media&lt;/h3&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Read books&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -136,24 +134,23 @@ You might want to try &lt;a href=&quot;https://twitter.com/kytrinyx&quot;&gt;@ky
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Read code&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Read good code. Start here
-&lt;strong&gt;Ruby Docs&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Read good code. &lt;a href=&quot;http://ruby-doc.org/&quot;&gt;Start here&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;write-code&quot;&gt;Write Code&lt;/h2&gt;
+&lt;h3 id=&quot;write-code&quot;&gt;Write Code&lt;/h3&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Write code&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Write lots of code. Even if its bad. Especially when its bad. Fork and contribute to repositories. &lt;a href=&quot;https://github.com/matthewnewell&quot;&gt;Like mine&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;ship-code&quot;&gt;Ship Code&lt;/h2&gt;
+&lt;h3 id=&quot;ship-code&quot;&gt;Ship Code&lt;/h3&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Ship code&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Writing code is fun but seeing it come alive on the cloud is a blast. The barrier to entry is low and the upside endless. I deploy to Amazon Web Service by way of Heroku.&lt;/p&gt;
 
-&lt;h2 id=&quot;teach&quot;&gt;Teach&lt;/h2&gt;
+&lt;h3 id=&quot;teach&quot;&gt;Teach&lt;/h3&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Teach&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
