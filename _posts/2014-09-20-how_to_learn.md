@@ -1,7 +1,11 @@
 ---
-layout: general
-title: Learn
+layout: post
+title: How to Learn
+categories:
+- blog
 ---
+
+# 
 
 {% highlight ruby %}
 
@@ -146,8 +150,4 @@ end
 
 meet_us(family) {family.each {|f| puts f}}
 {% endhighlight %}
-
-
-
-
 

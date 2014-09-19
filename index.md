@@ -10,10 +10,10 @@ title: Useful Web Service
 * [Shop July Twenty Two:](july_twenty_two.html) Botique retail
 
 ###Presentations
-* [Ruby Newbie:](http://www.slideshare.net/matthewnewell/ruby-newbie-26183481) First year with ruby & rails
+* [Learning Ruby:](http://www.slideshare.net/matthewnewell/ruby-newbie-26183481) My pivot from suit to nerd
 * [Demonstration Property](http://www.slideshare.net/matthewnewell/wildlife-and-watershed-friendly-residential-landscape): Environmentally responsible residential landscape
 * [Watershed awareness article](http://www.townepost.com/geist/spring-fertilization-tips-geist-watershed-alliance/): The solution to pollution is **not** dilution
-* [Geist Watershed Community Meeting:](http://www.slideshare.net/matthewnewell/geistfall-creek-watershed-public-meeting) Watershed awareness public outreach
+* [Meet Geist Watershed:](http://www.slideshare.net/matthewnewell/geistfall-creek-watershed-public-meeting) Watershed awareness public outreach
 
 <div id="home">
   <h3><i class="icon-bookmark"></i> Blog</h3>

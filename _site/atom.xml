@@ -4,13 +4,180 @@
  <title>The blog of Useful Web Service</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-09-08T19:55:27-04:00</updated>
+ <updated>2014-09-19T00:27:32-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
    <name>Useful Web Service</name>
    <email>matt@usefulwebservice.com</email>
  </author>
 
+ 
+ <entry>
+   <title>How to Learn</title>
+   <link href="http://usefulwebservice.com/blog/2014/09/20/how_to_learn.html"/>
+   <updated>2014-09-20T00:00:00-04:00</updated>
+   <id>http://usefulwebservice.com/blog/2014/09/20/how_to_learn</id>
+   <content type="html">&lt;h1 id=&quot;section&quot;&gt;&lt;/h1&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;  &lt;span class=&quot;n&quot;&gt;knowledgable_and_productive&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;pick a development track&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;learn how to learn&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;listen to smart people&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;use interactive resources&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;read books&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;read code&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;write code&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;ship code&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;teach&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;until&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;knowledgable_and_productive&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;practice&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;practice&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;practice&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;practice&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;pick-a-development-track&quot;&gt;Pick a Development Track&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Pick a development track&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;My areas of interest are Ruby, Rails, Git/Hub, Heroku &amp;amp; AWS, Markdown, JavaScript, and UNIX based development and production environments.&lt;/p&gt;
+
+&lt;h2 id=&quot;learn-how-to-learn&quot;&gt;Learn How to Learn&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Learn how to Learn&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The podcast &lt;a href=&quot;rubyrogues.com/131-rr-how-to-learn&quot;&gt;Ruby Rogues Episode 131 “How to Learn”&lt;/a&gt; is amazing. Its worth a listen even if you are not into Ruby.&lt;/p&gt;
+
+&lt;h2 id=&quot;listen-to-smart-people&quot;&gt;Listen to Smart People&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Listen to smart people&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Go to &lt;a href=&quot;www.meetup.com&quot;&gt;meetups&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Follow smart people on Twitter. 
+You might want to try &lt;a href=&quot;https://twitter.com/kytrinyx&quot;&gt;@kytrinyx&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/sandimetz&quot;&gt;@sandimetz&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Follow smart people on GitHub and read their blogs and fork their repositories.  I am a fan of &lt;a href=&quot;http://www.mdswanson.com/&quot;&gt;Matt Swanson&lt;/a&gt;. My site is based on his template &lt;a href=&quot;https://github.com/swanson/lagom&quot;&gt;Lagom&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Subscribe to some podcasts. I like &lt;a href=&quot;www.rubyrogues.com&quot;&gt;Ruby Rogues&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;use-interactive-resources&quot;&gt;Use Interactive Resources&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Use interactive resources&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;My two favorite flavors are &lt;strong&gt;Browser Based Learning&lt;/strong&gt; and &lt;strong&gt;Test Driven Development Learning&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Browser Based Learning&lt;/strong&gt; requires no client configuration. (Client configuration is every newbies kryptonite).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;TDD Learning&lt;/strong&gt; secretly teaches you how to write tests while you are learning a new software concept.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Browser Based Learning Picks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ruby Monk&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Code Academy&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tutsplus&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thoutbot?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;TDD Learning&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;exercism.io&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;read-books-and-online-media&quot;&gt;Read Books &lt;em&gt;and&lt;/em&gt; Online Media&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Read books&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Subscribe to Rails Weekly newsletter&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cookbooks&lt;/strong&gt;
+&lt;a href=&quot;http://www.railstutorial.org/&quot;&gt;Michael Hartl, Learn Rails&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;D3.Js&lt;/strong&gt;
+&lt;a href=&quot;https://github.com/mbostock/d3/wiki&quot;&gt;D3 wiki&lt;/a&gt;
+&lt;a href=&quot;http://alignedleft.com/tutorials/d3&quot;&gt;Scott Murray’s D3 Book&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;**Git
+&lt;a href=&quot;git-scm.com/book&quot;&gt;Pro Git&lt;/a&gt;  &lt;/p&gt;
+
+&lt;p&gt;[Git browser tutorial]**(https://try.github.io)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Videos&lt;/strong&gt;
+* Railscasts
+* Watch the free Tutsplus tutorial on Sublime&lt;/p&gt;
+
+&lt;h3 id=&quot;read-code&quot;&gt;Read Code&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Read code&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Read good code. Start here
+&lt;strong&gt;Ruby Docs&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;write-code&quot;&gt;Write Code&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Write code&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Write lots of code. Even if its bad. Especially when its bad. Fork and contribute to repositories. &lt;a href=&quot;https://github.com/matthewnewell&quot;&gt;Like mine&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ship-code&quot;&gt;Ship Code&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Ship code&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Writing code is fun but seeing it come alive on the cloud is a blast. The barrier to entry is low and the upside endless. I deploy to Amazon Web Service by way of Heroku.&lt;/p&gt;
+
+&lt;h2 id=&quot;teach&quot;&gt;Teach&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Teach&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Helping others to learn is one of the best ways to learn an new competency. Blog about a new move, help a newbie, or teach a class. Its kind of like &lt;a href=&quot;http://en.wikipedia.org/wiki/Rubber_duck_debugging&quot;&gt;rubber ducking&lt;/a&gt; except with humans.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;heres-how-to-pass-a-block-of-code-through-a-method&quot;&gt;Here’s how to pass a block of code through a method&lt;/h2&gt;
+
+&lt;p&gt;Learn more about this at &lt;a href=&quot;https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas&quot;&gt;RubyMonk.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Matt&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Dana&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Lucy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Bode&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;meet_us&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Meet our family of &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fam&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;meet_us&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>AWS GovCloud Disrupts Everything Federal</title>
@@ -158,7 +325,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-&lt;p&gt;Inspired by &lt;a href=&quot;http://habtmexexample.herokuapp.com/instructions&quot;&gt;has_and_belongs_to_many relationship in Rails 4.x&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Inspired by &lt;a href=&quot;http://habtmexample.herokuapp.com/instructions&quot;&gt;has_and_belongs_to_many relationship in Rails 4.x&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The scenario is based on the example on &lt;a href=&quot;guides.rubyonrails.org/association_basics.html#the-has-many-through-association&quot;&gt;guides.rubyonrails.org&lt;/a&gt;&lt;/p&gt;
 </content>

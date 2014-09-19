@@ -3,8 +3,8 @@ layout: default
 title: Projects
 ---
 
-#[CMMI Club](http://www.cmmi.club) 
-[CMMI.Club](http://www.cmmi.club)
+#[CMMI Club](http://www.cmmi.club/process_areas) 
+[CMMI.Club](http://www.cmmi.club/process_areas)
 
 The Capability Maturity Model Integrated (CMMI) is a collection of best practices that help organizations to improve their processes. Process enables leveraging of resources and provides a way to incorporate knowledge of how to do things better.
 

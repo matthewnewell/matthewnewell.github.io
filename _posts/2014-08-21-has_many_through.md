@@ -96,6 +96,6 @@ patient_sue.appointments.first.physician.name  #=>"Dr Fred"
 
 References
 ---------
-Inspired by [has_and_belongs_to_many relationship in Rails 4.x](http://habtmexexample.herokuapp.com/instructions).
+Inspired by [has_and_belongs_to_many relationship in Rails 4.x](http://habtmexample.herokuapp.com/instructions).
 
 The scenario is based on the example on [guides.rubyonrails.org](guides.rubyonrails.org/association_basics.html#the-has-many-through-association)
