@@ -5,7 +5,7 @@ categories:
 - blog
 ---
 
-# 
+Lessons learned about learning
 
 {% highlight ruby %}
 
