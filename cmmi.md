@@ -15,7 +15,7 @@ CMMI compliance precludes many small businesses from being eligible for federal 
 
 Low cost compliance will increase competition for federal contracts. This benefits the taxpayer, warfighter, and federal procurement expenditure. 
 
-That said, the CMMI is for established organizations to incrementally improve process. It is not an appropriate framework for invention. It is a framework for in-breeding.  
+That said, the CMMI is for established organizations to incrementally improve process. It is not an appropriate framework for invention.  
 
 *The animation is from Mike Bostok's d3.js [bl.ocks.org](www.bl.ocks.org)*
 
