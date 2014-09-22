@@ -4,7 +4,7 @@
  <title>The blog of Useful Web Service</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-09-19T11:02:08-04:00</updated>
+ <updated>2014-09-22T10:14:00-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
    <name>Useful Web Service</name>
@@ -17,7 +17,7 @@
    <link href="http://usefulwebservice.com/blog/2014/09/20/how_to_learn.html"/>
    <updated>2014-09-20T00:00:00-04:00</updated>
    <id>http://usefulwebservice.com/blog/2014/09/20/how_to_learn</id>
-   <content type="html">&lt;h1 id=&quot;section&quot;&gt;&lt;/h1&gt;
+   <content type="html">&lt;p&gt;Lessons learned about learning&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;  &lt;span class=&quot;n&quot;&gt;knowledgable_and_productive&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
 
