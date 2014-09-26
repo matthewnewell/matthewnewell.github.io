@@ -63,23 +63,26 @@ learn[3] # => Use interactive resources
 
 My two favorite flavors are __Browser Based Learning__ and __Test Driven Development Learning__. 
 
-* __Browser Based Learning__ requires no client configuration. (Client configuration is every newbies kryptonite).
+* __Browser Based Learning__ requires no client configuration. Client configuration is newbie kryptonite.
 
 * __TDD Learning__ secretly teaches you how to write tests while you are learning a new software concept.
 
 **Browser Based Learning Picks**
 
-* Ruby Monk
+* Code School
 
 * Code Academy
 
 * Tutsplus
 
-* Thoutbot?
+[Try Git](https://try.github.io)
+
 
 **TDD Learning**
 
 * exercism.io
+
+* Ruby Monk
 
 
 ###Read Books _and_ Online Media
@@ -98,8 +101,6 @@ Subscribe to Rails Weekly newsletter
 
 **Git
 [Pro Git](git-scm.com/book)  
-
-[Git browser tutorial]**(https://try.github.io)
 
 **Videos**
 * Railscasts
@@ -130,7 +131,7 @@ Writing code is fun but seeing it come alive on the cloud is a blast. The barrie
 {% highlight ruby %}
 learn[8] # => Teach
 {% endhighlight%}
-Helping others to learn is one of the best ways to learn an new competency. Blog about a new move, help a newbie, or teach a class. Its kind of like [rubber ducking](http://en.wikipedia.org/wiki/Rubber_duck_debugging) except with humans.
+Helping others to learn is one of the best ways to learn an new competency. Blog about a new move, help a newbie, or teach a class. Its kind of like [rubber ducking](http://en.wikipedia.org/wiki/Rubber_duck_debugging) with humans.
 
 __Example__
 

@@ -4,7 +4,7 @@
  <title>The blog of Useful Web Service</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-09-22T10:14:00-04:00</updated>
+ <updated>2014-09-25T20:41:29-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
    <name>Useful Web Service</name>
@@ -76,7 +76,7 @@ You might want to try &lt;a href=&quot;https://twitter.com/kytrinyx&quot;&gt;@ky
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Browser Based Learning&lt;/strong&gt; requires no client configuration. (Client configuration is every newbies kryptonite).&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Browser Based Learning&lt;/strong&gt; requires no client configuration. Client configuration is newbie kryptonite.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;TDD Learning&lt;/strong&gt; secretly teaches you how to write tests while you are learning a new software concept.&lt;/p&gt;
@@ -87,7 +87,7 @@ You might want to try &lt;a href=&quot;https://twitter.com/kytrinyx&quot;&gt;@ky
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Ruby Monk&lt;/p&gt;
+    &lt;p&gt;Code School&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Code Academy&lt;/p&gt;
@@ -95,15 +95,19 @@ You might want to try &lt;a href=&quot;https://twitter.com/kytrinyx&quot;&gt;@ky
   &lt;li&gt;
     &lt;p&gt;Tutsplus&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Thoutbot?&lt;/p&gt;
-  &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://try.github.io&quot;&gt;Try Git&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;TDD Learning&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;exercism.io&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;exercism.io&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ruby Monk&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;read-books-and-online-media&quot;&gt;Read Books &lt;em&gt;and&lt;/em&gt; Online Media&lt;/h3&gt;
@@ -122,8 +126,6 @@ You might want to try &lt;a href=&quot;https://twitter.com/kytrinyx&quot;&gt;@ky
 
 &lt;p&gt;**Git
 &lt;a href=&quot;git-scm.com/book&quot;&gt;Pro Git&lt;/a&gt;  &lt;/p&gt;
-
-&lt;p&gt;[Git browser tutorial]**(https://try.github.io)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Videos&lt;/strong&gt;
 * Railscasts
@@ -155,7 +157,7 @@ You might want to try &lt;a href=&quot;https://twitter.com/kytrinyx&quot;&gt;@ky
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Teach&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Helping others to learn is one of the best ways to learn an new competency. Blog about a new move, help a newbie, or teach a class. Its kind of like &lt;a href=&quot;http://en.wikipedia.org/wiki/Rubber_duck_debugging&quot;&gt;rubber ducking&lt;/a&gt; except with humans.&lt;/p&gt;
+&lt;p&gt;Helping others to learn is one of the best ways to learn an new competency. Blog about a new move, help a newbie, or teach a class. Its kind of like &lt;a href=&quot;http://en.wikipedia.org/wiki/Rubber_duck_debugging&quot;&gt;rubber ducking&lt;/a&gt; with humans.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
 

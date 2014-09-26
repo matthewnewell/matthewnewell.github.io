@@ -3,13 +3,17 @@ layout: general
 title: About
 ---
 
-Our mission is to lower barriers to enter and compete in the federal business opportunity space.
+>You never change things by fighting the existing reality. <br>
+To change something, <br> build a new model that makes the existing model obsolete.<br>
+-R. Buckminister Fuller
 
-Competition benefits the taxpayer, our federal government, and our warfighters. 
+Our mission is to lower barriers to enter and compete in the federal business space.
+
+More competitive federal procurement benefits the taxpayer, our federal government, and our warfighters. 
 
 We apply common commercial concepts, products, and services such as lean startup, open source software development, and cloud migration services to the federal business space. 
 
-We value transparency, collaboration, and invention. We value value.
+We value transparency, collaboration, and invention. <br>We value people and things that create value.
 
 *matt@usefulwebservice.com*
 

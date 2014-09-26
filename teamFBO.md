@@ -6,7 +6,9 @@ title: Projects
 #[team FBO](http://www.teamfbo.com) 
 [teamfbo.com](http://www.teamfbo.com)
 
-teamFBO lowers the cost of finding federal business opportunities. Teams crowd source new business leads and then blog on why the lead may be a fit for their organization.
+Ten fold reduction in time spent identifying federal business opportunities. 
+
+Teams crowd source new business leads and then blog on why the lead may be a fit for their organization.
 
 ![Alt text](/static/teamFBO.png)
 

@@ -6,16 +6,14 @@ title: Projects
 #[CMMI Club](http://www.cmmi.club/process_areas) 
 [CMMI.Club](http://www.cmmi.club/process_areas)
 
-Reference library for the CMMI. The model's [framework interactions](http://www.cmmi.club/process_areas) are much easier to understand when the presentation is not static.
+ Reference library for the CMMI. The model's [framework interactions](http://www.cmmi.club/process_areas) are much easier to understand when the presentation is dynamic.
 
 <insert_d3>
 </insert_d3>
 
 CMMI compliance precludes many small businesses from being eligible for federal competition. I envision CMMI.club as a suite of services that help small business establish and maintain compliance at a very low cost.  
 
-Low cost compliance will increase competition for federal contracts. This benefits the taxpayer, warfighter, and federal procurement expenditure. 
-
-That said, the CMMI is for established organizations to incrementally improve process. It is not an appropriate framework for invention.  
+>The CMMI is for established organizations to incrementally improve process (1 to n). It is not an appropriate framework for invention (0 to 1). 
 
 *The animation is from Mike Bostok's d3.js [bl.ocks.org](www.bl.ocks.org)*
 
