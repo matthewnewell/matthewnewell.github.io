@@ -10,5 +10,5 @@ To change something, build a new model that makes the existing model obsolete.<b
 We value transparency, collaboration, and invention. <br>
 We value people that create things that produce value.
 
-*matt@usefulwebservice.com*
+*matt@usefulwebservice.com, aka 'We'*
 

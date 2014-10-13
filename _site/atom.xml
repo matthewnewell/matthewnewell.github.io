@@ -4,7 +4,7 @@
  <title>The blog of Useful Web Service</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2014-09-28T06:13:40-04:00</updated>
+ <updated>2014-10-13T13:12:07-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
    <name>Useful Web Service</name>
@@ -17,7 +17,7 @@
    <link href="http://usefulwebservice.com/blog/2014/09/25/refactor-rake.html"/>
    <updated>2014-09-25T00:00:00-04:00</updated>
    <id>http://usefulwebservice.com/blog/2014/09/25/refactor-rake</id>
-   <content type="html">&lt;p&gt;The Indianapolis Ruby Users Group &lt;a href=&quot;www.indy.rb&quot;&gt;Indy.rb&lt;/a&gt; hosts a monthly hack night. Format is bring a problem and/or help someone solve a problem. I was lucky enough to work with &lt;a href=&quot;https://twitter.com/unixmonkey&quot;&gt;@unixmonkey&lt;/a&gt; on the following refactor. &lt;/p&gt;
+   <content type="html">&lt;p&gt;The Indianapolis Ruby Users Group (&lt;a href=&quot;www.indy.rb&quot;&gt;Indy.rb&lt;/a&gt;) hosts a monthly hack night. Format is bring a problem and/or help someone solve a problem. I was lucky enough to work with &lt;a href=&quot;https://twitter.com/unixmonkey&quot;&gt;@unixmonkey&lt;/a&gt; on the following refactor. &lt;/p&gt;
 
 &lt;h2 id=&quot;the-setup&quot;&gt;The Setup&lt;/h2&gt;
 
@@ -25,7 +25,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;Over five days old&lt;/li&gt;
-  &lt;li&gt;No team evaluation of the row has an &lt;code&gt;evaluation_value&lt;/code&gt; greater than one&lt;/li&gt;
+  &lt;li&gt;No team evaluation of the row has an &lt;code&gt;evaluation_code_id&lt;/code&gt; greater than one&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The original rake task works correctly but requires two iterations to evaluate all rows. I need it to work in one iteration.&lt;/p&gt;
@@ -53,11 +53,11 @@
 
 &lt;ul&gt;
   &lt;li&gt;Look at the shape of the code. Lots of indentations. &lt;/li&gt;
-  &lt;li&gt;The code does a lot but it is difficult to understand exactly what it is doing. In ruby, a method should really only do one thing (&lt;a href=&quot;http://c2.com/cgi/wiki?SingleResponsibilityPrinciple&quot;&gt;Single Responsibility Principle&lt;/a&gt;). &lt;/li&gt;
+  &lt;li&gt;The code does a lot but it is difficult to understand exactly what it is doing. In ruby, a method should really only do one thing (&lt;a href=&quot;http://www.slideshare.net/anildigital/solid-design-principles-in-ruby&quot;&gt;Single Responsibility Principle&lt;/a&gt;. &lt;/li&gt;
   &lt;li&gt;Recommend we extract the methods and then re-evaluate what the code is doing.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;but-first-some-syntax-cleanup&quot;&gt;But first, some syntax cleanup&lt;/h2&gt;
+&lt;h2 id=&quot;syntax-cleanup&quot;&gt;Syntax cleanup&lt;/h2&gt;
 
 &lt;p&gt;These two lines mean the same thing. The &lt;code&gt;evaluations.present?&lt;/code&gt; is more expressive. &lt;/p&gt;
 
@@ -69,16 +69,16 @@
 
 &lt;h2 id=&quot;refactor&quot;&gt;Refactor&lt;/h2&gt;
 
-&lt;p&gt;We extracted the methods out of &lt;code&gt;.rake&lt;/code&gt; and into a new file &lt;code&gt;/app/models/concerns/purge_opportunities.rb&lt;/code&gt;. During the extract, Dave asked me to explain what each block of code was doing. When I was finally able to articulate clearly, we named the method according to my verbal description. We also used a style convention of &lt;code&gt;?&lt;/code&gt; for conditional methods (return true or false) and &lt;code&gt;!&lt;/code&gt; for methods that change data.&lt;/p&gt;
+&lt;p&gt;We extracted the methods out of &lt;code&gt;.rake&lt;/code&gt; and into a new file &lt;code&gt;/app/models/concerns/purge_opportunities.rb&lt;/code&gt;. During the extract, Dave asked me to explain what each block of code was doing. When I was able to articulate clearly, we named the method according to my verbal description. We also used a style convention of &lt;code&gt;?&lt;/code&gt; for conditional methods (return true or false) and &lt;code&gt;!&lt;/code&gt; for methods that change data.&lt;/p&gt;
 
-&lt;p&gt;One block was eliminited in its entirity with a database select statement:&lt;/p&gt;
+&lt;p&gt;One block was eliminited in its entirity with a select statement:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;opportunities&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Opportunity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;all&lt;/span&gt; 
 &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;today&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opportunity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post_date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;Opportunity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;post_date &amp;lt; ?&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;days&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ago&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Here is the refactored code.&lt;/p&gt;
+&lt;p&gt;Here is the refactored code in &lt;code&gt;purge_opportunities.rb&lt;/code&gt;. Much more expressive and easier to understand. And test.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PurgeOpportunities&lt;/span&gt;
 
@@ -124,6 +124,14 @@
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
+&lt;p&gt;We simplified the &lt;code&gt;rake&lt;/code&gt; task to create a PurgOpportunity object as follows:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:clean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:environment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#heroku scheduler run this every 1 days&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;purger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PurgeOpportunities&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; 
+  &lt;span class=&quot;n&quot;&gt;purger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;purge_old_and_never_evaluated!&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h2 id=&quot;tests&quot;&gt;Tests&lt;/h2&gt;
 
 &lt;p&gt;Now that we had a properly structured object, we were able to write some tests in &lt;code&gt;/app/tests/models/purge_opportunities_test.rb&lt;/code&gt;.&lt;/p&gt;
@@ -156,9 +164,9 @@
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;Dave took three hours out of his Tuesday evening to help a casual acquaintance write better code. This culture of helping others should not surprise rubyists. But its a special thing. Its people that make ruby powerful. &lt;/p&gt;
+&lt;p&gt;Dave took three hours out of his Tuesday evening to help a casual acquaintance write better code. Indy.rb’s culture of helping others get better should not surprise rubyists. But its a special thing. And its what make so ruby powerful. &lt;/p&gt;
 
-&lt;p&gt;I look forward to the day when I get to help someone else.&lt;/p&gt;
+&lt;p&gt;I look forward to the day when I get to help someone else get better. &lt;/p&gt;
 
 </content>
  </entry>

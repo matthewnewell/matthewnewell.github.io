@@ -32,7 +32,7 @@
   </a>
   
   <div align="center">
-    <a href="/about.html">About Us</a> 
+    <a href="/about.html">About</a> 
   </div>
   <hr/>
   <div>
@@ -90,7 +90,7 @@
 <h1 class="title">Refactoring a Rake Task</h1>
 
 <div id="post">
-  <p>The Indianapolis Ruby Users Group <a href="www.indy.rb">Indy.rb</a> hosts a monthly hack night. Format is bring a problem and/or help someone solve a problem. I was lucky enough to work with <a href="https://twitter.com/unixmonkey">@unixmonkey</a> on the following refactor. </p>
+  <p>The Indianapolis Ruby Users Group (<a href="www.indy.rb">Indy.rb</a>) hosts a monthly hack night. Format is bring a problem and/or help someone solve a problem. I was lucky enough to work with <a href="https://twitter.com/unixmonkey">@unixmonkey</a> on the following refactor. </p>
 
 <h2 id="the-setup">The Setup</h2>
 
@@ -98,7 +98,7 @@
 
 <ul>
   <li>Over five days old</li>
-  <li>No team evaluation of the row has an <code>evaluation_value</code> greater than one</li>
+  <li>No team evaluation of the row has an <code>evaluation_code_id</code> greater than one</li>
 </ul>
 
 <p>The original rake task works correctly but requires two iterations to evaluate all rows. I need it to work in one iteration.</p>
@@ -126,11 +126,11 @@
 
 <ul>
   <li>Look at the shape of the code. Lots of indentations. </li>
-  <li>The code does a lot but it is difficult to understand exactly what it is doing. In ruby, a method should really only do one thing (<a href="http://c2.com/cgi/wiki?SingleResponsibilityPrinciple">Single Responsibility Principle</a>). </li>
+  <li>The code does a lot but it is difficult to understand exactly what it is doing. In ruby, a method should really only do one thing (<a href="http://www.slideshare.net/anildigital/solid-design-principles-in-ruby">Single Responsibility Principle</a>. </li>
   <li>Recommend we extract the methods and then re-evaluate what the code is doing.</li>
 </ul>
 
-<h2 id="but-first-some-syntax-cleanup">But first, some syntax cleanup</h2>
+<h2 id="syntax-cleanup">Syntax cleanup</h2>
 
 <p>These two lines mean the same thing. The <code>evaluations.present?</code> is more expressive. </p>
 
@@ -142,16 +142,16 @@
 
 <h2 id="refactor">Refactor</h2>
 
-<p>We extracted the methods out of <code>.rake</code> and into a new file <code>/app/models/concerns/purge_opportunities.rb</code>. During the extract, Dave asked me to explain what each block of code was doing. When I was finally able to articulate clearly, we named the method according to my verbal description. We also used a style convention of <code>?</code> for conditional methods (return true or false) and <code>!</code> for methods that change data.</p>
+<p>We extracted the methods out of <code>.rake</code> and into a new file <code>/app/models/concerns/purge_opportunities.rb</code>. During the extract, Dave asked me to explain what each block of code was doing. When I was able to articulate clearly, we named the method according to my verbal description. We also used a style convention of <code>?</code> for conditional methods (return true or false) and <code>!</code> for methods that change data.</p>
 
-<p>One block was eliminited in its entirity with a database select statement:</p>
+<p>One block was eliminited in its entirity with a select statement:</p>
 
 <div class="highlight"><pre><code class="ruby"><span class="o">-</span>  <span class="n">opportunities</span> <span class="o">=</span> <span class="no">Opportunity</span><span class="o">.</span><span class="n">all</span> 
 <span class="o">-</span>  <span class="k">if</span> <span class="p">(</span><span class="no">Date</span><span class="o">.</span><span class="n">today</span> <span class="o">-</span> <span class="n">opportunity</span><span class="o">.</span><span class="n">post_date</span><span class="p">)</span><span class="o">.</span><span class="n">to_i</span> <span class="o">&gt;</span> <span class="mi">5</span>
 <span class="o">+</span>  <span class="no">Opportunity</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="s1">&#39;post_date &lt; ?&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span><span class="o">.</span><span class="n">ago</span><span class="p">)</span>
 </code></pre></div>
 
-<p>Here is the refactored code.</p>
+<p>Here is the refactored code in <code>purge_opportunities.rb</code>. Much more expressive and easier to understand. And test.</p>
 
 <div class="highlight"><pre><code class="ruby"><span class="k">class</span> <span class="nc">PurgeOpportunities</span>
 
@@ -197,6 +197,14 @@
 <span class="k">end</span>
 </code></pre></div>
 
+<p>We simplified the <code>rake</code> task to create a PurgOpportunity object as follows:</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="n">task</span> <span class="ss">:clean</span> <span class="o">=&gt;</span> <span class="ss">:environment</span> <span class="k">do</span>  <span class="c1">#heroku scheduler run this every 1 days</span>
+  <span class="n">purger</span> <span class="o">=</span> <span class="no">PurgeOpportunities</span><span class="o">.</span><span class="n">new</span> 
+  <span class="n">purger</span><span class="o">.</span><span class="n">purge_old_and_never_evaluated!</span>
+<span class="k">end</span>
+</code></pre></div>
+
 <h2 id="tests">Tests</h2>
 
 <p>Now that we had a properly structured object, we were able to write some tests in <code>/app/tests/models/purge_opportunities_test.rb</code>.</p>
@@ -229,9 +237,9 @@
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>Dave took three hours out of his Tuesday evening to help a casual acquaintance write better code. This culture of helping others should not surprise rubyists. But its a special thing. Its people that make ruby powerful. </p>
+<p>Dave took three hours out of his Tuesday evening to help a casual acquaintance write better code. Indy.rb’s culture of helping others get better should not surprise rubyists. But its a special thing. And its what make so ruby powerful. </p>
 
-<p>I look forward to the day when I get to help someone else.</p>
+<p>I look forward to the day when I get to help someone else get better. </p>
 
 
 </div>
