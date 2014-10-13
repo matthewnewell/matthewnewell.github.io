@@ -5,14 +5,14 @@ categories:
 - blog
 ---
 
-The Indianapolis Ruby Users Group [Indy.rb](www.indy.rb) hosts a monthly hack night. Format is bring a problem and/or help someone solve a problem. I was lucky enough to work with [@unixmonkey](https://twitter.com/unixmonkey) on the following refactor. 
+The Indianapolis Ruby Users Group ([Indy.rb](www.indy.rb)) hosts a monthly hack night. Format is bring a problem and/or help someone solve a problem. I was lucky enough to work with [@unixmonkey](https://twitter.com/unixmonkey) on the following refactor. 
 
 ##The Setup
 
 My rails application [Team FBO](teamFBO.html) has a [rake task](http://en.wikipedia.org/wiki/Rake_(software)) to purge stale database rows. A row of data shall be purged when it meets two conditions:
 
 * Over five days old
-* No team evaluation of the row has an `evaluation_value` greater than one
+* No team evaluation of the row has an `evaluation_code_id` greater than one
 
 The original rake task works correctly but requires two iterations to evaluate all rows. I need it to work in one iteration.
 
@@ -40,10 +40,10 @@ end
 ## Dave's Observations
 
 * Look at the shape of the code. Lots of indentations. 
-* The code does a lot but it is difficult to understand exactly what it is doing. In ruby, a method should really only do one thing ([Single Responsibility Principle](http://c2.com/cgi/wiki?SingleResponsibilityPrinciple)). 
+* The code does a lot but it is difficult to understand exactly what it is doing. In ruby, a method should really only do one thing ([Single Responsibility Principle](http://www.slideshare.net/anildigital/solid-design-principles-in-ruby). 
 * Recommend we extract the methods and then re-evaluate what the code is doing.
 
-## But first, some syntax cleanup
+## Syntax cleanup
 
 These two lines mean the same thing. The `evaluations.present?` is more expressive. 
 
@@ -56,9 +56,9 @@ BTW, the `+` and `-` are change indicators from the [git commit](https://github.
 
 ## Refactor
 
-We extracted the methods out of `.rake` and into a new file `/app/models/concerns/purge_opportunities.rb`. During the extract, Dave asked me to explain what each block of code was doing. When I was finally able to articulate clearly, we named the method according to my verbal description. We also used a style convention of `?` for conditional methods (return true or false) and `!` for methods that change data.
+We extracted the methods out of `.rake` and into a new file `/app/models/concerns/purge_opportunities.rb`. During the extract, Dave asked me to explain what each block of code was doing. When I was able to articulate clearly, we named the method according to my verbal description. We also used a style convention of `?` for conditional methods (return true or false) and `!` for methods that change data.
 
-One block was eliminited in its entirity with a database select statement:
+One block was eliminited in its entirity with a select statement:
 
 {% highlight ruby %}
 -  opportunities = Opportunity.all 
@@ -66,7 +66,7 @@ One block was eliminited in its entirity with a database select statement:
 +  Opportunity.where('post_date < ?', 5.days.ago)
 {% endhighlight %}
 
-Here is the refactored code.
+Here is the refactored code in `purge_opportunities.rb`. Much more expressive and easier to understand. And test.
 
 {% highlight ruby %}
 
@@ -115,6 +115,15 @@ end
 
 {% endhighlight %}
 
+We simplified the `rake` task to create a PurgOpportunity object as follows:
+
+{% highlight ruby %}
+task :clean => :environment do  #heroku scheduler run this every 1 days
+  purger = PurgeOpportunities.new 
+  purger.purge_old_and_never_evaluated!
+end
+{% endhighlight %}
+
 ## Tests
 
 Now that we had a properly structured object, we were able to write some tests in `/app/tests/models/purge_opportunities_test.rb`.
@@ -149,9 +158,9 @@ end
 
 ## Conclusion
 
-Dave took three hours out of his Tuesday evening to help a casual acquaintance write better code. This culture of helping others should not surprise rubyists. But its a special thing. Its people that make ruby powerful. 
+Dave took three hours out of his Tuesday evening to help a casual acquaintance write better code. Indy.rb's culture of helping others get better should not surprise rubyists. But its a special thing. And its what make so ruby powerful. 
 
-I look forward to the day when I get to help someone else.
+I look forward to the day when I get to help someone else get better. 
 
 
 
