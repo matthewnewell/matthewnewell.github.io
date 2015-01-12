@@ -11,10 +11,10 @@
   
 
 
-  <title>Useful Web Service - Refactoring a Rake Task</title>
+  <title>Useful Web Service - Refactoring Fizz Buzz</title>
   <meta name="author" content="Useful Web Service" />
   <meta name="description" content="The blog of Useful Web Service" />
-  <link rel="canonical" href="http://usefulwebservice.com/blog/2014/09/25/refactor-rake.html" />
+  <link rel="canonical" href="http://usefulwebservice.com/blog/2015/01/08/refactor-fizz_buzz.html" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.png">
@@ -81,18 +81,109 @@
     <div class="eleven columns content">
       
       <p class="meta">
-  September 25, 2014 
+  January 08, 2015 
   <a href="/">
     <i class="home fa fa-home"></i>
   </a>
 </p>
 
-<h1 class="title">Refactoring a Rake Task</h1>
+<h1 class="title">Refactoring Fizz Buzz</h1>
 
 <div id="post">
-  <p>The Indianapolis Ruby Users Group (<a href="www.indy.rb">Indy.rb</a>) hosts a monthly hack night. Format is bring a problem and/or help someone solve a problem. I was lucky enough to work with <a href="https://twitter.com/unixmonkey">@unixmonkey</a> on the following refactor. </p>
+  <h2 id="the-setup">The Setup</h2>
+<p>*For the numbers from 1 to 100:
+*If the number is a multiple of 3, print fuzz
+*If the number is a multiple of 5, print buzz
+*If the number is a multiple of 3 and 5, print fizz buzz
+*Otherwise, print the number</p>
 
-<h2 id="the-setup">The Setup</h2>
+<p>My first fizz buzz looked something like this:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> 
+  <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span><span class="o">%</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> 
+    <span class="nb">puts</span> <span class="s2">&quot;fizz buzz&quot;</span>
+  <span class="k">elsif</span> <span class="n">i</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> 
+    <span class="nb">puts</span> <span class="s2">&quot;fizz&quot;</span>
+  <span class="k">elsif</span> <span class="n">i</span><span class="o">%</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> 
+    <span class="nb">puts</span> <span class="s2">&quot;buzz&quot;</span>
+  <span class="k">else</span> 
+    <span class="nb">puts</span> <span class="n">i</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+
+<p>Now a refactor. First step is to write a test with <a href="https://rubygems.org/gems/rspec">rspec</a> for the the problem. I found that the spec and the library had to be written in parallel. </p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;./lib/fb.rb&#39;</span>
+
+<span class="n">describe</span> <span class="s2">&quot;Fizz Buzz&quot;</span> <span class="k">do</span>
+  <span class="n">let</span><span class="p">(</span><span class="ss">:fb</span><span class="p">)</span> <span class="p">{</span> <span class="no">FizzBuzz</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span> <span class="p">}</span>
+
+  <span class="n">it</span> <span class="s2">&quot;FB runs the program fizz buzz against a range&quot;</span> <span class="k">do</span>
+    <span class="n">fb</span><span class="o">.</span><span class="n">evaluate</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">result</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;buzz&quot;</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="s2">&quot;buzz&quot;</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="s2">&quot;fizz-buzz&quot;</span><span class="o">]</span>
+  <span class="k">end</span>
+
+  <span class="n">it</span> <span class="s2">&quot;prints to screen the numbers defined in a range&quot;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">number_range</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">15</span>
+  <span class="k">end</span>
+
+  <span class="n">it</span> <span class="s2">&quot;returns fizz-buzz if number is divisible by 3 and 5&quot;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">fizz_buzz_check</span><span class="p">(</span><span class="mi">15</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="s2">&quot;fizz-buzz&quot;</span><span class="o">]</span>
+  <span class="k">end</span>
+
+  <span class="n">it</span> <span class="s2">&quot;returns fizz if number is divisible by 3 and not 5&quot;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">fizz_check</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="s2">&quot;fizz&quot;</span><span class="o">]</span>
+  <span class="k">end</span>
+
+  <span class="n">it</span> <span class="s2">&quot;returns buzz if number is divisible by 5 and not 3&quot;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">buzz_check</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="s2">&quot;buzz&quot;</span><span class="o">]</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+
+<p>And here is my first library that made the tests pass.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">FizzBuzz</span>
+  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+    <span class="vi">@num1</span> <span class="o">=</span> <span class="n">num1</span>
+    <span class="vi">@num2</span> <span class="o">=</span> <span class="n">num2</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">result</span>
+    <span class="vi">@result</span> <span class="o">||=</span> <span class="o">[]</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">number_range</span>
+    <span class="k">return</span> <span class="p">(</span><span class="vi">@num1</span><span class="o">.</span><span class="n">.</span><span class="vi">@num2</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">fizz_check</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">0</span>
+     <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;fizz&quot;</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">buzz_check</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span>
+     <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;buzz&quot;</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">fizz_buzz_check</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span>
+      <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;fizz-buzz&quot;</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">evaluate</span>
+    <span class="p">(</span><span class="vi">@num1</span><span class="o">.</span><span class="n">.</span><span class="vi">@num2</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+      <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="k">unless</span> <span class="n">fizz_check</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">||</span>  <span class="n">buzz_check</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">||</span> <span class="n">fizz_buzz_check</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+
+<p>Now that I have a test framework and a functioning class, I can refactor. First need to commit to github with a tag.</p>
+
+<h2 id="the-setup-1">The Setup</h2>
 
 <p>My rails application <a href="teamFBO.html">Team FBO</a> has a <a href="http://en.wikipedia.org/wiki/Rake_(software)">rake task</a> to purge stale database rows. A row of data shall be purged when it meets two conditions:</p>
 
@@ -242,7 +333,7 @@
   <ul class="posts">
     
     <li>
-      <span>08 Jan 2015 &raquo;</span> <a href="/blog/2015/01/08/refactor-fizz_buzz.html">Refactoring Fizz Buzz</a>
+      <span>25 Sep 2014 &raquo;</span> <a href="/blog/2014/09/25/refactor-rake.html">Refactoring a Rake Task</a>
     </li>
     
     <li>
