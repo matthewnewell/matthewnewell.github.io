@@ -31,9 +31,9 @@
     <img src="/static/UWS1.JPG" alt="re:newell"/>
   </a>
   
-  <div align="center">
+  <!-- <div align="center">
     <a href="/about.html">About</a> 
-  </div>
+  </div> -->
   <hr/>
   <div>
     <div id="social">
@@ -90,14 +90,25 @@
 <h1 class="title">Refactoring Fizz Buzz</h1>
 
 <div id="post">
-  <h2 id="the-setup">The Setup</h2>
-<p>*For the numbers from 1 to 100:
-*If the number is a multiple of 3, print fuzz
-*If the number is a multiple of 5, print buzz
-*If the number is a multiple of 3 and 5, print fizz buzz
-*Otherwise, print the number</p>
+  <p>The objective of this exercise is to explore programming concepts from <a href="https://rubysteps.com/">Ruby Steps</a>, lectures 1 to 10. </p>
 
-<p>My first fizz buzz looked something like this:</p>
+<h2 id="fizz-buzz-requirements">Fizz Buzz Requirements</h2>
+
+<p>For the numbers from 1 to 100:</p>
+
+<ul>
+  <li>If the number is a multiple of 3, print fuzz</li>
+  <li>If the number is a multiple of 5, print buzz</li>
+  <li>If the number is a multiple of 3 and 5, print fizz buzz</li>
+  <li>Otherwise, print the number</li>
+</ul>
+
+<h2 id="fizz-buzz-001httpsgithubcommatthewnewellfizzbuzztreefizz-buzz-001"><a href="https://github.com/matthewnewell/fizzbuzz/tree/fizz-buzz-001">fizz-buzz-001</a></h2>
+
+<ul>
+  <li>solve fizz buzz</li>
+  <li>git tag</li>
+</ul>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> 
   <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span><span class="o">%</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> 
@@ -109,38 +120,22 @@
   <span class="k">else</span> 
     <span class="nb">puts</span> <span class="n">i</span>
   <span class="k">end</span>
-<span class="k">end</span></code></pre></div>
+<span class="k">end</span>
 
-<p>Now a refactor. First step is to write a test with <a href="https://rubygems.org/gems/rspec">rspec</a> for the the problem. I found that the spec and the library had to be written in parallel. </p>
+<span class="n">git</span> <span class="n">add</span> <span class="o">--</span><span class="n">all</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;original commit&quot;</span>
+<span class="n">git</span> <span class="n">tag</span> <span class="n">fizz</span><span class="o">-</span><span class="n">buzz</span><span class="o">-</span><span class="mo">001</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">fizz</span><span class="o">-</span><span class="n">buzz</span><span class="o">-</span><span class="mo">001</span></code></pre></div>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;./lib/fb.rb&#39;</span>
+<h2 id="fizz-buzz-002httpsgithubcommatthewnewellfizzbuzztreefizz-buzz-002"><a href="https://github.com/matthewnewell/fizzbuzz/tree/fizz-buzz-002">fizz-buzz-002</a></h2>
 
-<span class="n">describe</span> <span class="s2">&quot;Fizz Buzz&quot;</span> <span class="k">do</span>
-  <span class="n">let</span><span class="p">(</span><span class="ss">:fb</span><span class="p">)</span> <span class="p">{</span> <span class="no">FizzBuzz</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span> <span class="p">}</span>
+<ul>
+  <li>Write some tests with rspec</li>
+  <li>Create a FizzBuzz class</li>
+  <li>Create a method that maintains an instance variable of the same name</li>
+</ul>
 
-  <span class="n">it</span> <span class="s2">&quot;FB runs the program fizz buzz against a range&quot;</span> <span class="k">do</span>
-    <span class="n">fb</span><span class="o">.</span><span class="n">evaluate</span>
-    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">result</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;buzz&quot;</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="s2">&quot;buzz&quot;</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="s2">&quot;fizz-buzz&quot;</span><span class="o">]</span>
-  <span class="k">end</span>
-
-  <span class="n">it</span> <span class="s2">&quot;prints to screen the numbers defined in a range&quot;</span> <span class="k">do</span>
-    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">number_range</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">15</span>
-  <span class="k">end</span>
-
-  <span class="n">it</span> <span class="s2">&quot;returns fizz-buzz if number is divisible by 3 and 5&quot;</span> <span class="k">do</span>
-    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">fizz_buzz_check</span><span class="p">(</span><span class="mi">15</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="s2">&quot;fizz-buzz&quot;</span><span class="o">]</span>
-  <span class="k">end</span>
-
-  <span class="n">it</span> <span class="s2">&quot;returns fizz if number is divisible by 3 and not 5&quot;</span> <span class="k">do</span>
-    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">fizz_check</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="s2">&quot;fizz&quot;</span><span class="o">]</span>
-  <span class="k">end</span>
-
-  <span class="n">it</span> <span class="s2">&quot;returns buzz if number is divisible by 5 and not 3&quot;</span> <span class="k">do</span>
-    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">buzz_check</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="s2">&quot;buzz&quot;</span><span class="o">]</span>
-  <span class="k">end</span>
-<span class="k">end</span></code></pre></div>
-
-<p>And here is my first library that made the tests pass.</p>
+<h2 id="the-class">The Class</h2>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">FizzBuzz</span>
   <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
@@ -150,10 +145,6 @@
 
   <span class="k">def</span> <span class="nf">result</span>
     <span class="vi">@result</span> <span class="o">||=</span> <span class="o">[]</span>
-  <span class="k">end</span>
-
-  <span class="k">def</span> <span class="nf">number_range</span>
-    <span class="k">return</span> <span class="p">(</span><span class="vi">@num1</span><span class="o">.</span><span class="n">.</span><span class="vi">@num2</span><span class="p">)</span>
   <span class="k">end</span>
 
   <span class="k">def</span> <span class="nf">fizz_check</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
@@ -181,149 +172,169 @@
   <span class="k">end</span>
 <span class="k">end</span></code></pre></div>
 
-<p>Now that I have a test framework and a functioning class, I can refactor. First need to commit to github with a tag.</p>
+<h2 id="the-library">The Library</h2>
 
-<h2 id="the-setup-1">The Setup</h2>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;./lib/fb.rb&#39;</span>
 
-<p>My rails application <a href="teamFBO.html">Team FBO</a> has a <a href="http://en.wikipedia.org/wiki/Rake_(software)">rake task</a> to purge stale database rows. A row of data shall be purged when it meets two conditions:</p>
+<span class="n">describe</span> <span class="s2">&quot;Fizz Buzz&quot;</span> <span class="k">do</span>
+  <span class="n">let</span><span class="p">(</span><span class="ss">:fb</span><span class="p">)</span> <span class="p">{</span> <span class="no">FizzBuzz</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span> <span class="p">}</span>
+
+  <span class="n">it</span> <span class="s2">&quot;returns fizz if number is divisible by 3 and not 5&quot;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">fizz_check</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="s2">&quot;fizz&quot;</span><span class="o">]</span>
+  <span class="k">end</span>
+
+  <span class="n">it</span> <span class="s2">&quot;returns buzz if number is divisible by 5 and not 3&quot;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">buzz_check</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="s2">&quot;buzz&quot;</span><span class="o">]</span>
+  <span class="k">end</span>
+
+  <span class="n">it</span> <span class="s2">&quot;returns fizz-buzz if number is divisible by 3 and 5&quot;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">fizz_buzz_check</span><span class="p">(</span><span class="mi">15</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="s2">&quot;fizz-buzz&quot;</span><span class="o">]</span>
+  <span class="k">end</span>
+
+  <span class="n">it</span> <span class="s2">&quot;FB runs the program fizz buzz against a range&quot;</span> <span class="k">do</span>
+    <span class="n">fb</span><span class="o">.</span><span class="n">evaluate</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">result</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;buzz&quot;</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="s2">&quot;buzz&quot;</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="s2">&quot;fizz-buzz&quot;</span><span class="o">]</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+
+<h2 id="fizz-buzz-003httpsgithubcommatthewnewellfizzbuzztreefizz-buzz-003"><a href="https://github.com/matthewnewell/fizzbuzz/tree/fizz-buzz-003">fizz-buzz-003</a></h2>
 
 <ul>
-  <li>Over five days old</li>
-  <li>No team evaluation of the row has an <code>evaluation_code_id</code> greater than one</li>
+  <li>Refactor to evaluate fizz buzz with blocks</li>
+  <li>Write a method that contains a hash with a proc value [:evaluation] and a string value [:return_result]</li>
+  <li>Refactor tests to evaluate method-hash-proc-string structure</li>
 </ul>
 
-<p>The original rake task works correctly but requires two iterations to evaluate all rows. I need it to work in one iteration.</p>
+<h2 id="class-refactor">Class Refactor</h2>
 
-<p>Here is the original code in <code>app/lib/tasks/scrape.rake</code>:</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">evaluate</span>
+  <span class="p">(</span><span class="vi">@num1</span><span class="o">.</span><span class="n">.</span><span class="vi">@num2</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vi">@opportunities</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">opportunity</span><span class="o">|</span> 
-  <span class="k">if</span> <span class="p">(</span><span class="no">Date</span><span class="o">.</span><span class="n">today</span> <span class="o">-</span> <span class="n">opportunity</span><span class="o">.</span><span class="n">post_date</span><span class="p">)</span><span class="o">.</span><span class="n">to_i</span> <span class="o">&gt;</span> <span class="mi">5</span>
-    <span class="k">if</span> <span class="no">Evaluation</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="ss">opportunity_id</span><span class="p">:</span> <span class="n">opportunity</span><span class="o">.</span><span class="n">id</span><span class="p">)</span><span class="o">.</span><span class="n">first</span>
-      <span class="n">evaluations</span> <span class="o">=</span> <span class="no">Evaluation</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="ss">opportunity_id</span><span class="p">:</span> <span class="n">opportunity</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
-      <span class="n">evaluations</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">evaluation</span><span class="o">|</span>
-        <span class="k">if</span> <span class="n">evaluation</span><span class="o">.</span><span class="n">evaluation_code_id</span> <span class="o">==</span> <span class="mi">1</span> <span class="c1">#purge only if team opportunity is not evaluated</span>
-          <span class="n">evaluation</span><span class="o">.</span><span class="n">destroy</span>   
-        <span class="k">end</span>
-      <span class="k">end</span>
-    <span class="k">else</span>  <span class="c1">#the opportunity is not part of any team&#39;s evaluation criteria</span>
-      <span class="n">opportunity</span><span class="o">.</span><span class="n">destroy</span>
-    <span class="k">end</span>
+    <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">fizz_evaluator</span><span class="o">[</span><span class="ss">:return_message</span><span class="o">]</span> <span class="k">if</span> <span class="n">fizz_evaluator</span><span class="o">[</span><span class="ss">:condition</span><span class="o">].</span><span class="n">call</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">buzz_evaluator</span><span class="o">[</span><span class="ss">:return_message</span><span class="o">]</span> <span class="k">if</span> <span class="n">buzz_evaluator</span><span class="o">[</span><span class="ss">:condition</span><span class="o">].</span><span class="n">call</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">fizz_buzz_evaluator</span><span class="o">[</span><span class="ss">:return_message</span><span class="o">]</span> <span class="k">if</span> <span class="n">fizz_buzz_evaluator</span><span class="o">[</span><span class="ss">:condition</span><span class="o">].</span><span class="n">call</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="k">if</span> <span class="n">integer_evaluator</span><span class="o">[</span><span class="ss">:condition</span><span class="o">].</span><span class="n">call</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">fizz_evaluator</span>
+  <span class="p">{</span>
+    <span class="ss">condition</span><span class="p">:</span> <span class="o">-&gt;</span><span class="p">(</span><span class="n">i</span><span class="p">){</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">},</span>
+    <span class="ss">return_message</span><span class="p">:</span> <span class="s2">&quot;fizz&quot;</span>
+  <span class="p">}</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">buzz_evaluator</span>
+  <span class="p">{</span>
+    <span class="ss">condition</span><span class="p">:</span> <span class="o">-&gt;</span><span class="p">(</span><span class="n">i</span><span class="p">){</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">},</span>
+    <span class="ss">return_message</span><span class="p">:</span> <span class="s2">&quot;buzz&quot;</span>
+  <span class="p">}</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">fizz_buzz_evaluator</span>
+  <span class="p">{</span>
+    <span class="ss">condition</span><span class="p">:</span> <span class="o">-&gt;</span><span class="p">(</span><span class="n">i</span><span class="p">){</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">},</span>
+    <span class="ss">return_message</span><span class="p">:</span> <span class="s2">&quot;fizz-buzz&quot;</span>
+  <span class="p">}</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">integer_evaluator</span>
+  <span class="p">{</span>
+    <span class="ss">condition</span><span class="p">:</span> <span class="o">-&gt;</span><span class="p">(</span><span class="n">i</span><span class="p">){</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">},</span>
+    <span class="ss">return_message</span><span class="p">:</span> <span class="kp">nil</span>
+  <span class="p">}</span>
+<span class="k">end</span></code></pre></div>
+
+<p>Test Refactor</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">describe</span> <span class="s2">&quot;Fizz Buzz&quot;</span> <span class="k">do</span>
+  <span class="n">let</span><span class="p">(</span><span class="ss">:fb</span><span class="p">)</span> <span class="p">{</span> <span class="no">FizzBuzz</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span> <span class="p">}</span>
+
+  <span class="n">it</span> <span class="s2">&quot;FB runs the program fizz buzz against a range&quot;</span> <span class="k">do</span>
+    <span class="n">fb</span><span class="o">.</span><span class="n">evaluate</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">result</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;buzz&quot;</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="s2">&quot;buzz&quot;</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="s2">&quot;fizz-buzz&quot;</span><span class="o">]</span>
+  <span class="k">end</span>
+
+  <span class="n">it</span> <span class="s2">&quot;returns fizz-buzz if number is divisible by 3 and 5&quot;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">fizz_buzz_evaluator</span><span class="o">[</span><span class="ss">:condition</span><span class="o">].</span><span class="n">call</span><span class="p">(</span><span class="mi">15</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="kp">true</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">fizz_buzz_evaluator</span><span class="o">[</span><span class="ss">:return_message</span><span class="o">]</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="s2">&quot;fizz-buzz&quot;</span>
+  <span class="k">end</span>
+
+  <span class="n">it</span> <span class="s2">&quot;returns fizz if number is divisible by 3 and not 5&quot;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">fizz_evaluator</span><span class="o">[</span><span class="ss">:condition</span><span class="o">].</span><span class="n">call</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="kp">true</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">fizz_evaluator</span><span class="o">[</span><span class="ss">:return_message</span><span class="o">]</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="s2">&quot;fizz&quot;</span>
+  <span class="k">end</span>
+
+  <span class="n">it</span> <span class="s2">&quot;returns buzz if number is divisible by 5 and not 3&quot;</span> <span class="k">do</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">buzz_evaluator</span><span class="o">[</span><span class="ss">:condition</span><span class="o">].</span><span class="n">call</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="kp">true</span>
+    <span class="n">expect</span><span class="p">(</span><span class="n">fb</span><span class="o">.</span><span class="n">buzz_evaluator</span><span class="o">[</span><span class="ss">:return_message</span><span class="o">]</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">eq</span> <span class="s2">&quot;buzz&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span></code></pre></div>
 
-<h2 id="daves-observations">Dave’s Observations</h2>
+<h2 id="fizz-buzz-004httpsgithubcommatthewnewellfizzbuzztreefizz-buzz-004"><a href="https://github.com/matthewnewell/fizzbuzz/tree/fizz-buzz-004">fizz-buzz-004</a></h2>
 
 <ul>
-  <li>Look at the shape of the code. Lots of indentations. </li>
-  <li>The code does a lot but it is difficult to understand exactly what it is doing. In ruby, a method should really only do one thing (<a href="http://www.slideshare.net/anildigital/solid-design-principles-in-ruby">Single Responsibility Principle</a>. </li>
-  <li>Recommend we extract the methods and then re-evaluate what the code is doing.</li>
+  <li>DRY: call blocks with common evaluator</li>
+  <li>No test refactor needed!</li>
 </ul>
 
-<h2 id="syntax-cleanup">Syntax cleanup</h2>
+<h2 id="class-refactor-1">Class Refactor</h2>
 
-<p>These two lines mean the same thing. The <code>evaluations.present?</code> is more expressive. </p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">-</span>  <span class="k">if</span> <span class="no">Evaluation</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="ss">opportunity_id</span><span class="p">:</span> <span class="n">opportunity</span><span class="o">.</span><span class="n">id</span><span class="p">)</span><span class="o">.</span><span class="n">first</span>
-<span class="o">+</span>  <span class="k">if</span> <span class="n">opportunity</span><span class="o">.</span><span class="n">evaluations</span><span class="o">.</span><span class="n">present?</span></code></pre></div>
-
-<p>BTW, the <code>+</code> and <code>-</code> are change indicators from the <a href="https://github.com/matthewnewell/fbo-scrape/commit/dda240c533dc0664a1f5760f413f5a69b2119e4f">git commit</a>.</p>
-
-<h2 id="refactor">Refactor</h2>
-
-<p>We extracted the methods out of <code>.rake</code> and into a new file <code>/app/models/concerns/purge_opportunities.rb</code>. During the extract, Dave asked me to explain what each block of code was doing. When I was able to articulate clearly, we named the method according to my verbal description. We also used a style convention of <code>?</code> for conditional methods (return true or false) and <code>!</code> for methods that change data.</p>
-
-<p>One block was eliminited in its entirity with a select statement:</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">-</span>  <span class="n">opportunities</span> <span class="o">=</span> <span class="no">Opportunity</span><span class="o">.</span><span class="n">all</span> 
-<span class="o">-</span>  <span class="k">if</span> <span class="p">(</span><span class="no">Date</span><span class="o">.</span><span class="n">today</span> <span class="o">-</span> <span class="n">opportunity</span><span class="o">.</span><span class="n">post_date</span><span class="p">)</span><span class="o">.</span><span class="n">to_i</span> <span class="o">&gt;</span> <span class="mi">5</span>
-<span class="o">+</span>  <span class="no">Opportunity</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="s1">&#39;post_date &lt; ?&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span><span class="o">.</span><span class="n">ago</span><span class="p">)</span></code></pre></div>
-
-<p>Here is the refactored code in <code>purge_opportunities.rb</code>. Much more expressive and easier to understand. And test.</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">PurgeOpportunities</span>
-
-  <span class="k">def</span> <span class="nf">purge_old_and_never_evaluated!</span>
-    <span class="n">purge_never_evaluated!</span>
-    <span class="n">purge_never_evaluated_opportunities!</span>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">FizzBuzz</span>
+  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+    <span class="vi">@num1</span> <span class="o">=</span> <span class="n">num1</span>
+    <span class="vi">@num2</span> <span class="o">=</span> <span class="n">num2</span>
   <span class="k">end</span>
 
-  <span class="c1"># private</span>
-
-  <span class="k">def</span> <span class="nf">old_opportunities</span>
-    <span class="no">Opportunity</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="s1">&#39;post_date &lt; ?&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span><span class="o">.</span><span class="n">ago</span><span class="p">)</span>
+  <span class="k">def</span> <span class="nf">result</span>
+    <span class="vi">@result</span> <span class="o">||=</span> <span class="o">[]</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">purge_never_evaluated!</span>
-    <span class="n">old_opportunities</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">opportunity</span><span class="o">|</span> 
-      <span class="k">if</span> <span class="n">has_team_evaluation?</span><span class="p">(</span><span class="n">opportunity</span><span class="p">)</span>
-        <span class="n">opportunity</span><span class="o">.</span><span class="n">evaluations</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">evaluation</span><span class="o">|</span>
-          <span class="k">if</span> <span class="n">evaluation_is_in_initial_state_of_not_evaluated?</span><span class="p">(</span><span class="n">evaluation</span><span class="p">)</span>
-            <span class="n">evaluation</span><span class="o">.</span><span class="n">destroy</span>  
-          <span class="k">end</span>
-        <span class="k">end</span>
-      <span class="k">end</span>
+  <span class="k">def</span> <span class="nf">evaluator</span><span class="p">(</span><span class="n">evaluator_name</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">evaluator</span> <span class="o">=</span> <span class="nb">send</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">#{</span><span class="n">evaluator_name</span><span class="si">}</span><span class="s2">_evaluator&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">evaluator</span><span class="o">[</span><span class="ss">:condition</span><span class="o">].</span><span class="n">call</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+      <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">evaluator</span><span class="o">[</span><span class="ss">:return_message</span><span class="o">]</span> <span class="o">||=</span> <span class="n">i</span>
     <span class="k">end</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">purge_never_evaluated_opportunities!</span>
-    <span class="n">old_opportunities</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">opportunity</span><span class="o">|</span>
-      <span class="k">unless</span> <span class="n">has_team_evaluation?</span><span class="p">(</span><span class="n">opportunity</span><span class="p">)</span>
-        <span class="n">opportunity</span><span class="o">.</span><span class="n">destroy</span>
+  <span class="k">def</span> <span class="nf">fizz_evaluator</span>
+    <span class="p">{</span>
+      <span class="ss">condition</span><span class="p">:</span> <span class="o">-&gt;</span><span class="p">(</span><span class="n">i</span><span class="p">){</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">},</span>
+      <span class="ss">return_message</span><span class="p">:</span> <span class="s2">&quot;fizz&quot;</span>
+    <span class="p">}</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">buzz_evaluator</span>
+    <span class="p">{</span>
+      <span class="ss">condition</span><span class="p">:</span> <span class="o">-&gt;</span><span class="p">(</span><span class="n">i</span><span class="p">){</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">},</span>
+      <span class="ss">return_message</span><span class="p">:</span> <span class="s2">&quot;buzz&quot;</span>
+    <span class="p">}</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">fizz_buzz_evaluator</span>
+    <span class="p">{</span>
+      <span class="ss">condition</span><span class="p">:</span> <span class="o">-&gt;</span><span class="p">(</span><span class="n">i</span><span class="p">){</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">},</span>
+      <span class="ss">return_message</span><span class="p">:</span> <span class="s2">&quot;fizz-buzz&quot;</span>
+    <span class="p">}</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">integer_evaluator</span>
+    <span class="p">{</span>
+      <span class="ss">condition</span><span class="p">:</span> <span class="o">-&gt;</span><span class="p">(</span><span class="n">i</span><span class="p">){</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">}</span>
+    <span class="p">}</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">evaluate</span>
+    <span class="n">evaluators</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;fizz&quot;</span><span class="p">,</span> <span class="s2">&quot;buzz&quot;</span><span class="p">,</span> <span class="s2">&quot;fizz_buzz&quot;</span><span class="p">,</span> <span class="s2">&quot;integer&quot;</span><span class="o">]</span>
+    
+    <span class="p">(</span><span class="vi">@num1</span><span class="o">.</span><span class="n">.</span><span class="vi">@num2</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+      <span class="n">evaluators</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">e</span><span class="o">|</span> 
+        <span class="n">evaluator</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
       <span class="k">end</span>
-    <span class="k">end</span>
+    <span class="k">end</span> 
   <span class="k">end</span>
-
-  <span class="k">def</span> <span class="nf">has_team_evaluation?</span><span class="p">(</span><span class="n">opportunity</span><span class="p">)</span>
-    <span class="n">opportunity</span><span class="o">.</span><span class="n">evaluations</span><span class="o">.</span><span class="n">present?</span>
-  <span class="k">end</span> 
-
-  <span class="k">def</span> <span class="nf">evaluation_is_in_initial_state_of_not_evaluated?</span><span class="p">(</span><span class="n">evaluation</span><span class="p">)</span>
-    <span class="n">evaluation</span><span class="o">.</span><span class="n">evaluation_code_id</span> <span class="o">==</span> <span class="mi">1</span> <span class="c1">#purge only if team opportunity is not evaluated</span>
-  <span class="k">end</span>
-
 <span class="k">end</span></code></pre></div>
-
-<p>We simplified the <code>rake</code> task to create a PurgOpportunity object as follows:</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">task</span> <span class="ss">:clean</span> <span class="o">=&gt;</span> <span class="ss">:environment</span> <span class="k">do</span>  <span class="c1">#heroku scheduler run this every 1 days</span>
-  <span class="n">purger</span> <span class="o">=</span> <span class="no">PurgeOpportunities</span><span class="o">.</span><span class="n">new</span> 
-  <span class="n">purger</span><span class="o">.</span><span class="n">purge_old_and_never_evaluated!</span>
-<span class="k">end</span></code></pre></div>
-
-<h2 id="tests">Tests</h2>
-
-<p>Now that we had a properly structured object, we were able to write some tests in <code>/app/tests/models/purge_opportunities_test.rb</code>.</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;test_helper&#39;</span>
-
-<span class="k">class</span> <span class="nc">PurgeOpportunitiesTest</span> <span class="o">&lt;</span> <span class="no">ActiveSupport</span><span class="o">::</span><span class="no">TestCase</span>
-
-  <span class="nb">test</span> <span class="s2">&quot;#purge_old_and_never_evaluated&quot;</span> <span class="k">do</span>
-    <span class="n">old</span> <span class="o">=</span> <span class="no">Opportunity</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">opportunity</span><span class="p">:</span> <span class="s1">&#39;old&#39;</span><span class="p">,</span> <span class="ss">post_date</span><span class="p">:</span> <span class="mi">6</span><span class="o">.</span><span class="n">days</span><span class="o">.</span><span class="n">ago</span><span class="p">)</span>
-    <span class="n">bad</span> <span class="o">=</span> <span class="no">Opportunity</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">opportunity</span><span class="p">:</span> <span class="s1">&#39;bad&#39;</span><span class="p">,</span> <span class="ss">post_date</span><span class="p">:</span> <span class="mi">4</span><span class="o">.</span><span class="n">weeks</span><span class="o">.</span><span class="n">ago</span><span class="p">)</span>
-    <span class="n">bad</span><span class="o">.</span><span class="n">evaluations</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">evaluation_code_id</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="n">good</span> <span class="o">=</span> <span class="no">Opportunity</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">opportunity</span><span class="p">:</span> <span class="s1">&#39;good&#39;</span><span class="p">,</span> <span class="ss">post_date</span><span class="p">:</span> <span class="no">Date</span><span class="o">.</span><span class="n">today</span><span class="p">)</span>
-    <span class="n">good</span><span class="o">.</span><span class="n">evaluations</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">evaluation_code_id</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span>
-    <span class="n">old_good</span> <span class="o">=</span> <span class="no">Opportunity</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">opportunity</span><span class="p">:</span> <span class="s1">&#39;old_good&#39;</span><span class="p">,</span> <span class="ss">post_date</span><span class="p">:</span> <span class="mi">1</span><span class="o">.</span><span class="n">month</span><span class="o">.</span><span class="n">ago</span><span class="p">)</span>
-    <span class="n">old_good</span><span class="o">.</span><span class="n">evaluations</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">evaluation_code_id</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
-
-    <span class="n">purger</span> <span class="o">=</span> <span class="no">PurgeOpportunities</span><span class="o">.</span><span class="n">new</span>
-    <span class="n">purger</span><span class="o">.</span><span class="n">purge_old_and_never_evaluated!</span>
-    <span class="n">all</span> <span class="o">=</span> <span class="no">Opportunity</span><span class="o">.</span><span class="n">all</span>
-
-    <span class="n">assert</span> <span class="o">!</span><span class="n">all</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">old</span><span class="p">),</span> <span class="s1">&#39;old is not gone :(&#39;</span>
-    <span class="n">assert</span> <span class="o">!</span><span class="n">all</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">bad</span><span class="p">),</span> <span class="s1">&#39;bad is not gone :(&#39;</span>
-    <span class="n">assert</span> <span class="n">all</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">good</span><span class="p">),</span> <span class="s1">&#39;good not here :(&#39;</span>
-    <span class="n">assert</span> <span class="n">all</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">old_good</span><span class="p">),</span> <span class="s1">&#39;old_good not here :(&#39;</span>
-  <span class="k">end</span>
-
-<span class="k">end</span></code></pre></div>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>Dave took three hours out of his Tuesday evening to help a casual acquaintance write better code. Indy.rb’s culture of helping others get better should not surprise rubyists. But its a special thing. And its what make so ruby powerful. </p>
-
-<p>I look forward to the day when I get to help someone else get better. </p>
 
 
 </div>
