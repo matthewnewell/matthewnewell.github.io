@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="assets/d3/d3.v3.js"></script>
+
+  
+
+
+  <title>Useful Web Service - Ten Ruby Things I Learned This Week</title>
+  <meta name="author" content="Useful Web Service" />
+  <meta name="description" content="The blog of Useful Web Service" />
+  <link rel="canonical" href="http://usefulwebservice.com/blog/2015/01/21/Ten-Things-I-Learned.html" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="Useful Web Service" href="http://usefulwebservice.com/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <a href="/">
+    <img src="/static/UWS1.JPG" alt="re:newell"/>
+  </a>
+  
+  <!-- <div align="center">
+    <a href="/about.html">About</a> 
+  </div> -->
+  <hr/>
+  <div>
+    <div id="social">
+      <div id="stalker">
+  
+  <a title="matthewnewell on Github" href="https://github.com/matthewnewell">
+    <i class="fa fa-github-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="matthewrnewell on Twitter" href="https://twitter.com/matthewrnewell">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+  <a title="Useful Web Service on LinkedIn" href="https://www.linkedin.com/pub/matthew-newell/6/474/978">
+    <i class="fa fa-linkedin-square"></i>
+  </a>
+  
+
+  
+
+</div>
+
+    </div>
+  </div>
+  </ul>
+</nav>
+    </div>
+
+    <div class="eleven columns content">
+      
+      <p class="meta">
+  January 21, 2015 
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title">Ten Ruby Things I Learned This Week</h1>
+
+<div id="post">
+  <p>By Friday my browser it usually tabbed full of must know information. Before I kill the tabs, here are a few of the things I found interesting. </p>
+
+<h2 id="monkey-patch-a-method-and-then-call-it-with-map-via-blocks-symbol">1. Monkey Patch a Method and then Call it with Map via Block’s Symbol</h2>
+
+<p>Source: <a href="http://rosettacode.org/wiki/FizzBuzz#Ruby">Rosetta Code</a></p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># the monkeypatch</span>
+
+<span class="k">class</span> <span class="nc">String</span>
+  <span class="k">def</span> <span class="nf">shout</span>
+    <span class="s2">&quot;</span><span class="si">#{</span><span class="nb">self</span><span class="si">}</span><span class="s2">!!!!&quot;</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;I like cats&quot;</span>
+<span class="n">a</span><span class="o">.</span><span class="n">shout</span> <span class="c1"># =&gt; I like cats!!!</span>
+
+<span class="c1"># here is the map, block, symbol part</span>
+
+<span class="n">animals</span> <span class="o">=</span> <span class="sx">%w(cats dogs birds )</span>
+<span class="n">animals</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:shout</span><span class="p">)</span> <span class="c1"># =&gt; [&quot;cats!!!&quot;, &quot;dogs!!!&quot;, &quot;birds!!!&quot;]</span></code></pre></div>
+
+<h2 id="super-short-syntex-for-ifelse-statement">2. Super Short Syntex for If/Else Statement</h2>
+
+<p>Learned while browsing <a href="http://rosettacode.org/wiki/FizzBuzz#Ruby">Rosetta Code</a></p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># The following blocks are equilivant:</span>
+
+<span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> 
+  <span class="nb">puts</span> <span class="s2">&quot;match&quot;</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">&quot;no match&quot;</span>
+<span class="k">end</span>
+
+<span class="c1">#is the same as this one.</span>
+<span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="p">?</span> <span class="s2">&quot;match&quot;</span> <span class="p">:</span> <span class="s2">&quot;no match&quot;</span></code></pre></div>
+
+<h2 id="arraynew-with-an-argument-and-block">3. Array.new with an Argument and Block</h2>
+
+<p>Discovered at <a href="https://blog.engineyard.com/2015/five-ruby-methods-you-should-be-using?utm_source=rubyweekly&amp;utm_medium=email">Engine Yard</a></p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">BallGame</span>
+  <span class="k">def</span> <span class="nf">score_per_innings</span>
+    <span class="vi">@score_per_innings</span> <span class="o">||=</span> <span class="nb">Array</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> <span class="p">{</span> <span class="nb">Array</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">mets_vs_yanks</span> <span class="o">=</span> <span class="no">Ballgame</span><span class="o">.</span><span class="n">new</span> 
+<span class="n">mets_vs_yanks</span><span class="o">.</span><span class="n">score</span> <span class="o">=&gt;</span> <span class="o">[</span> <span class="o">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">0</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">0</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">0</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">0</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">0</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">0</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">0</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">0</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">0</span><span class="o">]</span> <span class="o">]</span></code></pre></div>
+
+<h2 id="spaceship-operator">4. Spaceship Operator</h2>
+
+<p>Evaluates value a and b. Returns -1 when a follows b, 0 when a == b, and 1 when b follows a</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">string</span> <span class="o">=</span> <span class="sx">%w(b a i c n o)</span>
+
+<span class="c1"># the following are equivalant</span>
+<span class="n">string</span><span class="o">.</span><span class="n">sort</span><span class="o">.</span><span class="n">reverse</span>
+<span class="n">string</span><span class="o">.</span><span class="n">sort</span> <span class="p">{</span><span class="o">|</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">|</span> <span class="n">b</span> <span class="o">&lt;=&gt;</span> <span class="n">a</span> <span class="p">}</span> <span class="c1">#note b precedes a in spaceship block. to match the reverse method.</span></code></pre></div>
+
+<h2 id="an-abstraction-exercise">5-10 An Abstraction Exercise</h2>
+
+<p><a href="http://mauricio.github.io/2015/01/12/implementing-enumerable-in-ruby.html?utm_source=rubyweekly&amp;utm_medium=email">Understanding some Enumerable methods by implementing them in Ruby</a></p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">question</span>
+  <span class="k">return</span></code></pre></div>
+
+
+</div>
+
+<div id="related">
+  <h3>Related Posts</h3>
+  <ul class="posts">
+    
+    <li>
+      <span>08 Jan 2015 &raquo;</span> <a href="/blog/2015/01/08/refactor-fizz_buzz.html">Refactoring Fizz Buzz</a>
+    </li>
+    
+    <li>
+      <span>25 Sep 2014 &raquo;</span> <a href="/blog/2014/09/25/refactor-rake.html">Refactoring a Rake Task</a>
+    </li>
+    
+    <li>
+      <span>20 Sep 2014 &raquo;</span> <a href="/blog/2014/09/20/how_to_learn.html">How to Learn</a>
+    </li>
+    
+  </ul>
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Useful Web Service, 2014 &mdash; built with Jekyll using <a href="https://github.com/swanson/lagom">Lagom</a> theme. 
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-55209906-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<footer>
+</footer>
+
+</body>
+</html>

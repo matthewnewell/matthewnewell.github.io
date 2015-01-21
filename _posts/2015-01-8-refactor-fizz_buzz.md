@@ -91,7 +91,7 @@ end
 
 {% endhighlight %}
 
-## The Library
+## The Test
 
 {% highlight ruby %}
 
