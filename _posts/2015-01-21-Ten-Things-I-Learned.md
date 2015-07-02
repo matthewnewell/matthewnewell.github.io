@@ -5,7 +5,7 @@ categories:
 - blog
 ---
 
-By Friday my browser it usually tabbed full of must know information. Before I kill the tabs, here are a few of the things I found interesting. 
+By Friday my browser is tabbed full of must know information. 
 
 ## 1. Monkey Patch a Method and then Call it with Map via Block's Symbol
 
@@ -67,6 +67,8 @@ mets_vs_yanks.score => [ [0-0], [0-0], [0-0], [0-0], [0-0], [0-0], [0-0], [0-0],
 
 {% endhighlight %}
 
+
+
 ## 4. Spaceship Operator
 
 Evaluates value a and b. Returns -1 when a follows b, 0 when a == b, and 1 when b follows a
@@ -81,7 +83,51 @@ string.sort {|a, b| b <=> a } #note b precedes a in spaceship block. to match th
 
 {% endhighlight %} 
 
-## 5-10 An Abstraction Exercise
+## 5. Know thy Self
+
+Stumbled upon at [jonathan-alban's fizz_buzz](github.com/jonathan-alban/fizz_buzz/blob/master/fizz_buzz.rb). Explained at [RubyLearning](rubylearning.som/satishtalim/ruby_self.html)
+
+
+> At every point there is one and only one ```self``` - the current or default object accessible to you in your program.
+
+{% highlight ruby %}
+
+class EvalEven
+  def self.find(number)
+    if number % 2 == 0
+      "#{number} is an even number!"
+    else
+      "odd number"
+    end
+  end
+end
+
+EvalEven.find(2)  # => 2 is an even number!
+
+{% endhighlight %}
+
+## 6. Blocks and Methods
+
+You normally invoke a block by using the yield statement from a method that has the same name as that of the block. 
+
+{% highlight ruby %}
+def test
+  yield
+end
+
+test { puts "hello world" }
+
+def adder(a,b,c)
+  yield a, b, c
+end
+
+test {|a,b,c| puts a+b+c}
+
+{% endhighlight %}
+
+
+
+## 7 An Abstraction Exercise
 
 [Understanding some Enumerable methods by implementing them in Ruby](http://mauricio.github.io/2015/01/12/implementing-enumerable-in-ruby.html?utm_source=rubyweekly&utm_medium=email)
 
@@ -91,5 +137,8 @@ def question
   return 
 
 {% endhighlight %}
+
+## 8 Common Rails Mistakes
+[10 common rails mistakes: a best practice tutorial](http://www.toptal.com/ruby-on-rails/top-10-mistakes-that-rails-programmers-make)
 
 
