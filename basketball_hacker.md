@@ -9,5 +9,7 @@ title: Projects
 
 Software training for kids just in case they don't go pro.  
 
-Basketball Hacker is a set of ruby exercises with basketball releated themes. Your fist challenge is to write a shot clock. Then a scoreboard. And team and player objects.  Along the way, the student learns the fundamentals of ruby programming language and test driven development. 
+Basketball Hacker is a set of ruby exercises with basketball releated themes. Your fist challenge is to write a shot clock. Then a scoreboard. 
+
+Pretty soon you will be making objects for teams and players. Along the way, the student learns the fundamentals of object orienterd programming, the ruby programming language and the fundamentals of test driven development. 
 
