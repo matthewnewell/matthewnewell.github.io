@@ -5,7 +5,7 @@ categories:
 - blog
 ---
 
-Geist Reservoir has an aquatic vegetation problem.
+Geist Reservoir has an aquatic vegetation problem. Excessive vegetation limits summer recreation options. Shoreline weeds are unsightly and can hurt property values.
 
 We have a vegetation problem because our Reservoir is full of nutrients. Most of these nutrients come from the mud (called sediment) at the bottom of the Reservoir. Sediment comes from soil erosion.  Soil erosion is the output of a complex calculation involving rain patterns, soil conditions, and land management practices.
 
