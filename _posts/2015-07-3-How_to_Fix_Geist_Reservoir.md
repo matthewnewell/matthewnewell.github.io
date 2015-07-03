@@ -7,21 +7,21 @@ categories:
 
 Geist Reservoir has an aquatic vegetation problem.
 
-We have a vegetation problem because our Reservoir is full of nutrients. Most of these nutrients come from mud (called sediment) at the bottom of the Reservoir. Sediment comes from soil erosion.  Soil erosion is the output of a complex calculation involving rain patterns, soil conditions, and land management practices.
+We have a vegetation problem because our Reservoir is full of nutrients. Most of these nutrients come from the mud (called sediment) at the bottom of the Reservoir. Sediment comes from soil erosion.  Soil erosion is the output of a complex calculation involving rain patterns, soil conditions, and land management practices.
 
 We cannot change rain patterns. We cannot change soil (we can improve it). The only variable we control in the Reservoir equation is land management. 
 
-In other words, we cannot fix our Reservoir until we take better care our soil. Here’s why:
+In other words, we cannot fix our Reservoir until we take better care our land. Here’s why:
 
-When it rains in Central Indiana, it pours.  And when it pours on our mostly clay soils, water pools on the surface. If it rains hard enough, pools of surface water overflow into storm drains, retention ponds, rivers, streams, and Reservoir. Along the way, surface water picks up tiny pieces of dirt that eventually become sediment.  This is what puts the “mud” in Mud Creek. 
+When it rains in Central Indiana, it pours.  And when it pours on our mostly clay soils, water pools. If it rains hard enough, pools of surface water overflow into storm drains, retention ponds, rivers, streams, and Reservoir. Along the way, surface water picks up tiny pieces of dirt that eventually become sediment.  This is what puts the “mud” in Mud Creek. 
 
 Up until a few years ago, Geist Reservoir had an algae problem. This happened because 1) algae is very good at consuming nutrients from soil erosion and 2) nothing in the Reservoir is very good at consuming algae. Algae blooms limited sunlight from entering the water which in turn restricted aquatic plant growth. Then [zebra mussels](https://en.wikipedia.org/wiki/Zebra_mussel) happened.
 
 Zebra mussels are a freakishly competitive super species of exotic mussel that filter feed on algae.  They are so good at eating algae that since their introduction to Geist Reservoir a few years ago, water visibility has gone from almost zero to several feet. No more algae blooms. 
 
-Aquatic plants, like algae, need light and nutrients to survive. Thanks to the zebras, light now penetrates down to the nutrient rich mud at the bottom our Reservoir. Our algae population is kept in check by zebra mussels. And the aquatic plants are finally getting their day in the sun.
+Aquatic plants, like algae, need light and nutrients to survive. Thanks to the zebras, light now penetrates down to the nutrient rich mud at the bottom our Reservoir. The algae population is kept in check by zebra mussels. And the aquatic plants are finally getting their day in the sun.
 
-We humans also like a day in the sun. To make this possible, we spray the Reservoir with aquatic herbicides. This is a fairly cheap way to keep the Reservoir usable for a season. It is not a long term solution.  
+We humans also like a day in the sun. To make this possible, we spray the Reservoir with aquatic herbicides. This is a fairly cheap way to keep the Reservoir usable for a season. Its maybe not a great long term solution.  
 
 Dredging could be part of a long term solution. But without changes to our land management practices, soil erosion will fill in dredged areas. Think sand castle vs. rising tide. The tide always wins.
 
