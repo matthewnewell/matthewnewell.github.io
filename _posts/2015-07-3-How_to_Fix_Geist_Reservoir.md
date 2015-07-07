@@ -5,23 +5,23 @@ categories:
 - blog
 ---
 
-Geist Reservoir has an aquatic vegetation problem. Our shorelines and marinas and boating channels are clogged with weeds and mud has filled in many of the shallow areas. As a result, our Reservoir recreation options are becomming increasingly limited.
+Geist Reservoir has an aquatic vegetation problem. Our shorelines and marinas and boating channels are clogged with weeds and mud. As a result, the asthetic appeal and recreation options on our Reservoir are becomming increasingly limited.
 
-We have a vegetation problem because our Reservoir is full of nutrients. Most of these nutrients come from the mud (called sediment) at the bottom of the Reservoir. Sediment comes from soil erosion.  Soil erosion is the result of a complex calculation involving **rain patterns**, **soil conditions**, and **land management practices**.
+We have a vegetation problem because our Reservoir is full of nutrients. Most of these nutrients come from the mud (called sediment) at the bottom of the Reservoir. This mud comes from soil erosion.  Soil erosion is the result of a complex calculation involving **rain patterns**, **soil conditions**, **geography**, and **land management practices**.
 
-The only way to make lasting improvements to Geist Resevoir is by changing the way we take care of our land. Here’s why:
+The only variable we can control in this calculation is our land management practices.  In other words, it is not possible to improve our Reservoir until we take better care of the land that drains into it. Here’s why:
 
-When it rains in Central Indiana, it pours.  And when it pours on our mostly clay soils, water pools and then overflows into our storm drains, retention ponds, rivers, streams, and Reservoir. Along the way, surface water picks up tiny pieces of dirt that eventually become sediment.  This is why we have “mud” in Mud Creek. 
+When it rains in Central Indiana, it pours.  And when it pours on our mostly clay soils, water pools and then overflows into our storm drains, retention ponds, rivers, streams, and Reservoir. Along the way, surface water picks up tiny pieces of dirt. This dirt eventually settles into our Reservoir where it becomes food for aquatic plants. Incidently, this process puts the “mud” in Mud Creek. 
 
 Up until a few years ago, Geist Reservoir had an algae problem. This happened because 1) algae is very good at consuming nutrients from soil erosion and 2) nothing in the Reservoir is very good at consuming algae. Algae blooms limited sunlight from entering the water which in turn restricted aquatic plant growth. Then [zebra mussels](https://en.wikipedia.org/wiki/Zebra_mussel) happened.
 
-Zebra mussels are a freakishly competitive species of exotic mussel that filter feed on algae.  They are so good at eating algae that since their introduction to Geist Reservoir a few years ago, water visibility has gone from almost zero to several feet. No more algae blooms. 
+Zebra mussels eat algae. They are so good at eating algae that since their introduction to Geist Reservoir a few years ago, water visibility has gone from almost zero to several feet. No more algae blooms. 
 
 Aquatic plants, like algae, need light and nutrients to survive. Thanks to the zebras, light now penetrates down to the nutrient rich mud at the bottom our Reservoir. The algae population is kept in check by zebra mussels. And the aquatic plants are finally getting their day in the sun.
 
 We humans also like a day in the sun. To make this possible, we spray the Reservoir with aquatic herbicides. This is a fairly cheap way to keep the Reservoir usable for a season. It is maybe not a great long term solution. 
 
-Dredging might be part of a long term solution. But without changes to our land management practices, soil erosion will fill in dredged areas after a few years. Think sand castle vs. rising tide. Tide always wins.
+Dredging might be part of a long term solution. But without changes to our land management practices,  erosion will fill in the dredged areas after a few heavy rain storms. 
 
 So, here is how we can fix our Reservoir:
 
