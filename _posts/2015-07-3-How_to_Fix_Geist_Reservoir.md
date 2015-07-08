@@ -5,17 +5,17 @@ categories:
 - blog
 ---
 
-Geist Reservoir has an aquatic vegetation problem. Our shorelines and marinas and boating channels are clogged with weeds and mud. As a result, the asthetic appeal and recreation options on our Reservoir are becomming increasingly limited.
+Geist Reservoir has an aquatic vegetation problem. The shorelines and marinas and boating channels are clogged with weeds and mud. The asthetic appeal and recreation options on our Reservoir are becomming increasingly limited.
 
 We have a vegetation problem because our Reservoir is full of nutrients. Most of these nutrients come from the mud (called sediment) at the bottom of the Reservoir. This mud comes from soil erosion.  Soil erosion is the result of a complex calculation involving **rain patterns**, **soil conditions**, **geography**, and **land management practices**.
 
-The only variable we can control in this calculation is our land management practices.  In other words, it is not possible to improve our Reservoir until we take better care of the land that drains into it. Here’s why:
+The only variable we can control in this calculation is land management.  It is not possible to improve our Reservoir until we take better care of the land that drains into it. Here’s why:
 
-When it rains in Central Indiana, it pours.  And when it pours on our mostly clay soils, water pools and then overflows into our storm drains, retention ponds, rivers, streams, and Reservoir. Along the way, surface water picks up tiny pieces of dirt. This dirt eventually settles into our Reservoir where it becomes food for aquatic plants. Incidently, this process puts the “mud” in Mud Creek. 
+When it rains in Central Indiana, it pours.  And when it pours on our mostly clay soils, water pools and then overflows into storm drains, retention ponds, rivers, streams, and Reservoir. Along the way, surface water picks up tiny pieces of dirt. This dirt eventually settles into our Reservoir where it becomes food for aquatic plants. 
 
-Up until a few years ago, Geist Reservoir had an algae problem. This happened because 1) algae is very good at consuming nutrients from soil erosion and 2) nothing in the Reservoir is very good at consuming algae. Algae blooms limited sunlight from entering the water which in turn restricted aquatic plant growth. Then [zebra mussels](https://en.wikipedia.org/wiki/Zebra_mussel) happened.
+Up until a few years ago, Geist Reservoir had an algae problem. This happened because 1) algae is very good at consuming nutrients and 2) nothing in the Reservoir is very good at consuming algae. Algae blooms limited sunlight from entering the water which in turn restricted aquatic plant growth. Then [zebra mussels](https://en.wikipedia.org/wiki/Zebra_mussel) happened.
 
-Zebra mussels eat algae. They are so good at eating algae that since their introduction to Geist Reservoir a few years ago, water visibility has gone from almost zero to several feet. No more algae blooms. 
+Zebra mussels are so good at eating algae that since their introduction to Geist Reservoir a few years ago, water visibility has gone from almost zero to several feet. We no longer have algae blooms. 
 
 Aquatic plants, like algae, need light and nutrients to survive. Thanks to the zebras, light now penetrates down to the nutrient rich mud at the bottom our Reservoir. The algae population is kept in check by zebra mussels. And the aquatic plants are finally getting their day in the sun.
 
@@ -35,9 +35,9 @@ Central Indiana soil is mostly clay. Plants break up clay. Plant roots make chan
 
 The best plants to plant are the ones with really deep roots. Trees and shrubs are great. So are ornamental grasses and perennial flowers. And then there’s your lawn.
 
-Central Indiana lawns are often composed of species of grass with very short roots. Short root lawns require frequent light irrigation to stay healthy. They cannot hold much water during a heavy rain. 
+Indiana lawns often consist of grass species that have very short roots. Short root lawns do hold much water and do not break up clay soil.  
 
-Please consider over-seeding your lawn with drought tolerant grass seed.  These are newer cultivars of rye and fescue that have a nice thin blade like bluegrass but put down a very deep root. They require significantly less water and fertilizer to stay green. As the lawn matures, grass roots will break up clay soil which in turn will reduce runoff and slow soil erosion. 
+If you want to help our Reservoir and save a bit of money on lawn care, please consider over-seeding your lawn with drought tolerant grass seed.  Drought tolerant seeds are newer cultivars of rye and fescue that have a nice thin blade like bluegrass but put down a very deep root. They require significantly less water and fertilizer to stay green. As the lawn matures, grass roots will break up clay soil which in turn will reduce runoff and slow soil erosion. 
 
 Drought tolerant seed blends are available everywhere from Costco and Home Depot to garden centers and specialty shops like Advanced Turf Solutions in Noblesville. Some of the more popular brands are [Pennington Smart Seed](http://www.penningtonseed.com/products/smart-seed), [Scotts tall fescue blends](http://www.scotts.com/smg/gocat/turf-builder-grass-seeds/cat50050), and [Perals Premium](http://www.pearlspremium.com/). Perals claims a 12" root, once a month mowing, and once a year fertilizer. You can get it at Costco. 
 

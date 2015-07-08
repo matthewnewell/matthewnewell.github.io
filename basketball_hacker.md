@@ -3,7 +3,7 @@ layout: default
 title: Projects
 ---
 
-#[The Basketball Hacker](https://github.com.matthewnewell/basketball_hacker) 
+#[The Basketball Hacker](https://github.com/matthewnewell/basketball_hacker) 
 
 [https://github.com.matthewnewell/basketball_hacker](https://github.com/matthewnewell/basketball_hacker) 
 
