@@ -4,7 +4,7 @@
  <title>The blog of Useful Web Service</title>
  <link href="http://usefulwebservice.com/atom.xml" rel="self"/>
  <link href="http://usefulwebservice.com"/>
- <updated>2015-07-09T08:41:31-04:00</updated>
+ <updated>2015-07-30T10:42:11-04:00</updated>
  <id>http://usefulwebservice.com</id>
  <author>
    <name>Useful Web Service</name>
@@ -13,21 +13,88 @@
 
  
  <entry>
+   <title>The Basketball Hacker</title>
+   <link href="http://usefulwebservice.com/blog/2015/08/01/Basketball_Hacker_CONOPS.html"/>
+   <updated>2015-08-01T00:00:00-04:00</updated>
+   <id>http://usefulwebservice.com/blog/2015/08/01/Basketball_Hacker_CONOPS</id>
+   <content type="html">&lt;p&gt;The objective of Basketball Hacker is to teach kids how to write software through a series of basketball themed programming exercises.  &lt;/p&gt;
+
+&lt;p&gt;As the student athlete completes course modules, he/she earns credits that can be used to buy team apparel, basketballs, subsidized team dues, and private instruction sessions (for software or basketball). &lt;/p&gt;
+
+&lt;p&gt;The program runs alongside an entire youth basketball season. Classes are optional for team participants and begin about 45 minutes prior to basketball practice at a classroom near the gym.  Participation cap for the initial class should be one team or up to 10 students. For any given class, a 5 to 1 student/teacher ratio is ideal. &lt;/p&gt;
+
+&lt;p&gt;Participating students are given a small laminated card with basic computer programming commands and a laptop. The laminated card is designed to fit into a gym bag. Laptops are to remain in the classroom or with the course instructor.&lt;/p&gt;
+
+&lt;p&gt;I envision the engineering environment to consist of Apple laptop computers plus Apple’s built in terminal shell (for running software), Apple’s default instance of the ruby programming language, and a free text editor for writing software. This is my personal preference for an engineering environment. We can adjust based on instructor experience and available resources.&lt;/p&gt;
+
+&lt;p&gt;Basketball Hacker is not currently affiliated with any organization. All program materials will be released as open source. However, sponsorship will be necessary help offset the cost of student incentives and hardware assets.&lt;/p&gt;
+
+&lt;h1 id=&quot;course-outline&quot;&gt;Course Outline&lt;/h1&gt;
+
+&lt;h2 id=&quot;weeks-1--2&quot;&gt;Weeks 1 &amp;amp; 2&lt;/h2&gt;
+&lt;p&gt;Students are introduced to their development environment. We will learn what a computer program is, how to write a computer program, and how to run a computer program.  &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;team_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Pacers&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hello &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;team_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;!&amp;quot;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &amp;quot;Hello Pacers!&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;weeks-3--4&quot;&gt;Weeks 3 &amp;amp; 4&lt;/h2&gt;
+&lt;p&gt;Introduction to data types (string, integer, floating point, and boolean), data containers (array, hash), and conditional evaluations (if/then statements)&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;team_members&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Anthony&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Bode&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Lucas&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Simon&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Damon&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;team_members&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; 
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Please welcome &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; Please welcome Anthony! &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; Please welcome Bode!&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; Please welcome Lucas!&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; Please welcome Simon!&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; Please welcome Damon!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;weeks-5--6&quot;&gt;Weeks 5 &amp;amp; 6&lt;/h2&gt;
+&lt;p&gt;Introduction to objects. Students will make a player object that holds player statistics.  Students will make a team object that hold players.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Player&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@position&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;introduce_player&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;At &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;, playing &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@position&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;, please welcome &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;!&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;weeks-6--8&quot;&gt;Weeks 6 &amp;amp; 8&lt;/h2&gt;
+&lt;p&gt;Introduction to Test Driven Development. Students learn how to write and test their code through a &lt;a href=&quot;https://github.com/matthewnewell/basketball_hacker&quot;&gt;series of exercises&lt;/a&gt;. &lt;/p&gt;
+
+&lt;h2 id=&quot;month-2&quot;&gt;Month 2&lt;/h2&gt;
+&lt;p&gt;Introduction to online learning resources, configuration management via git, and a continuation of test driven development exercises. &lt;/p&gt;
+
+&lt;h2 id=&quot;month-3&quot;&gt;Month 3&lt;/h2&gt;
+&lt;p&gt;Introduction to Ruby on Rails. Students will build a team website. We will deploy the website to a cloud service and store source code on &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;. Deployed work will be accessible outside of the classroom environment.    &lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>How to Fix Geist Reservoir</title>
    <link href="http://usefulwebservice.com/blog/2015/07/03/How_to_Fix_Geist_Reservoir.html"/>
    <updated>2015-07-03T00:00:00-04:00</updated>
    <id>http://usefulwebservice.com/blog/2015/07/03/How_to_Fix_Geist_Reservoir</id>
-   <content type="html">&lt;p&gt;Geist Reservoir has an aquatic vegetation problem. Weeds and mud clog our shorelines and marinas and boating channels. Over time, the Reservoir’s asthetic appeal and watersport recreation opportunities will become increasingly limited.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Geist Reservoir has an aquatic vegetation problem. Weeds and mud clog our shorelines, marinas, and boating channels. Over time, the Reservoir’s asthetic appeal and watersport recreation opportunities will become increasingly limited.&lt;/p&gt;
 
-&lt;p&gt;We have a vegetation problem because our Reservoir is full of nutrients. Most of these nutrients come from the mud (called sediment) at the bottom of the Reservoir. Mud comes from soil erosion.  Soil erosion is the result of a complex calculation involving &lt;strong&gt;rain patterns&lt;/strong&gt;, &lt;strong&gt;soil conditions&lt;/strong&gt;, &lt;strong&gt;geography&lt;/strong&gt;, and &lt;strong&gt;land management practices&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We have a vegetation problem because our Reservoir is full of nutrients. Most of these nutrients come from the mud (called sediment) at the bottom of the Reservoir. Mud comes from soil erosion.  &lt;/p&gt;
 
-&lt;p&gt;The only variable we can influence in the soil erosion equation is land management.  In other words, we cannot improve our water until we improve our land. Here’s why:&lt;/p&gt;
+&lt;p&gt;Soil erosion is the result of a complex calculation involving &lt;strong&gt;rain patterns&lt;/strong&gt;, &lt;strong&gt;soil conditions&lt;/strong&gt;, &lt;strong&gt;geography&lt;/strong&gt;, and &lt;strong&gt;land management practices&lt;/strong&gt;. The only variable we control in this equation is land management.  In other words, we cannot improve our Reservoir until we improve our land. Here’s why:&lt;/p&gt;
 
-&lt;p&gt;When it rains in Central Indiana, it pours.  And when it pours on our mostly clay soils, water pools on the surface and then overflows into our storm drains, retention ponds, rivers, streams, and Reservoir. Heavy rains overwhelm our drainage systems and erode soil. This soil ends up in our water where it becomes food for aquatic plants. This is why we have mud in “Mud Creek”.&lt;/p&gt;
+&lt;p&gt;When it rains in Central Indiana, it pours.  And when it pours on our mostly clay soils, water pools on the surface and then overflows into our storm drains, retention ponds, rivers, streams, and Reservoir. Heavy rains can overwhelm our drainage systems and erode soil. This soil ends up in our water where it becomes food for aquatic plants. This is why we have mud in “Mud Creek”.&lt;/p&gt;
 
 &lt;p&gt;Up until a few years ago, Geist Reservoir had an algae problem. This happened because 1) algae is very good at consuming nutrients and 2) nothing in the Reservoir is very good at consuming algae. Algae blooms limited sunlight from entering the water which in turn restricted aquatic plant growth. Then &lt;a href=&quot;https://en.wikipedia.org/wiki/Zebra_mussel&quot;&gt;zebra mussels&lt;/a&gt; happened.&lt;/p&gt;
 
-&lt;p&gt;Zebra mussels are so good at eating algae that since their introduction to Geist Reservoir a few years ago, we no longer have algae blooms. Except for days following heavy rains (soil erosion), the water is extremely clear.  &lt;/p&gt;
+&lt;p&gt;Zebra mussels are so good at eating algae that since their introduction to Geist Reservoir a few years ago, we no longer have algae blooms. Except for days following heavy rains (soil erosion), water is extremely clear.  &lt;/p&gt;
 
 &lt;p&gt;Aquatic plants, like algae, need light and nutrients to survive. Thanks to the zebras, light now penetrates down to the nutrient rich mud at the bottom our Reservoir. The algae population is kept in check by zebra mussels. And the aquatic plants are finally getting their day in the sun.&lt;/p&gt;
 
@@ -48,6 +115,8 @@
 &lt;p&gt;The best plants to plant are the ones with really deep roots. Trees and shrubs are great. So are ornamental grasses and perennial flowers. And then there’s your lawn.&lt;/p&gt;
 
 &lt;p&gt;Indiana lawns often consist of grass species that have very short roots. Short root lawns do hold much water and do not break up clay soil.  &lt;/p&gt;
+
+&lt;p&gt;Overseeding your lawn with drought tolerant grass is probably the most significant thing a homeowner can help our reservoir.&lt;/p&gt;
 
 &lt;h2 id=&quot;versitle-at-holding-water&quot;&gt;-versitle at holding water&lt;/h2&gt;
 

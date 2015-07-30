@@ -5,17 +5,17 @@ categories:
 - blog
 ---
 
-Geist Reservoir has an aquatic vegetation problem. Weeds and mud clog our shorelines and marinas and boating channels. Over time, the Reservoir's asthetic appeal and watersport recreation opportunities will become increasingly limited.
+Geist Reservoir has an aquatic vegetation problem. Weeds and mud clog our shorelines, marinas, and boating channels. Over time, the Reservoir's asthetic appeal and watersport recreation opportunities will become increasingly limited.
 
-We have a vegetation problem because our Reservoir is full of nutrients. Most of these nutrients come from the mud (called sediment) at the bottom of the Reservoir. Mud comes from soil erosion.  Soil erosion is the result of a complex calculation involving **rain patterns**, **soil conditions**, **geography**, and **land management practices**.
+We have a vegetation problem because our Reservoir is full of nutrients. Most of these nutrients come from the mud (called sediment) at the bottom of the Reservoir. Mud comes from soil erosion.  
 
-The only variable we can influence in the soil erosion equation is land management.  In other words, we cannot improve our water until we improve our land. Here’s why:
+Soil erosion is the result of a complex calculation involving **rain patterns**, **soil conditions**, **geography**, and **land management practices**. The only variable we control in this equation is land management.  In other words, we cannot improve our Reservoir until we improve our land. Here’s why:
 
-When it rains in Central Indiana, it pours.  And when it pours on our mostly clay soils, water pools on the surface and then overflows into our storm drains, retention ponds, rivers, streams, and Reservoir. Heavy rains overwhelm our drainage systems and erode soil. This soil ends up in our water where it becomes food for aquatic plants. This is why we have mud in "Mud Creek".
+When it rains in Central Indiana, it pours.  And when it pours on our mostly clay soils, water pools on the surface and then overflows into our storm drains, retention ponds, rivers, streams, and Reservoir. Heavy rains can overwhelm our drainage systems and erode soil. This soil ends up in our water where it becomes food for aquatic plants. This is why we have mud in "Mud Creek".
 
 Up until a few years ago, Geist Reservoir had an algae problem. This happened because 1) algae is very good at consuming nutrients and 2) nothing in the Reservoir is very good at consuming algae. Algae blooms limited sunlight from entering the water which in turn restricted aquatic plant growth. Then [zebra mussels](https://en.wikipedia.org/wiki/Zebra_mussel) happened.
 
-Zebra mussels are so good at eating algae that since their introduction to Geist Reservoir a few years ago, we no longer have algae blooms. Except for days following heavy rains (soil erosion), the water is extremely clear.  
+Zebra mussels are so good at eating algae that since their introduction to Geist Reservoir a few years ago, we no longer have algae blooms. Except for days following heavy rains (soil erosion), water is extremely clear.  
 
 Aquatic plants, like algae, need light and nutrients to survive. Thanks to the zebras, light now penetrates down to the nutrient rich mud at the bottom our Reservoir. The algae population is kept in check by zebra mussels. And the aquatic plants are finally getting their day in the sun.
 
@@ -36,6 +36,8 @@ Central Indiana soil is mostly clay. Plants break up clay. Plant roots make chan
 The best plants to plant are the ones with really deep roots. Trees and shrubs are great. So are ornamental grasses and perennial flowers. And then there’s your lawn.
 
 Indiana lawns often consist of grass species that have very short roots. Short root lawns do hold much water and do not break up clay soil.  
+
+Overseeding your lawn with drought tolerant grass is probably the most significant thing a homeowner can help our reservoir.
 
 -versitle at holding water
 -
