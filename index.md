@@ -8,7 +8,7 @@ title: Useful Web Service
 * [Team FBO:](teamFBO.html) Crowdsource federal business opportunities
 * [Thank The Teacher:](thanktheteacher.html) Crowdfund thank-you gifts for teachers
 * [Shop July Twenty Two:](july_twenty_two.html) Botique retail
-* [The Basketball Hacker:](basketball_hacker.html) Just in case your baller doesn't go pro
+* [The Basketball Hacker:](basketball_hacker.html) Learn to write software through a series of basketball themed programming exercises
 
 ###Presentations
 * [Learning Ruby:](http://www.slideshare.net/matthewnewell/ruby-newbie-26183481) Pivot from suit to nerd

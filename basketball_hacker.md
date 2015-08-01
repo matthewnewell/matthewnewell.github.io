@@ -7,9 +7,7 @@ title: Projects
 
 [https://github.com.matthewnewell/basketball_hacker](https://github.com/matthewnewell/basketball_hacker) 
 
-Software training for kids just in case they don't go pro.  
+The objective of Basketball Hacker is to teach kids how to write software through a series of basketball themed programming exercises.  
+As the student athlete completes course modules, he/she earns credits that can be used to buy team apparel, sports equipment, subsidized team dues, and private instruction sessions (for software or basketball). 
 
-Basketball Hacker is a set of ruby exercises with basketball releated themes.  
-
-Along the way, your lil baller learns the fundamentals of object orienterd programming, the ruby programming language, and test driven development. 
-
+ 
