@@ -9,15 +9,19 @@ The objective of Basketball Hacker is to teach kids how to write software throug
 
 As the student athlete completes course modules, he/she earns credits that can be used to buy team apparel, sports equipment, subsidized team dues, and private instruction sessions (for software or basketball). 
 
-The program runs alongside an entire youth basketball season. Classes are optional for team participants and begin about 45 minutes prior to basketball practice at a classroom near the gym.  Participation cap for the initial class should be 10 students. For any given class, a 5 to 1 student/teacher ratio is ideal. 
+The program runs alongside an the first half of an AAU youth basketball season (February to May). Classes are optional for team participants and begin about 45 minutes prior to basketball practice at a classroom near the gym.  Participation cap for the initial class should be 10 students. For any given class, a 5 to 1 student/teacher ratio is ideal. 
+
+Target age for the program is 6th to 8th grade. 
 
 Participating students are given a small laminated card with basic computer programming commands and a laptop. The laminated card is designed to fit into a gym bag. Laptops are to remain in the classroom or with the course instructor.
 
 I envision the engineering environment to consist of Apple laptop computers plus Apple’s built in terminal shell (for running software), Apple's default instance of the ruby programming language, and a free text editor for writing software. This is my personal preference for an engineering environment. We can adjust based on instructor experience and available resources.
 
-Basketball Hacker is not currently affiliated with any organization. All program materials will be released as open source. However, sponsorship will be necessary help offset the cost of student incentives and hardware assets.
+All instructers are volunteer. I would like to teach the first class. 
 
-#Course Outline
+Basketball Hacker is not currently affiliated with any organization. All program materials will be released as open source. However, sponsorship will be necessary help offset the cost of student incentives, hardware assets, and program expansion. 
+
+#Draft Course Outline
 
 ## Weeks 1 & 2
 Students are introduced to their development environment. We will learn what a computer program is, how to write a computer program, and how to run a computer program.  
