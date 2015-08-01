@@ -5,7 +5,7 @@ categories:
 - blog
 ---
 
-By Friday my browser is tabbed full of must know information. 
+By Friday my browser is tabbed full of must know information. Time to purge.
 
 ## 1. Monkey Patch a Method and then Call it with Map via Block's Symbol
 
