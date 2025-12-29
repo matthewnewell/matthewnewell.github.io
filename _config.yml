@@ -1,35 +1,8 @@
-# General Jekyll Config
-markdown: kramdown
-pygments: true
-url: http://usefulwebservice.com
-lsi: false
-exclude: [LICENSE, CNAME, README.md, .gitignore]
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
 
-# Theme customization - please change from the defaults!
-theme:
-  # Color for top bar, links, etc
-  highlight_color: '#3498db'
-
-  # Profile links on the left sidebar, leave blank to ignore
-  social:
-    github: matthewnewell
-    #bitbucket: philipj
-    #hacker_news: swanson
-    #stackexchange: 348619
-    #stackoverflow: 348619
-    twitter: matthewrnewell
-    #facebook: zuck
-    #tumblr: animalygifs
-    linkedin: matthew-newell/6/474/978
-    #gplus: 110552447039675960964
-
-  # "Hi, I'm _______"
-  name: Useful Web Service
-  email: matt@usefulwebservice.com
-  tagline: "Cloud Strategy"
-
-  # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-55209906-2
-
-  # Toggle "Postings are my own" disclaimer in footer
-  show_disclaimer: false
+title: Matthew Newell
+description: Senior Principal Engineer | AI Strategist | Systems Integration
+google_analytics: # Add your ID here if you have one later
+show_downloads: false
