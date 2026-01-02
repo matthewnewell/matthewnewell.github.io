@@ -1,4 +1,6 @@
-I bridge the gap between complex systems engineering and the frontier of Generative AI. Currently leading RAG and Agentic AI initiatives at V2X, I focus on building Semi-Disposable Applications and Applied AI solutions that solve real-world technical debt. Skeptical of enterprise initiatives.
+# Matthew Newell
+## Senior Principal Engineer | AI Strategist
+I focus on building Semi-Disposable Software and Applied AI solutions that solve real-world technical debt. Skeptical of enterprise initiatives.
 
 ---
 
