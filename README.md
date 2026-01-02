@@ -12,8 +12,8 @@ I bridge the gap between complex systems engineering and the frontier of Generat
 
 ## 🛠 Currently Building
 - **Universal Growth Engine:** A personal "Life Operating System" built on Google Drive & Gemini.
-- **Antigravity Projects:** AI tools for productivity and technical fundamentals.
 - **Musical Mastery:** Applying "Atomic Habits" to music theory and performance.
+- **Burned Value:** The lovechild of EVMS and a Release Burndown: the fiscal discipline of a government auditor meets the 'pivot-or-perish' soul of a startup.
 
 ---
 [LinkedIn](https://www.linkedin.com/in/matthew-newell-pmp-9784746/) | [Contact Me](mailto:matthew.r.newell@gmail.com)
