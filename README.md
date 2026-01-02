@@ -1,7 +1,4 @@
-# Matthew Newell
-### Senior Principal Engineer & AI Strategist
-
-I bridge the gap between complex systems engineering and the frontier of Generative AI. Currently leading RAG and Agentic AI initiatives at V2X, I focus on building "Solo Tools" and Applied AI solutions that solve real-world technical debt.
+I bridge the gap between complex systems engineering and the frontier of Generative AI. Currently leading RAG and Agentic AI initiatives at V2X, I focus on building Semi-Disposable Applications and Applied AI solutions that solve real-world technical debt. Skeptical of enterprise initiatives.
 
 ---
 
@@ -13,7 +10,7 @@ I bridge the gap between complex systems engineering and the frontier of Generat
 ## 🛠 Currently Building
 - **Universal Growth Engine:** A personal "Life Operating System" built on Google Drive & Gemini.
 - **Musical Mastery:** Applying "Atomic Habits" to music theory and performance.
-- **Burned Value:** The lovechild of EVMS and a Release Burndown: the fiscal discipline of a government auditor meets the 'pivot-or-perish' soul of a startup.
+- **[Burned Value](https://github.com/matthewnewell/BurnedValue):** The lovechild of EVMS and a Release Burndown: the fiscal discipline of a government auditor meets the 'pivot-or-perish' soul of a startup.
 
 ---
-[LinkedIn](https://www.linkedin.com/in/matthew-newell-pmp-9784746/) | [Contact Me](mailto:matthew.r.newell@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/matthew-newell-pmp-9784746/) | [Email](mailto:matthew.r.newell@gmail.com)

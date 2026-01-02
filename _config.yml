@@ -3,6 +3,6 @@ plugins:
   - jekyll-remote-theme
 
 title: Matthew Newell
-description: Senior Principal Engineer | AI Strategist | Systems Integration
+description: Senior Principal Engineer | AI Strategist
 google_analytics: # Add your ID here if you have one later
 show_downloads: false
