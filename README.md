@@ -1,6 +1,6 @@
 # Matthew Newell
-## Senior Principal Engineer | AI Strategist
-I focus on building Semi-Disposable Software and Applied AI solutions that solve real-world technical debt. Skeptical of enterprise initiatives.
+## Senior Principal Engineer | AI Orchestration
+I focus on building **Semi-Disposable Software** and **Applied AI solutions** that solve real-world technical debt. Skeptical of enterprise initiatives.
 
 ---
 
