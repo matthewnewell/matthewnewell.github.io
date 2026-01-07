@@ -13,6 +13,7 @@ I focus on building **Semi-Disposable Software** and **Applied AI solutions** th
 - **Universal Growth Engine:** A personal "Life Operating System" built on Google Drive & Gemini.
 - **Musical Mastery:** Applying "Atomic Habits" to music theory and performance.
 - **[Burned Value](https://github.com/matthewnewell/BurnedValue):** The lovechild of EVMS and a Release Burndown: the fiscal discipline of a government auditor meets the 'pivot-or-perish' soul of a startup.
+- **[CMMI 1.3-AI: Automated Process Orchestration**](https://github.com/matthewnewell/CMMI-1.3-AI-Orchestration) Develop specialized AI Agents for each CMMI Process Area (PA).
 
 ---
 [LinkedIn](https://www.linkedin.com/in/matthew-newell-pmp-9784746/) | [Email](mailto:matthew.r.newell@gmail.com)
