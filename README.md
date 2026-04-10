@@ -1,9 +1,9 @@
 # Matthew Newell
 ## Engineer · Builder · Program Manager | AI for the Real World
 
-In Mozart's time, society could afford only a few composers — the craft was simply too expensive to democratize. Then came MIDI, then DAWs, and suddenly anyone could compose. AI is that shift, times a million.
+In Mozart's time, a single masterpiece required a composer, an orchestra, a concert hall, a patron, and years of rehearsal. AI collapses all of that into one person with an idea.
 
-I believe AI is the great democratizer. My work is about finding the legacy workflows that burn time and money, and replacing them with something that moves at the speed of thought. Not AI for its own sake — AI that makes people 10x more capable than they were yesterday.
+AI is the great democratizer — and the people who deserve it most are the ones actually making things.
 
 I build **Semi-Disposable Software**: lean, purposeful tools designed to solve a real problem and get out of the way. Skeptical of enterprise theater.
 
