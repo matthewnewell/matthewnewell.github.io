@@ -7,9 +7,9 @@ Active
 - **[Burned Value](https://www.BurnedValue.com):** BurnedValue started as the lovechild of Earned Value Management and Agile Burndown metrics. It has grown to become a complete project portfolio planning and execution and oversight applicaton. 
 
 Backlog
-- **go-nogo:** A business capture management application. Go/no-go scoring, P(win), market fit, competitive intelligence, win strategy, subcontractor coordination, and RFP compliance tracking — because the most expensive proposal is the one you were never going to win.
+- **Go/No-Go:** A business capture management application. P(win), market fit, competitive intelligence, win strategy, subcontractor coordination, and RFP compliance tracking — because the most expensive proposal is the one you were never going to win.  
 - **[CMMI 1.3-AI](https://github.com/matthewnewell/CMMI-1.3-AI-Orchestration):** A theory under investigation: each CMMI process area is essentially a specialized agent — defined inputs, defined outputs, measurable goals. If that's true, a fully orchestrated CMMI compliance suite might be buildable with Claude Code, Cowork, and Managed Agents. 
-- **Musical Mastery:** Atomic Habits builds the discipline, AI accelerates the learning. 
+
 
 ---
 [LinkedIn](https://www.linkedin.com/in/matthew-newell-pmp-9784746/) | [Email](mailto:matthew.r.newell@gmail.com)
